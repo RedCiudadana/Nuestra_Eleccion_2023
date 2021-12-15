@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Red Ciudadana" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="css/colors.php?color=F9BE79" type="text/css" />
+
+	<!-- Forum Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/forum/forum.css" type="text/css" /> <!-- Forum Custom Css -->
+	<link rel="stylesheet" href="demos/forum/css/fonts.css" type="text/css" /> <!-- Forum Custom Fonts -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<!-- / -->
+
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+	<!-- Document Title
+	============================================= -->
+	<title>Lab Electoral | Red Ciudadana</title>
+
+</head>
+
+<body class="stretched search-overlay">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Modal -->
+		<div class="modal fade" id="modal-signin" tabindex="-1" aria-labelledby="modal-signin" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content bg-white p-4 p-md-5 rounded">
+					<h3 class="h2 fw-bolder mb-4">Create a New Topic</h3>
+					<form class="row mb-0" action="#" method="post" enctype="multipart/form-data">
+						<div class="col-12 form-group mb-4">
+							<textarea name="post-message" id="post-message" class="form-control" cols="30" rows="10"></textarea>
+						</div>
+						<div class="clear"></div>
+						<div class="col-6 form-group">
+							<small class="text-muted">Maximum file size allowed is 2048 KB.</small>
+							<div class="form-file">
+								<input type="file" class="form-control" id="file-input">
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="col-12 form-group mb-1">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+								<label class="form-check-label nott ls0 mb-0 fw-semibold" for="inlineCheckbox1">Set as a Private Reply</label>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="col-12 form-group">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+								<label class="form-check-label nott ls0 mb-0 fw-semibold" for="inlineCheckbox2">Email me when Someone Replies</label>
+							</div>
+						</div>
+						<div class="col-12">
+							<button type="submit" name="submit" class="button button-large bg-alt border border-width-2 rounded-1 fw-medium nott ls0 ms-0">Submit Now</button>
+
+							<button type="button" data-bs-dismiss="modal" aria-label="Close" class="button button-large button-border border-default h-bg-danger rounded-1 fw-medium nott ls0 ms-0">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header header-size-md" data-mobile-sticky="true">
+			<div id="header-wrap">
+				<div class="container">				
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="demo-forum.html" class="standard-logo"><img style="padding:5%" src="elementos/ELEMENTOS/LOGOTIPO/LAB-ELECTORAL_03.png" alt="Canvas Logo"></a>
+							<a href="demo-forum.html" class="retina-logo"><img style="padding:5%" src="elementos/ELEMENTOS/LOGOTIPO/LAB-ELECTORAL_02.png" alt="Canvas Logo"></a>
+						</div><!-- #logo end -->
+
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+
+							<ul class="menu-container">
+								<li class="menu-item current"><a class="menu-link" href="index.html"><div>Explicativos</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="iniciativas.html"><div>Iniciativas</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="demo-forum-profile.html"><div>Publicaciones</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="demo-forum-search-result.html"><div>Datos</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="demo-forum-signin.html"><div></div>Contacto</a></li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+
+                <!-- event-area-start -->
+                <div class="event-area pt-60 pb-130">
+                    <div class="container">
+
+                        <div class="container clearfix">
+                            <div class="heading-block center">
+
+                                <img style="margin:2% 0"  src="elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
+
+                                <h2>Iniciativas</h2>
+                                <span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span>
+                            </div>
+                        </div>
+
+                        <div class="event-bg event-bg-03 pos-rel mb-30">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="event-img mb-20 center">
+                                        <a href="events-details.html"><img style="height:100%!important" src="https://d33wubrfki0l68.cloudfront.net/c299bcde260615aaebfcd0d70684268d2d3ad421/93e98/assets/img/lab-gray.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="event-wrapper mb-20 ">
+                                        <div class="event-text">
+                                            <span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span>
+                                            <h3> índice de datos abiertos del sector justicia</h3>
+                                        </div>
+                                        <div class="event-meta">
+                                            <span><i class="far fa-user-circle"></i>Lorem ipsum dolor sit amet, et laboramus constituto usu. Vim cu augue aeque. Sed ut solet evertitur, id eum dolorem principes dissentiet. Lorem assueverit qui no, summo dictas at sit.</span>
+                                        </div><br>
+                                        <div class="cta-content">
+
+                                            <div class="cta-button">
+                                                <a class="btn" href="causes-details.html">Descargar <i class="far fa-long-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-bg event-bg-03 pos-rel mb-30">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="event-img mb-20 center">
+                                        <a href="events-details.html"><img style="height:100%!important" src="https://d33wubrfki0l68.cloudfront.net/c299bcde260615aaebfcd0d70684268d2d3ad421/93e98/assets/img/lab-gray.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="event-wrapper mb-20 ">
+                                        <div class="event-text">
+                                            <span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span>
+                                            <h3> índice de datos abiertos del sector justicia</h3>
+                                        </div>
+                                        <div class="event-meta">
+                                            <span><i class="far fa-user-circle"></i>Lorem ipsum dolor sit amet, et laboramus constituto usu. Vim cu augue aeque. Sed ut solet evertitur, id eum dolorem principes dissentiet. Lorem assueverit qui no, summo dictas at sit.</span>
+                                        </div><br>
+                                        <div class="cta-content">
+
+                                            <div class="cta-button">
+                                                <a class="btn" href="causes-details.html">Descargar <i class="far fa-long-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-bg event-bg-03 pos-rel mb-30">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="event-img mb-20 center">
+                                        <a href="events-details.html"><img style="height:100%!important" src="https://d33wubrfki0l68.cloudfront.net/c299bcde260615aaebfcd0d70684268d2d3ad421/93e98/assets/img/lab-gray.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="event-wrapper mb-20 ">
+                                        <div class="event-text">
+                                            <span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span>
+                                            <h3> índice de datos abiertos del sector justicia</h3>
+                                        </div>
+                                        <div class="event-meta">
+                                            <span><i class="far fa-user-circle"></i>Lorem ipsum dolor sit amet, et laboramus constituto usu. Vim cu augue aeque. Sed ut solet evertitur, id eum dolorem principes dissentiet. Lorem assueverit qui no, summo dictas at sit.</span>
+                                        </div><br>
+                                        <div class="cta-content">
+
+                                            <div class="cta-button">
+                                                <a class="btn" href="causes-details.html">Descargar <i class="far fa-long-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="event-bg event-bg-03 pos-rel mb-30">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="event-img mb-20 center">
+                                        <a href="events-details.html"><img style="height:100%!important" src="https://d33wubrfki0l68.cloudfront.net/c299bcde260615aaebfcd0d70684268d2d3ad421/93e98/assets/img/lab-gray.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="event-wrapper mb-20 ">
+                                        <div class="event-text">
+                                            <span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span>
+                                            <h3> índice de datos abiertos del sector justicia</h3>
+                                        </div>
+                                        <div class="event-meta">
+                                            <span><i class="far fa-user-circle"></i>Lorem ipsum dolor sit amet, et laboramus constituto usu. Vim cu augue aeque. Sed ut solet evertitur, id eum dolorem principes dissentiet. Lorem assueverit qui no, summo dictas at sit.</span>
+                                        </div><br>
+                                        <div class="cta-content">
+
+                                            <div class="cta-button">
+                                                <a class="btn" href="causes-details.html">Descargar <i class="far fa-long-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+      </div>
+      <!-- event-area-end -->
+
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark" style="background-color: #101010;">
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap">
+
+					<div class="row justify-content-center">
+						<div class="col-lg-9">
+							<div class="widget clearfix">
+
+								<div class="row col-mb-30">
+									<div class="col-lg-3 col-6 widget_links">
+										<ul>
+											<li><a href="#">Home</a></li>
+											<li><a href="#">About</a></li>
+											<li><a href="#">FAQs</a></li>
+											<li><a href="#">Support</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-6 widget_links">
+										<ul>
+											<li><a href="#">Shop</a></li>
+											<li><a href="#">Portfolio</a></li>
+											<li><a href="#">Blog</a></li>
+											<li><a href="#">Events</a></li>
+											<li><a href="#">Forums</a></li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-6 widget_links">
+										<ul>
+											<li><a href="#">Corporate</a></li>
+											<li><a href="#">Agency</a></li>
+											<li><a href="#">eCommerce</a></li>
+											<li><a href="#">Personal</a></li>
+											<li><a href="#">One Page</a></li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-6 widget_links">
+										<ul>
+											<li><a href="#">Corporate</a></li>
+											<li><a href="#">Agency</a></li>
+											<li><a href="#">eCommerce</a></li>
+											<li><a href="#">Personal</a></li>
+											<li><a href="#">One Page</a></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-lg-3 mt-5 mt-lg-0 text-center text-lg-end">
+							<div class="widget clearfix">
+
+								<div class="row">
+									<div class="col-12 mb-3">
+										<small>Call Us:</small>
+										<h4 class="h4">+(1) 22 55412474</h4>
+									</div>
+
+									<div class="col-12 d-flex justify-content-center justify-content-lg-end">
+										<a href="#" class="social-icon si-small si-light si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="#" class="social-icon si-small si-light si-delicious">
+											<i class="icon-delicious"></i>
+											<i class="icon-delicious"></i>
+										</a>
+										<a href="#" class="social-icon si-small si-light si-paypal">
+											<i class="icon-paypal"></i>
+											<i class="icon-paypal"></i>
+										</a>
+										<a href="#" class="social-icon si-small si-light si-flattr">
+											<i class="icon-flattr"></i>
+											<i class="icon-flattr"></i>
+										</a>
+									</div>
+
+									<div class="col-12 mt-5 text-white-50 text-smaller">
+										All Rights Reserved <br>&copy; 2020 by SemiColonWeb<br>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- TinyMCE Plugin -->
+	<script src="js/components/tinymce/tinymce.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		jQuery(document).ready( function(){
+
+			$('input[type="file"]').change(function(e){
+				var fileName = e.target.files[0].name;
+				$('.custom-file-label').html(fileName);
+			});
+
+			tinymce.init({
+				selector: '#post-message',
+				menubar: false,
+				setup: function(editor) {
+					editor.on('change', function(e) {
+						editor.save();
+					});
+				}
+			});
+
+			$(function(){
+		      if(window.location.hash) {
+		          var hash = window.location.hash;
+		          $(hash).modal('toggle');
+		      }
+		  });
+		});
+	</script>
+
+	</body>
+	</html>
