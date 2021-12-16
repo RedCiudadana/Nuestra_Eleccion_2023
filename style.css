@@ -16762,3 +16762,7 @@ label.checkbox { padding-left: 20px; }
 .ft30{
 	font-size: 30px!important
 }
+
+.link-b:hover{
+	color:white;
+}
