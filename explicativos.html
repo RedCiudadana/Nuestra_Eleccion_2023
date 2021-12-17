@@ -126,10 +126,10 @@
 			<div class="container" >
 				<div class="row h-100">
 					<div class="col-md-6 align-self-left left pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding-bottom:0!important;margin-bottom:0!important">
-						<img src="elementos/NUBE_01.png">
+						<img id="nube1" src="elementos/NUBE_01.png">
 					</div>
 					<div class="col-md-6 align-self-right right pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding-bottom:0!important;margin-bottom:0!important;text-align:end">
-						<img src="elementos/NUBE_03.png">
+						<img id="nube2" src="elementos/NUBE_03.png">
 					</div>
 					
 					<div class="align-self-center center  pb-0  mb-0 my-lg-4">
@@ -139,13 +139,83 @@
 
 
 					<div id="nub1" class="col-md-6 align-self-left left" style="padding-bottom:0!important;margin-bottom:0!important">
-						<img style="margin: -80px 200px 0;" src="elementos/NUBE_04.png">
+						<img id="nube3" style="margin: -80px 200px 0;" src="elementos/NUBE_04.png">
 					</div>
 					<div id="nub2" class="col-md-6 align-self-right right " style="padding-bottom:0!important;margin-bottom:0!important;text-align:end">
-						<img style="margin: -200px 60px 0;" src="elementos/NUBE_02.png">
+						<img id="nube4" style="margin: -200px 60px 0;" src="elementos/NUBE_02.png">
 					</div>
 
-					
+					<style>
+
+					#nube1 {
+						animation-duration: 5s;
+						//animation-iteration-count:infinite;
+						animation-name: slidein;
+					}
+
+						@keyframes slidein {
+						from {
+							margin-left: -50%;
+						}
+
+						to {
+							margin-left: 0%;
+
+						}
+					}
+
+					#nube2 {
+						animation-duration: 9s;
+						//animation-iteration-count:infinite;
+						animation-name: slidein3;
+					}
+
+						@keyframes slidein3 {
+						from {
+							margin-left: 150%;
+						}
+
+						to {
+							margin-left: 0%;
+
+						}
+					}
+
+					#nube3 {
+						animation-duration: 5s;
+						//animation-iteration-count:infinite;
+						animation-name: slidein2;
+					}
+
+						@keyframes slidein2 {
+						from {
+							margin-left: -100%;
+						}
+
+						to {
+							margin-left: 200px;
+
+						}
+					}
+
+					#nube4 {
+						animation-duration: 8s;
+						//animation-iteration-count:infinite;
+						animation-name: slidein4;
+					}
+
+						@keyframes slidein4 {
+						from {
+							margin-left: 200%;
+						}
+
+						to {
+							margin-left: 200px;
+
+						}
+					}
+
+					</style>
 				</div>
 			</div>
 			<div class="w-100">
