@@ -346,8 +346,17 @@
 
 	<!--desaparecer nubes en pantalla pequeña-->
 	<script>
-					
-					
+		nube1 = document.getElementById("nub1");
+		nube2 = document.getElementById("nub2");		
+		if (screen.width < 1000){
+			nube1.style.display="none";
+			nube2.style.display="none";
+		} 
+			
+		else{
+			nube1.style.display="block";
+			nube2.style.display="block";
+		}
 					
 	</script>
 
