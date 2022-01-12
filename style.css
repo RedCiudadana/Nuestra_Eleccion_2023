@@ -88,6 +88,41 @@
 
 ---------------------------------------------------------------- */
 
+@font-face {
+	font-family: "Metropolis-Black";
+  
+	src: url("elementos/ELEMENTOS/FONT/Metropolis-Black.otf");
+}
+
+@font-face {
+	font-family: "Metropolis-Bold";
+  
+	src: url("elementos/ELEMENTOS/FONT/Metropolis-Bold.otf");
+}
+
+@font-face {
+	font-family: "Metropolis-ExtraBold";
+  
+	src: url("elementos/ELEMENTOS/FONT/Metropolis-ExtraBold.otf");
+}
+
+@font-face {
+	font-family: "Metropolis-Medium";
+  
+	src: url("elementos/ELEMENTOS/FONT/Metropolis-Medium.otf");
+}
+
+@font-face {
+	font-family: "Metropolis-Regular";
+  
+	src: url("elementos/ELEMENTOS/FONT/Metropolis-Regular.otf");
+}
+
+@font-face {
+	font-family: "Metropolis-SemiBold";
+  
+	src: url("elementos/ELEMENTOS/FONT/Metropolis-SemiBold.otf");
+}
 
 /* ----------------------------------------------------------------
 	Bootstrap Adjustments
@@ -175,7 +210,7 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: 1.5;
 	color: #555;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Metropolis-Regular', sans-serif!important;
 }
 
 a {
@@ -211,7 +246,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Metropolis-Bold', sans-serif!important;
 }
 
 h5,
@@ -273,7 +308,7 @@ table,
 fieldset,
 form { margin-bottom: 30px; }
 
-small { font-family: 'Lato', sans-serif; }
+small { font-family: 'Metropolis-Regular', sans-serif; }
 
 
 @media (max-width: 1200px) {
@@ -422,11 +457,11 @@ span.middot {
 
 .nolineheight { line-height: 0 !important; }
 
-.font-body { font-family: 'Lato', sans-serif; }
+.font-body { font-family: 'Metropolis-Regular', sans-serif; }
 
-.font-primary { font-family: 'Poppins', sans-serif; }
+.font-primary { font-family: 'Metropolis-Regular', sans-serif; }
 
-.font-secondary { font-family: 'PT Serif', serif; }
+.font-secondary { font-family: 'Metropolis-Regular', serif; }
 
 .fw-extralight {
 	font-weight: 100 !important;
@@ -3411,7 +3446,7 @@ html[xmlns] .slider-wrap {
 
 #logo a {
 	color: #000;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Metropolis-Regular', sans-serif;
 	font-size: 36px;
 }
 
@@ -3627,7 +3662,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	font-size: 0.8125rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Metropolis-Regular', sans-serif;
 }
 
 .menu-link span {
@@ -3671,7 +3706,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	font-weight: 400;
 	color: #666;
 	letter-spacing: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Metropolis-Regular', sans-serif;
 }
 
 .sub-menu-container .menu-item:hover > .menu-link {
@@ -8908,6 +8943,11 @@ td.actions {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+.bg-alt2{
+	background-color: #09334e!important;
+	border-color: #09334e!important;
+}
+
 body:not(.device-touch) .button {
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
@@ -13580,7 +13620,7 @@ h3.titular-title { font-size: 2rem; }
 .emphasis-title h2 {
 	margin-bottom: 0;
 	font-weight: 700;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	letter-spacing: 1px;
 	color: #333;
 }
