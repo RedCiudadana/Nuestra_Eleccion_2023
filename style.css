@@ -8948,6 +8948,13 @@ td.actions {
 	border-color: #09334e!important;
 }
 
+.bg-alt3{
+	background-color: #1aac8a!important;
+	border-color: #1aac8a!important;
+}
+
+
+
 body:not(.device-touch) .button {
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
