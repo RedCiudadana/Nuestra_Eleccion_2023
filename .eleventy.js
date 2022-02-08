@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
 
-    eleventyConfig.setTemplateFormats("njk");
+    eleventyConfig.setTemplateFormats("njk,html");
     
     eleventyConfig.addPassthroughCopy('src');
     eleventyConfig.addPassthroughCopy('css');
