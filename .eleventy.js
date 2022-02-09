@@ -8,5 +8,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('demos');
     eleventyConfig.addPassthroughCopy('elementos');
     eleventyConfig.addPassthroughCopy('images');
+    eleventyConfig.addPassthroughCopy('admin');
 
 }
