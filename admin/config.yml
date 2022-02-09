@@ -20,3 +20,4 @@ collections:
       - { name: "description", label: "Description" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "conclusion", label: "Conclusion" }
