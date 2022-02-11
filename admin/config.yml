@@ -21,3 +21,5 @@ collections:
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "conclusion", label: "Conclusion" }
+
+show_preview_links: true
