@@ -8946,6 +8946,13 @@ td.actions {
 .bg-alt2{
 	background-color: #09334e!important;
 	border-color: #09334e!important;
+	color:#fff!important;
+}
+
+.bg-alt2:hover{
+	background-color: #fff!important;
+	border-color: #fff!important;
+	color:#09334e!important;
 }
 
 .bg-alt3{
