@@ -16823,3 +16823,12 @@ label.checkbox { padding-left: 20px; }
 .link-b:hover{
 	color:white;
 }
+
+.lower-case{
+	text-transform: none!important;
+}
+
+.imageinicio{
+	width: 200px!important;
+	height: 190px!important;
+}
