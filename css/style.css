@@ -8953,7 +8953,17 @@ td.actions {
 	border-color: #1aac8a!important;
 }
 
+.bg-alt4{
+	background-color: #fff!important;
+	border-color: #fff!important;
+	color: #09334e;
+}
 
+.bg-alt4:hover{
+	background-color: #09334e!important;
+	border-color: #09334e!important;
+	color: #fff;
+}
 
 body:not(.device-touch) .button {
 	-webkit-transition: all .2s ease-in-out;
