@@ -27,9 +27,63 @@ collections:
       - { name: "seccionB3", label: "SeccionB3", widget: "markdown" }
       - { name: "seccionB4", label: "SeccionB4", widget: "markdown" }
       - { name: "conclusion", label: "Conclusion" }
+  - name: "iniciativas" # Used in routes, e.g., /admin/collections/blog
+    label: "Iniciativas" # Used in the UI
+    folder: "src/iniciativas" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    layout: "/_includes/layouts/iniciativas"
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Title" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { name: "description", label: "Description" }
+      - { name: "autor", label: "Autor" }
+      - { name: "correo", label: "Correo" }
+      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["posts"] }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
+  - name: "publicaciones" # Used in routes, e.g., /admin/collections/blog
+    label: "Publicaciones" # Used in the UI
+    folder: "src/publicaciones" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    layout: "/_includes/layouts/publicaciones"
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Title" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { name: "description", label: "Description" }
+      - { name: "autor", label: "Autor" }
+      - { name: "correo", label: "Correo" }
+      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["posts"] }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
-    folder: "src/posts" # The path to the folder where the documents are stored
+    folder: "src/blogs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    layout: "/_includes/layouts/post"
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Title" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { name: "description", label: "Description" }
+      - { name: "autor", label: "Autor" }
+      - { name: "correo", label: "Correo" }
+      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["posts"] }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
+  - name: "eventos" # Used in routes, e.g., /admin/collections/blog
+    label: "Eventos" # Used in the UI
+    folder: "src/eventos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     layout: "/_includes/layouts/post"
