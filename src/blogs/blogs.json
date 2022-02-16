@@ -1,4 +1,4 @@
 {
     "tags": "blogs",
-    "layout": "/_includes/layouts/post"
+    "layout": "layouts/post.njk"
 }
