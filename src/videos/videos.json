@@ -1,5 +1,5 @@
 {
     "tags": "videos",
     "permalink": "videos/{{ page.fileSlug }}/index.html",
-    "layout": "layouts/videos.njk"
+    "layout": "layouts/video.njk"
 }
