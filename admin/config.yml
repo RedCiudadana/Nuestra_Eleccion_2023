@@ -40,7 +40,6 @@ collections:
       - { name: "description", label: "Description" }
       - { name: "autor", label: "Autor" }
       - { name: "correo", label: "Correo" }
-      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["posts"] }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
@@ -57,7 +56,6 @@ collections:
       - { name: "description", label: "Description" }
       - { name: "autor", label: "Autor" }
       - { name: "correo", label: "Correo" }
-      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["posts"] }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
@@ -74,7 +72,6 @@ collections:
       - { name: "description", label: "Description" }
       - { name: "autor", label: "Autor" }
       - { name: "correo", label: "Correo" }
-      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["posts"] }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
@@ -91,7 +88,6 @@ collections:
       - { name: "description", label: "Description" }
       - { name: "autor", label: "Autor" }
       - { name: "correo", label: "Correo" }
-      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["posts"] }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
@@ -106,7 +102,6 @@ collections:
       - { name: "title", label: "Title" }
       - { name: "description", label: "Description" }
       - { name: "link", label: "Enlace de video" }
-      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["videos"] }
       - { name: "date", label: "Date", widget: "datetime" }
   - name: "podcast" # Used in routes, e.g., /admin/collections/podcast
     label: "Podcast" # Used in the UI
@@ -119,7 +114,6 @@ collections:
       - { name: "title", label: "Title" }
       - { name: "description", label: "Description" }
       - { name: "link", label: "Enlace de podcast" }
-      - { name: "tags", label: "Tags", widget: "relation", collection: "tag", searchFields: ["title"], valueField: "title", multiple: true, default: ["podcasts"] }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display podcast in home's highlights" }
 

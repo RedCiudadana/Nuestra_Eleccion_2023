@@ -213,7 +213,7 @@ permalink: "index.html"
 		============================================= -->
 
 				<div class="container my-4">
-					<div class="row text-center mb-5" style="justify-content:space-evenly">
+					<div class="row text-center mb-5" style="justify-content:space-evenly;align-items:flex-start">
 						<!--div class="col-lg-6">
 							<h3 class="display-4 fw-bolder mb-3">Publicaciones</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
@@ -243,110 +243,31 @@ permalink: "index.html"
 
 							<h2 style="text-align:left;margin:0">Eventos</h2>
 
+							{% for evento in collections.eventos | reverse | limit(5) %}
+					
+				
 							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
 								<div class="row" style=" align-items:center">
 									<div class="col-xl-6 col-lg-6">
 										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
+											<a href="events-details.html"><img style="height:100%!important" src="{{evento.data.image}}" alt=""></a>
 										</div>
 									</div>
 									<div class="col-xl-6 col-lg-6">
 										<div class="event-wrapper mb-20 " >
 											<div class="event-text">
 												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
+												<h3> {{evento.data.title}}</h3>
 											</div>
 											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
+												<span><!--i class="far fa-user-circle"></i-->{{evento.data.autor}} | {{evento.data.date | dateFormat('DD/MM/YYYY')}}</span>
 											</div><br>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
-							</div>
+							{% endfor %}
 
 							<div style="display:flex; justify-content:flex-end">
 								<a href="">Más Eventos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
@@ -427,9 +348,10 @@ permalink: "index.html"
 
 		<!-- Blogs y Podcasts
 		============================================= -->
-
+				
+			
 				<div class="container my-4">
-					<div class="row text-center mb-5"  style="justify-content:space-evenly">
+					<div class="row text-center mb-5"  style="justify-content:space-evenly;align-items:flex-start">
 						<!--div class="col-lg-6">
 							<h3 class="display-4 fw-bolder mb-3">Publicaciones</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
@@ -459,110 +381,31 @@ permalink: "index.html"
 
 							<h2 style="text-align:left;margin:0">Blogs</h2>
 
+							{% for blog in collections.blogs | reverse | limit(5) %}
+					
+				
 							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
 								<div class="row" style=" align-items:center">
 									<div class="col-xl-6 col-lg-6">
 										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
+											<a href="events-details.html"><img style="height:100%!important" src="{{blog.data.image}}" alt=""></a>
 										</div>
 									</div>
 									<div class="col-xl-6 col-lg-6">
 										<div class="event-wrapper mb-20 " >
 											<div class="event-text">
 												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
+												<h3> {{blog.data.title}}</h3>
 											</div>
 											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
+												<span><!--i class="far fa-user-circle"></i-->{{blog.data.autor}} | {{blog.data.date | dateFormat('DD/MM/YYYY')}}</span>
 											</div><br>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="events-details.html"><img style="height:100%!important" src="elementos/LAB ELECTORAL-13.png" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> Lorem ipsum dolor sit</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->Red Ciudadana | Enero 30, 2022</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
-							</div>
+							{% endfor %}
 
 							<div style="display:flex; justify-content:flex-end">
 								<a href="">Más Blogs<i class="icon-arrow-right" style="margin-left:5px"></i></a>
