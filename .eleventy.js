@@ -21,4 +21,9 @@ module.exports = function (eleventyConfig) {
         return moment(date).format(format);
     });
 
+    eleventyConfig.addCollection('podcastsHighlighted', (collectionApi) => {
+        return collectionApi.getFilteredByTag('podcasts').filter((item) => {
+            return item.data.highlight == true;
+        });
+    });
 }
