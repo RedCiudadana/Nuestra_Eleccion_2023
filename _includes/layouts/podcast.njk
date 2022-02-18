@@ -5,5 +5,24 @@
 {% endblock %}
 
 {% block content %}
+
+        <!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+
+                <!-- event-area-start -->
+                <div class="event-area pt-60 pb-130">
+                    <div class="container d-flex justify-content-center">
+                        <div class="row h-100 w-100 text-center">
+                            <h1>{{title}}</h1>
+                            <iframe height="155px" src="{{link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<p class="txt-video">{{description}}</p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
     
 {% endblock %}
