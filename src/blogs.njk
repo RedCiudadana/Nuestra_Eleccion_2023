@@ -4,7 +4,7 @@ pagination:
   size: 5
   alias: list
   reverse: true
-permalink: 'blogs/{{ pagination.pageNumber }}/index.html'  
+permalink: "blogs/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 {% extends "base.njk" %}
@@ -70,20 +70,14 @@ permalink: 'blogs/{{ pagination.pageNumber }}/index.html'
 
 
                     <div class="col-span-9 text-sm flex justify-end">
-                    {% if (pagination.previous) %}
+                    {% if pagination.href.previous %}
                     <div>
-                        <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
-                        href="<%= pagination.previous.replace(/index.html$/, "") %>">
-                        ←  Nuevos blog
-                        </a>
+                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">←  Nuevos blog</a>{% else %}←  Nuevos blog{% endif %}
                     </div>
                     {% endif %}
-                    {% if (pagination.next) %}
+                    {% if pagination.href.next %}
                         <div class="text-right mt-2">
-                        <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
-                            href="<%= pagination.next.replace(/index.html$/, "") %>">
-                            Blog anteriores →
-                        </a>
+                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Blog anteriores →</a>{% else %}Blog anteriores →{% endif %}
                         </div>
                     {% endif %}
                     </div>
