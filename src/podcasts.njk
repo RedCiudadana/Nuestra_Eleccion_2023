@@ -1,16 +1,16 @@
 ---
 pagination:
-  data: collections.iniciativas
+  data: collections.podcasts
   size: 5
   alias: list
   reverse: true
-permalink: "iniciativas/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+permalink: "podcasts/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 {% extends "base.njk" %}
 
 {% block head %}
-<title>Lab Electoral | Iniciativas</title>
+    <title>Lab Electoral | Podcasts</title>
 {% endblock %}
 
 {% block content %}
@@ -27,10 +27,10 @@ permalink: "iniciativas/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.p
                         <div class="container clearfix">
                             <div class="heading-block center">
 
-                                <img style="margin:2% 0"  src="elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
+                                <img style="margin:2% 0"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
-                                <h2>Iniciativas</h2>
-                                <span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span>
+                                <h2>Podcasts</h2>
+                                
                             </div>
                         </div>
 
@@ -39,8 +39,8 @@ permalink: "iniciativas/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.p
                         <div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0">
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6">
-                                    <div class="event-img mb-20 center">
-                                        <a href="{{item.url}}"><img style="height:100%!important" src="{{item.data.image}}" alt=""></a>
+                                    <div class="event-img mb-20 center" style="width:80%;margin:auto">
+                                        <iframe src="{{item.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6">
@@ -55,7 +55,7 @@ permalink: "iniciativas/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.p
                                         <div class="cta-content">
 
                                             <div class="cta-button">
-                                                <a class="btn" href="{{item.url}}">Ver Iniciativa <i class="far fa-long-arrow-right"></i></a>
+                                                <a class="btn" href="{{item.url}}">Ver podcasts <i class="far fa-long-arrow-right"></i></a>
                                             </div>
                                         </div>
 
@@ -69,26 +69,20 @@ permalink: "iniciativas/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.p
                         <div class="d-flex justify-content-center">
                             {% if pagination.href.previous %}
                             <div class="mx-4">
-                                {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Iniciativas más recientes</a>{% else %}←  Nuevos blog{% endif %}
+                                {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Podcasts más recientes</a>{% else %}←  Nuevos blog{% endif %}
                             </div>
                             {% endif %}
                             {% if pagination.href.next %}
                             <div class="mx-4">
-                                {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Iniciativas anteriores →</a>{% else %}Blog anteriores →{% endif %}
+                                {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Podcasts anteriores →</a>{% else %}Blog anteriores →{% endif %}
                             </div>
                             {% endif %}
                         </div>
 
                     </div>
-                </div>
-
-
 
                 </div>
             </div>
-            <!-- event-area-end -->
-
-			</div>
-		</section><!-- #content end -->
+        </div>
 
 {% endblock %}
