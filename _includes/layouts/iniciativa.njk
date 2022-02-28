@@ -1,0 +1,103 @@
+{% extends "base.njk" %}
+
+{% block head %}
+<title>{{ title }}</title>
+<link rel="stylesheet" href="/css/maingrid.css" type="text/css" />
+{% endblock %}
+
+{% block content %}
+    
+<!--ANUNCIO-->
+<div class="max-w-screen-lg mx-auto ">
+  <div class="grid grid-cols-4">
+    <div class="col-span-full mt-6">
+      <img src="/elementos/ELECCION-MP.gif" alt="funny GIF" width="100%">
+    </div>
+    
+  </div>
+</div>
+<!--POST-->
+<div class="max-w-screen-lg mx-auto " style="margin:3rem auto; padding:0 2rem">
+  <div class="grid grid-cols-4">
+    <div class="col-span-full">
+      <article>
+        <header>
+          <h1 class=" font-bold text-4xl text-gray-800">
+            {{ title }}
+          </h1>
+          <br>
+          <h6 class=" font-bold text-1xl text-gray-800">
+            {{ description }}
+          </h6>
+
+          <div class=" text-sm text-gray-600 mb-6">
+            Autor:
+              <span class="text-sm font-semibold text-gray-900 ml-2">
+                <!--autor correo fecha-->
+                    {{ autor }} | {{ correo }} | {{ date|dateFormat('DD/MM/YYYY')}}
+              </span>
+          </div>
+        </header>
+
+        <style>
+  
+          @media (max-width: 760px){
+              .presponsive{
+                  padding-left: 0!important;
+              }
+          }
+  
+        </style>
+        
+        <section class="content text-justify">
+          <div class="grid grid-cols-6">
+            <div class="col-span-6 md:col-span-4 ">
+              {{ content | safe}}
+            </div>
+            <div class="col-span-6 md:col-span-2 presponsive" style="padding-left: 3rem;">
+              <h6>Escucha nuestros podcasts</h6>
+              <div class="w-full">
+                {% if collections.podcasts %}
+                  {% for podcast in collections.podcasts | reverse | limit(4) %}
+                    <div class="block mb-4">
+                      <iframe src="{{ podcast.data.link }}" width="100%"
+                        height="152" frameBorder="0" allowfullscreen="" class="rifra"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>  
+          </div>
+
+        </section>
+        
+      </article>
+    </div>
+    <div class="col-span-full mt-6">
+      <h2 class="font-bold text-xl border-b-2 border-yellow-500 mb-4 pb-4">Más Publicaciones</h2>
+      <ul>
+        {% for post in collections.publicaciones | reverse | limit(4)%}
+        {% if page.url !== post.url %}
+            <li class="mb-3 block justify-between">
+            <a href="{{ post.url }}" class="flex border-b-2 pb-4 mb-4 text-current">
+                <img src="{{ post.data.image }}" alt="Evento" class="w-36">
+                <div class="pl-8 my-auto">
+                <h5 class="font-bold text-lg">
+                    {{ post.data.title }}
+                </h5>
+                <span class="text-sm">
+                    {{ post.data.description }} 
+                </span>
+                </div>
+            </a>
+            </li>
+        {% endif %}
+        {% endfor %}
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
