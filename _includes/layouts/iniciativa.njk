@@ -75,9 +75,9 @@
       </article>
     </div>
     <div class="col-span-full mt-6">
-      <h2 class="font-bold text-xl border-b-2 border-yellow-500 mb-4 pb-4">Más Publicaciones</h2>
+      <h2 class="font-bold text-xl border-b-2 border-yellow-500 mb-4 pb-4">Más Iniciativas</h2>
       <ul>
-        {% for post in collections.publicaciones | reverse | limit(4)%}
+        {% for post in collections.iniciativas | reverse | limit(4)%}
         {% if page.url !== post.url %}
             <li class="mb-3 block justify-between">
             <a href="{{ post.url }}" class="flex border-b-2 pb-4 mb-4 text-current">
