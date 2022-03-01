@@ -3,8 +3,8 @@ backend:
   branch: main
 
 # publish_mode: editorial_workflow
-media_folder: 'images/posts' # Media files will be stored in the repo under src/assets/images/posts
-public_folder: '/images/posts' # The src attribute for uploaded media will begin with assets/images/posts
+media_folder: "images/posts" # Media files will be stored in the repo under src/assets/images/posts
+public_folder: "/images/posts" # The src attribute for uploaded media will begin with assets/images/posts
 
 collections:
   - name: "explicativos" # Used in routes, e.g., /admin/collections/blog
@@ -19,13 +19,13 @@ collections:
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "seccionA1", label: "SeccionA1", widget: "markdown" }
       - { name: "seccionA2", label: "SeccionA2", widget: "markdown" }
-      - { name: "seccionB1", label: "SeccionB1", widget: "markdown" }
-      - { name: "seccionB2", label: "SeccionB2", widget: "markdown" }
+      - { name: "seccionB1", label: "SeccionB1" }
+      - { name: "seccionB2", label: "SeccionB2" }
       - { label: "Slider", name: "slider", widget: "image" }
       - { name: "seccionA3", label: "SeccionA3", widget: "markdown" }
       - { name: "seccionA4", label: "SeccionA4", widget: "markdown" }
-      - { name: "seccionB3", label: "SeccionB3", widget: "markdown" }
-      - { name: "seccionB4", label: "SeccionB4", widget: "markdown" }
+      - { name: "seccionB3", label: "SeccionB3" }
+      - { name: "seccionB4", label: "SeccionB4" }
       - { name: "conclusion", label: "Conclusion" }
   - name: "iniciativas" # Used in routes, e.g., /admin/collections/blog
     label: "Iniciativas" # Used in the UI
@@ -42,7 +42,13 @@ collections:
       - { name: "correo", label: "Correo" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display posts in home's highlights",
+        }
   - name: "publicaciones" # Used in routes, e.g., /admin/collections/blog
     label: "Publicaciones" # Used in the UI
     folder: "src/publicaciones" # The path to the folder where the documents are stored
@@ -58,7 +64,13 @@ collections:
       - { name: "correo", label: "Correo" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display posts in home's highlights",
+        }
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "src/blogs" # The path to the folder where the documents are stored
@@ -74,7 +86,13 @@ collections:
       - { name: "correo", label: "Correo" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display posts in home's highlights",
+        }
   - name: "eventos" # Used in routes, e.g., /admin/collections/blog
     label: "Eventos" # Used in the UI
     folder: "src/eventos" # The path to the folder where the documents are stored
@@ -90,7 +108,13 @@ collections:
       - { name: "correo", label: "Correo" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display posts in home's highlights" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display posts in home's highlights",
+        }
   - name: "video" # Used in routes, e.g., /admin/collections/video
     label: "Video" # Used in the UI
     folder: "src/videos" # The path to the folder where the documents are stored
@@ -115,6 +139,12 @@ collections:
       - { name: "description", label: "Description" }
       - { name: "link", label: "Enlace de podcast" }
       - { name: "date", label: "Date", widget: "datetime" }
-      - { name: "highlight", label: "Highlight", widget: "boolean", default: false, hint: "Display podcast in home's highlights" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display podcast in home's highlights",
+        }
 
 show_preview_links: true

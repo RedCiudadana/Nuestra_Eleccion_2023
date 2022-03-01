@@ -6,6 +6,18 @@
 
 {% block content %}
 
+        <!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element" style="background-image: url('{{slider}}');backgorund-size:cover">
+			<div class="container">
+				<div class="row h-100 center align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding:0 20%">
+                    <h1 class="text-white">Lorem Ipsum Dolor</h1>
+                    <p class="text-white">Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor
+                    Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor
+                    Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+				</div>
+			</div>
+		</section>
         
 
         <!-- Content
@@ -40,35 +52,35 @@
                 <div class="container clearfix">
                     <div class="heading-block center pt-5 pb-0 py-lg-6">
 
-                        <img style="margin:2% 0"  src="elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
+                        <img style="margin:2% 0"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
-                        <h2>{{ seccionA1 }}</h2>
-                        <span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span>
+                        <h2>Seccion A1</h2>
+                        <span>{{ seccionA1 }}</span>
                     </div>
                 </div>
                 <div class="container clearfix" style="background:#E8F0FA">
                     <div class="heading-block center pt-5 pb-0 py-lg-6">
 
-                        <img style="margin:2% 0"  src="elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
+                        <img style="margin:2% 0"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
-                        <h2>{{ seccionA2 }}</h2>
-                        <span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span>
+                        <h2>Seccion A2</h2>
+                        <span>{{ seccionA2 }}</span>
                     </div>
                 </div>
                 
             </div>
             <!--COLUMNA 2-->
             <div class="col-6" style="height:1000px;overflow-y:scroll; background:#3385C7">
-                <h2>{{ seccionB1 }}</h2>
-                <embed src="https://sistemaranking.redciudadana.org/mapas/m1c" type="text/html" style="height:700px;width:90%;margin:5%" >
-                <h2>{{ seccionB2 }}</h2>
-                <embed src="https://sistemaranking.redciudadana.org/mapas/m1c" type="text/html" style="height:700px;width:90%;margin:5%" >
+                <iframe style="padding:10%" height="600px" src="{{ seccionB1 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="padding:10%" height="600px" src="{{ seccionB2 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+                
             </div>
 		</section><!-- #content end -->
 
         <!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element" style="background-image: url('{{slider}}'),backgorund-size:cover">
+		<section id="slider" class="slider-element" style="background-image: url('{{slider}}');backgorund-size:cover">
 			<div class="container">
 				<div class="row h-100 center align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding:0 20%">
                     <h1 class="text-white">Lorem Ipsum Dolor</h1>
@@ -83,38 +95,51 @@
 		============================================= -->
 
 		<section id="content" class="d-flex">
-            <!--COLUMNA 1-->
-            <div class="col-6" style="height:1000px;overflow-y:scroll">
+            <!--COLUMNA 3-->
+            <div class="col-6" style="height:1000px;overflow-y:scroll; background:#3385C7">
                 
-                <h2>{{ seccionB3 }}</h2>
-                <embed src="https://sistemaranking.redciudadana.org/mapas/m1c" type="text/html" style="height:700px;width:90%;margin:5%" >
-                <h2>{{ seccionB4 }}</h2>
-                <embed src="https://sistemaranking.redciudadana.org/mapas/m1c" type="text/html" style="height:700px;width:90%;margin:5%" >
+                {{ seccionB3 }}
+                
+                {{ seccionB4 }}
+                
 
                 
             </div>
-            <!--COLUMNA 2-->
-            <div class="col-6" style="height:1000px;overflow-y:scroll; background:#3385C7">
+            <!--COLUMNA 4-->
+            <div class="col-6" style="height:1000px;overflow-y:scroll;">
                 
                 <div class="container clearfix">
                     <div class="heading-block center pt-5 pb-0 py-lg-6">
 
-                        <img style="margin:2% 0"  src="elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
+                        <img style="margin:2% 0"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
-                        <h2>{{ seccionA3 }}</h2>
-                        <span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span>
+                        <h2>Seccion A3</h2>
+                        <span>{{ seccionA3 }}</span>
                     </div>
                 </div>
                 <div class="container clearfix" style="background:#E8F0FA">
                     <div class="heading-block center pt-5 pb-0 py-lg-6">
 
-                        <img style="margin:2% 0"  src="elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
+                        <img style="margin:2% 0"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
-                        <h2>{{ seccionA4 }}</h2>
-                        <span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span>
+                        <h2>Seccion A4</h2>
+                        <span>{{ seccionA4 }}</span>
                     </div>
                 </div>
             </div>
 		</section><!-- #content end -->
+
+        <!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element" style="background-image: url('{{slider}}');backgorund-size:cover">
+			<div class="container">
+				<div class="row h-100 center align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding:0 20%">
+                    <h1 class="text-white">Conclusión</h1>
+                    <p class="text-white">{{conclusion}}</p>
+
+                    
+				</div>
+			</div>
+		</section>
     
 {% endblock %}
