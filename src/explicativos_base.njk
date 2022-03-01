@@ -1,5 +1,5 @@
 ---
-permalink: "explicativos.html"
+permalink: "/explicativos/index.html"
 ---
 
 {% extends "base.njk" %}
@@ -12,14 +12,14 @@ permalink: "explicativos.html"
 
         <!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element bg-color" style="background-image:url('elementos/SLIDER-02.png')">
+		<section id="slider" class="slider-element bg-color" style="background-image:url('/elementos/SLIDER-02.png')">
 			<div class="container" >
 				<div class="row h-100">
 					<div class="col-md-6 align-self-left left pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding-bottom:0!important;margin-bottom:0!important">
-						<img data-animate="fadeInLeft" data-delay="800" src="elementos/NUBE_01.png">
+						<img data-animate="fadeInLeft" data-delay="800" src="/elementos/NUBE_01.png">
 					</div>
 					<div class="col-md-6 align-self-right right pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding-bottom:0!important;margin-bottom:0!important;text-align:end">
-						<img data-animate="fadeInLeft" data-delay="800" src="elementos/NUBE_03.png">
+						<img data-animate="fadeInLeft" data-delay="800" src="/elementos/NUBE_03.png">
 					</div>
 					
 					<div class="align-self-center center  pb-0  mb-0 my-lg-4">
@@ -29,10 +29,10 @@ permalink: "explicativos.html"
 
 
 					<div id="nub1" class="col-md-6 align-self-left left" style="padding-bottom:0!important;margin-bottom:0!important">
-						<img data-animate="fadeInRight" data-delay="800" style="margin: -80px 200px 0;" src="elementos/NUBE_04.png">
+						<img data-animate="fadeInRight" data-delay="800" style="margin: -80px 200px 0;" src="/elementos/NUBE_04.png">
 					</div>
 					<div id="nub2" class="col-md-6 align-self-right right " style="padding-bottom:0!important;margin-bottom:0!important;text-align:end">
-						<img data-animate="fadeInRight" data-delay="800" style="margin: -200px 60px 0;" src="elementos/NUBE_02.png">
+						<img data-animate="fadeInRight" data-delay="800" style="margin: -200px 60px 0;" src="/elementos/NUBE_02.png">
 					</div>
 
 					<style>
@@ -109,7 +109,7 @@ permalink: "explicativos.html"
 				</div>
 			</div>
 			<div class="w-100">
-				<img src="elementos/SLIDER-01.png">
+				<img src="/elementos/SLIDER-01.png">
 			</div>
 		</section>
 
@@ -125,18 +125,12 @@ permalink: "explicativos.html"
                     <div class="row">
                         <div class="col-md-4 col-lg-4" style="border-right:#3385C7 0.2px solid">
                             <h4 class="text-white">Lorem ipsum dolor</h4>
+							{% for explicativo in collections.explicativos | reverse | limit(3)%}
                             <a href="exp1.html" ><div class="d-flex" style="align-items:center; ">
-                                <h6 class="text-white" style="margin:0!important">01. &nbsp</h6>
-                                <p class="text-white">Aquí esta la pagina de prueba funcional</p>
+                                <h6 class="text-white" style="margin:0!important">{{loop.index}} &nbsp</h6>
+                                <p class="text-white">{{explicativo.data.title}}</p>
                             </div></a>
-                            <a href="" class="link-b"><div class="d-flex" style="align-items:center; ">
-                                <h6 class="text-white" style="margin:0!important">02. &nbsp</h6>
-                                <p class="text-white">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
-                            </div></a>
-                            <a href="" class="link-b"><div class="d-flex" style="align-items:center; ">
-                                <h6 class="text-white" style="margin:0!important">03. &nbsp</h6>
-                                <p class="text-white">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
-                            </div></a>
+							{% endfor %}
                         </div>
 
                         <div class="col-md-4 col-lg-4" style="border-right:#3385C7 0.2px solid">
