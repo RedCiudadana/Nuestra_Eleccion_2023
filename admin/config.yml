@@ -19,13 +19,13 @@ collections:
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "seccionA1", label: "SeccionA1", widget: "markdown" }
       - { name: "seccionA2", label: "SeccionA2", widget: "markdown" }
-      - { name: "seccionB1", label: "SeccionB1" }
-      - { name: "seccionB2", label: "SeccionB2" }
+      - { name: "seccionB1", label: "SeccionB1", widget: "markdown" }
+      - { name: "seccionB2", label: "SeccionB2", widget: "markdown" }
       - { label: "Slider", name: "slider", widget: "image" }
       - { name: "seccionA3", label: "SeccionA3", widget: "markdown" }
       - { name: "seccionA4", label: "SeccionA4", widget: "markdown" }
-      - { name: "seccionB3", label: "SeccionB3" }
-      - { name: "seccionB4", label: "SeccionB4" }
+      - { name: "seccionB3", label: "SeccionB3", widget: "markdown" }
+      - { name: "seccionB4", label: "SeccionB4", widget: "markdown" }
       - { name: "conclusion", label: "Conclusion" }
   - name: "iniciativas" # Used in routes, e.g., /admin/collections/blog
     label: "Iniciativas" # Used in the UI
