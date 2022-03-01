@@ -126,9 +126,8 @@ permalink: "/explicativos/index.html"
                         <div class="col-md-4 col-lg-4" style="border-right:#3385C7 0.2px solid">
                             <h4 class="text-white">Lorem ipsum dolor</h4>
 							{% for explicativo in collections.explicativos | reverse | limit(3)%}
-                            <a href="{{explicativo.url}}" ><div class="d-flex" style="align-items:center; ">
-                                <h6 class="text-white" style="margin:0!important">{{loop.index}} &nbsp</h6>
-                                <p class="text-white">{{explicativo.data.title}}</p>
+                            <a href="{{explicativo.url}}" ><div class="d-flex" >
+                                <h6 class="text-white" style="margin:0!important">{{loop.index}}. &nbsp {{explicativo.data.title}}</h6>
                             </div></a>
 							{% endfor %}
                         </div>
