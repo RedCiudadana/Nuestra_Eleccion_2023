@@ -18,6 +18,8 @@ collections:
       - { name: "title", label: "Title" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { label: "Slider", name: "slider", widget: "image" }
+      - { label: "TituloSlider", name: "tslider", widget: "image" }
+      - { label: "TextoSlider", name: "txtslider", widget: "image" }
       - { name: "tseccionA1", label: "Titulo SeccionA1", widget: "markdown" }
       - { name: "seccionA1", label: "SeccionA1", widget: "markdown" }
       - { name: "tseccionA2", label: "Titulo SeccionA2", widget: "markdown" }
@@ -25,6 +27,8 @@ collections:
       - { name: "seccionB1", label: "SeccionB1", widget: "markdown" }
       - { name: "seccionB2", label: "SeccionB2", widget: "markdown" }
       - { label: "Slider2", name: "slider2", widget: "image" }
+      - { label: "TituloSlider2", name: "tslider2", widget: "image" }
+      - { label: "TextoSlider2", name: "txtslider2", widget: "image" }
       - { name: "tseccionA3", label: "Titulo SeccionA3", widget: "markdown" }
       - { name: "seccionA3", label: "SeccionA3", widget: "markdown" }
       - { name: "tseccionA4", label: "Titulo SeccionA4", widget: "markdown" }
