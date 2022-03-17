@@ -61,12 +61,14 @@ collections:
           label: "SeccionB1",
           widget: "markdown",
           hint: "Embeds o Audiovisuales",
+          required: false,
         }
       - {
           name: "seccionB2",
           label: "SeccionB2",
           widget: "markdown",
           hint: "Embeds o Audiovisuales",
+          required: false,
         }
       - { label: "Slider2", name: "slider", widget: "image" }
       - {
@@ -112,12 +114,14 @@ collections:
           label: "SeccionB3",
           widget: "markdown",
           hint: "Embeds o Audiovisuales",
+          required: false,
         }
       - {
           name: "seccionB4",
           label: "SeccionB4",
           widget: "markdown",
           hint: "Embeds o Audiovisuales",
+          required: false,
         }
       - { name: "conclusion", label: "Conclusion" }
   - name: "iniciativas" # Used in routes, e.g., /admin/collections/blog
