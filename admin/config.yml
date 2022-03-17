@@ -70,16 +70,16 @@ collections:
           hint: "Embeds o Audiovisuales",
           required: false,
         }
-      - { label: "Slider2", name: "slider", widget: "image" }
+      - { label: "Slider2", name: "slider2", widget: "image" }
       - {
           label: "TituloSlider2",
-          name: "tslider",
+          name: "tslider2",
           hint: "Título que se desplegará en el slider",
           required: false,
         }
       - {
           label: "TextoSlider2",
-          name: "txtslider",
+          name: "txtslider2",
           hint: "Subtítulo del slider",
           required: false,
         }
