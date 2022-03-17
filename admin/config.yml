@@ -70,19 +70,6 @@ collections:
           hint: "Embeds o Audiovisuales",
           required: false,
         }
-      - { label: "Slider2", name: "slider2", widget: "image" }
-      - {
-          label: "TituloSlider2",
-          name: "tslider2",
-          hint: "Título que se desplegará en el slider",
-          required: false,
-        }
-      - {
-          label: "TextoSlider2",
-          name: "txtslider2",
-          hint: "Subtítulo del slider",
-          required: false,
-        }
       - {
           name: "tseccionA3",
           label: "Titulo SeccionA3",
