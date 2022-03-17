@@ -174,26 +174,26 @@ permalink: "index.html"
 								</div>
 							</div-->
 
-							<h2 style="text-align:left;margin:1rem 0">Eventos</h2>
+							<h2 style="text-align:left;margin:1rem 0">Lo último</h2>
 
-							{% for evento in collections.eventos | reverse | limit(5) %}
+							{% for blog in collections.blogs | reverse | limit(5) %}
 					
 				
 							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
 								<div class="row" style=" align-items:center">
 									<div class="col-xl-6 col-lg-6">
 										<div class="event-img mb-20 center">
-											<a href="{{evento.url}}"><img style="height:100%!important" src="{{evento.data.image}}" alt=""></a>
+											<a href="{{blog.url}}"><img style="height:100%!important" src="{{blog.data.image}}" alt=""></a>
 										</div>
 									</div>
 									<div class="col-xl-6 col-lg-6">
 										<div class="event-wrapper mb-20 " >
 											<div class="event-text">
 												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> {{evento.data.title}}</h3>
+												<h3> {{blog.data.title}}</h3>
 											</div>
 											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->{{evento.data.autor}} | {{evento.data.date | dateFormat('DD/MM/YYYY')}}</span>
+												<span><!--i class="far fa-user-circle"></i-->{{blog.data.description}} </span>
 											</div><br>
 										</div>
 									</div>
@@ -203,8 +203,8 @@ permalink: "index.html"
 							{% endfor %}
 
 							<div class="mb-6" style="display:flex; justify-content:flex-end">
-								<a href="/eventos/index.html">Más Eventos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
-							</div>	
+								<a href="/blogs/index.html">Más Blogs<i class="icon-arrow-right" style="margin-left:5px"></i></a>
+							</div>		
 				
 						</div>
 
@@ -295,26 +295,26 @@ permalink: "index.html"
 								</div>
 							</div-->
 
-							<h2 style="text-align:left;margin:1rem 0">Blogs</h2>
+							<h2 style="text-align:left;margin:1rem 0">Eventos</h2>
 
-							{% for blog in collections.blogs | reverse | limit(5) %}
+							{% for evento in collections.eventos | reverse | limit(5) %}
 					
 				
 							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
 								<div class="row" style=" align-items:center">
 									<div class="col-xl-6 col-lg-6">
 										<div class="event-img mb-20 center">
-											<a href="{{blog.url}}"><img style="height:100%!important" src="{{blog.data.image}}" alt=""></a>
+											<a href="{{evento.url}}"><img style="height:100%!important" src="{{evento.data.image}}" alt=""></a>
 										</div>
 									</div>
 									<div class="col-xl-6 col-lg-6">
 										<div class="event-wrapper mb-20 " >
 											<div class="event-text">
 												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> {{blog.data.title}}</h3>
+												<h3> {{evento.data.title}}</h3>
 											</div>
 											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->{{blog.data.autor}} | {{blog.data.date | dateFormat('DD/MM/YYYY')}}</span>
+												<span>{{evento.data.description}}</span>
 											</div><br>
 										</div>
 									</div>
@@ -324,8 +324,10 @@ permalink: "index.html"
 							{% endfor %}
 
 							<div class="mb-6" style="display:flex; justify-content:flex-end">
-								<a href="/blogs/index.html">Más Blogs<i class="icon-arrow-right" style="margin-left:5px"></i></a>
-							</div>	
+								<a href="/eventos/index.html">Más Eventos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
+							</div>
+
+							
 				
 						</div>
 
