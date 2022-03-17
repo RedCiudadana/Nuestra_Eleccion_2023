@@ -154,51 +154,26 @@ permalink: "index.html"
 
 						<div class="row posts-md col-mb-30 col-xl-6">
 								
-							<!--div class="entry col-sm-6 col-xl-12">
-								<div class="grid-inner">
-									<div class="entry-image">
-										<a href="#"><img src="elementos/Lab Electoral-09.png" alt="Image"></a>
-									</div>
-									<div class="entry-title title-xs nott">
-										<h3><a href="blog-single.html">Yum, McDonald's apologize as new China food scandal brews</a></h3>
-									</div>
-									<div class="entry-meta">
-										<ul>
-											<li><i class="icon-calendar3"></i> 9th Sep 2021</li>
-											<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 23</a></li>
-										</ul>
-									</div>
-									<div class="entry-content">
-										<p>Neque nesciunt molestias soluta esse debitis. Magni impedit quae consectetur consequuntur.</p>
-									</div>
-								</div>
-							</div-->
 
-							<h2 style="text-align:left;margin:1rem 0">Lo último</h2>
+							<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Lo último</h2>
 
 							{% for blog in collections.blogs | reverse | limit(5) %}
 					
 				
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="{{blog.url}}"><img style="height:100%!important" src="{{blog.data.image}}" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> {{blog.data.title}}</h3>
-											</div>
-											<div class="event-meta">
-												<span><!--i class="far fa-user-circle"></i-->{{blog.data.description}} </span>
-											</div><br>
-										</div>
-									</div>
-								</div>
+							<a href="{{blog.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
+							<img src="{{ blog.data.image }}" alt="Evento" class="w-36">
+							<div class="pl-8 my-auto" style="text-align:left">
+								<h5 class="font-bold text-lg">
+								{{blog.data.title }}
+								</h5>
+								<span class="text-sm">
+								{{blog.data.date | dateFormat('DD/MM/YYYY')}}
+								</span><br>
+								<span class="text-sm">
+								{{blog.data.description}}
+								</span>
 							</div>
+							</a>
 
 							{% endfor %}
 
@@ -209,7 +184,7 @@ permalink: "index.html"
 						</div>
 
 						<div class="row posts-md col-mb-30 col-xl-3">
-							<h3 style="text-align:left;margin:1rem 0">Videos</h3>
+							<h3 class="uppercase font-bold text-base tracking-wider my-auto mb-4 pb-4"style="text-align:left;margin:1rem 0">Videos</h3>
 
 							{% for video in collections.videos | reverse | limit(4)%}
 							<div class="entry ">
@@ -274,52 +249,26 @@ permalink: "index.html"
 						</div-->
 
 						<div class="row posts-md col-mb-30 col-xl-6">
-								
-							<!--div class="entry col-sm-6 col-xl-12">
-								<div class="grid-inner">
-									<div class="entry-image">
-										<a href="#"><img src="elementos/Lab Electoral-09.png" alt="Image"></a>
-									</div>
-									<div class="entry-title title-xs nott">
-										<h3><a href="blog-single.html">Yum, McDonald's apologize as new China food scandal brews</a></h3>
-									</div>
-									<div class="entry-meta">
-										<ul>
-											<li><i class="icon-calendar3"></i> 9th Sep 2021</li>
-											<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 23</a></li>
-										</ul>
-									</div>
-									<div class="entry-content">
-										<p>Neque nesciunt molestias soluta esse debitis. Magni impedit quae consectetur consequuntur.</p>
-									</div>
-								</div>
-							</div-->
 
-							<h2 style="text-align:left;margin:1rem 0">Eventos</h2>
+							<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Eventos</h2>
 
 							{% for evento in collections.eventos | reverse | limit(5) %}
 					
 				
-							<div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0;">
-								<div class="row" style=" align-items:center">
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-img mb-20 center">
-											<a href="{{evento.url}}"><img style="height:100%!important" src="{{evento.data.image}}" alt=""></a>
-										</div>
-									</div>
-									<div class="col-xl-6 col-lg-6">
-										<div class="event-wrapper mb-20 " >
-											<div class="event-text">
-												<!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-												<h3> {{evento.data.title}}</h3>
-											</div>
-											<div class="event-meta">
-												<span>{{evento.data.description}}</span>
-											</div><br>
-										</div>
-									</div>
-								</div>
+							<a href="{{evento.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
+							<img src="{{ evento.data.image }}" alt="Evento" class="w-36">
+							<div class="pl-8 my-auto" style="text-align:left">
+								<h5 class="font-bold text-lg">
+								{{evento.data.title }}
+								</h5>
+								<span class="text-sm">
+								{{evento.data.date | dateFormat('DD/MM/YYYY')}}
+								</span><br>
+								<span class="text-sm">
+								{{evento.data.description}}
+								</span>
 							</div>
+							</a>
 
 							{% endfor %}
 
@@ -332,7 +281,7 @@ permalink: "index.html"
 						</div>
 
 						<div class="row posts-md col-mb-30 col-xl-3">
-							<h3 style="text-align:left;margin:1rem 0">Podcasts</h3>
+							<h3 class="uppercase font-bold text-base tracking-wider my-auto mb-4 pb-4"style="text-align:left;margin:1rem 0">Podcasts</h3>
 
 							{% for podcast in collections.podcasts | reverse | limit(4)%}
 							<div class="entry ">
@@ -374,38 +323,6 @@ permalink: "index.html"
 
 			</div>
 
-		
-
-
-
-		<!-- Youtube
-		============================================= -->
-
-				<!--div class="section dark my-0 border-0" style="height: 500px; padding: 145px 0;">
-
-					<div class="container clearfix">
-
-						<div class="slider-caption slider-caption-center" style="position: relative;">
-							<div data-animate="fadeInUp">
-								<h2 style="font-size: 42px;">Beautiful HTML5 Videos</h2>
-								<p class="d-none d-sm-block">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-								<a href="#" class="button button-border button-rounded button-white button-light button-large ms-0 mb-0 d-none d-md-inline-block" style="margin-top: 20px;">Show More</a>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="video-wrap">
-						<video poster="images/videos/explore-poster.jpg" preload="none" loop autoplay muted>
-							<source src='images/videos/explore.mp4' type='video/mp4' />
-							<source src='images/videos/explore.webm' type='video/webm' />
-						</video>
-						<div class="video-overlay" style="background-color: rgba(0,0,0,0.3);"></div>
-					</div>
-
-				</div-->
-
-			</div>
 		</section><!-- #content end -->
 {% endblock %}
 

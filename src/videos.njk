@@ -27,56 +27,47 @@ permalink: "videos/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageNu
                         <div class="container clearfix">
                             <div class="heading-block center">
 
-                                <img style="margin:2% 0"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
+                                <img style="margin:2% auto"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
                                 <h2>Videos</h2>
                                 
                             </div>
                         </div>
 
-                        {% if list%}
-                        {% for item in list%}
-                        <div class="event-bg event-bg-03 pos-rel mb-30" style="margin:1rem 0">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-6">
-                                    <div class="event-img mb-20 center" style="width:80%;margin:auto">
-                                        <iframe src="{{item.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                {% if list%}
+                                {% for item in list%}
+                                <a href="{{item.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
+                                <iframe width="200" height="auto"  src="{{item.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:auto"></iframe>
+                                <div class="pl-8 my-auto" style="text-align:left">
+                                    <h5 class="font-bold text-lg">
+                                    {{item.data.title }}
+                                    </h5>
+                                    <span class="text-sm">
+                                    {{item.data.date | dateFormat('DD/MM/YYYY')}}
+                                    </span><br>
+                                    <span class="text-sm">
+                                    {{item.data.description}}
+                                    </span>
                                 </div>
-                                <div class="col-xl-6 col-lg-6">
-                                    <div class="event-wrapper mb-20 ">
-                                        <div class="event-text">
-                                            <!--span><i class="far fa-map-marked-alt verdeo"></i> Guatemala - 8 de Septiembre 2021</span-->
-                                            <h3> {{item.data.title}}</h3>
-                                        </div>
-                                        <div class="event-meta">
-                                            <span><!--i class="far fa-user-circle"--></i>{{item.data.description}}</span>
-                                        </div><br>
-                                        <div class="cta-content">
+                                </a>
+                                {% endfor %}
+                                {% endif %}
 
-                                            <div class="cta-button">
-                                                <a class="btn" href="{{item.url}}">Ver video <i class="far fa-long-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-
+                                <div class="d-flex justify-content-center">
+                                    {% if pagination.href.previous %}
+                                    <div class="mx-4">
+                                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Iniciativas más recientes</a>{% else %}←  Nuevos blog{% endif %}
                                     </div>
+                                    {% endif %}
+                                    {% if pagination.href.next %}
+                                    <div class="mx-4">
+                                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Iniciativas anteriores →</a>{% else %}Blog anteriores →{% endif %}
+                                    </div>
+                                    {% endif %}
                                 </div>
                             </div>
-                        </div>
-                        {% endfor %}
-                        {% endif %}
-
-                        <div class="d-flex justify-content-center">
-                            {% if pagination.href.previous %}
-                            <div class="mx-4">
-                                {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Videos más recientes</a>{% else %}←  Nuevos blog{% endif %}
-                            </div>
-                            {% endif %}
-                            {% if pagination.href.next %}
-                            <div class="mx-4">
-                                {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Videos anteriores →</a>{% else %}Blog anteriores →{% endif %}
-                            </div>
-                            {% endif %}
                         </div>
 
                     </div>
