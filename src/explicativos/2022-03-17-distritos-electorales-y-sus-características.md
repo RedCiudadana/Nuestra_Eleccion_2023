@@ -24,25 +24,29 @@ seccionA1: >-
   El dibujo de estos distritos no es único o estándar debido a que existen distintos criterios que pueden utilizarse para su delimitación.  Estos criterios pueden utilizarse de manera simultánea en algunos casos o como criterio único, según lo delimite la autoridad electoral. Estas condiciones son: 
 
 
-  1. **Equidad poblacional**
+  **1. Equidad poblacional**
 
 
   El criterio de delimitación electoral más común es el de equidad de población. Este hace referencia a la categoría en la que todas las unidades electorales se delimitan mediante una misma cantidad de población (Ej. 80,000 personas por cada distrito). Este criterio garantiza la noción de que todos los votos equivalen lo mismo; limitando la sobre- o subrepresentación de la población en dichos distritos electorales. 
 
 
-  2. **Delimitaciones geográficas**
+
+
+  **2. Delimitaciones geográficas**
 
 
   La geografía, en cuanto a lo que delimitación de los distritos electorales se refiere, define las fronteras electorales con base en los límites administrativos del Estado; posiblemente establecidos según los “límites naturales como cordilleras, lagos, ríos e islas” (Fortín, 2016).  Este criterio geográfico es naturalmente compatible con algunas otras variables como el acceso al territorio y la densidad poblacional del mismo. 
 
 
-  3. **Comunidades de interés (regiones)**
+
+
+  **3. Comunidades de interés (regiones)**
 
 
   Otro criterio para trazar las fronteras electorales es pretender que respondan lo más posible a las comunidades de interés existentes en el territorio nacional. Para dicho trazo, se parte del supuesto que los distritos deben ser “más que conglomerados de grupos de individuos arbitrariamente definidos y que deben ser unidades cohesivas con intereses comunes” (Fortín, 2016). El ejemplo por excelencia de este tipo de distritos son las regiones que aglomeran distintos municipios y departamentos del país, con base en criterios de cercanía territorial y similitudes culturales y económicas (8 regiones). 
 
 
-  4. **Representación de minorías**
+  **4. Representación de minorías**
 
 
   Por último, recientemente se han destinado distritos especiales para garantizar la representación de grupos minoritarios que históricamente han sido relegados. Estos grupos pueden tratarse de grupos raciales, étnicos o hasta grupos religiosos. Este tipo de circunscripciones especiales busca garantizar la representación de ciertos grupos, como podría ser, en el contexto guatemalteco, distritos con representación de población maya e indígina. No obstante, el dibujo y elección dentro de dichos distritos genera una serie de dificultades logísticas y administrativas, por lo que no suelen ser muy utilizados.
@@ -119,6 +123,8 @@ seccionB3: <iframe width="560" height="315"
   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 seccionB4: "![](https://redciudadana.github.io/Pagina2021RC/assets/ELEMENTOS/HO\
   ME/PROYECTOS/07_CANDIDATOS.png)"
+sliderconclusion: /images/posts/01.png
+tconclusion: TITULO
 conclusion: "En otras palabras, los distritos electorales son las áreas
   geográficas dentro de las cuáles los votos se traducen en escaños o asientos
   en el Congreso. "
