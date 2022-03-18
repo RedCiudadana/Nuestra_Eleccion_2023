@@ -18,7 +18,7 @@ seccionA1: >-
   cuáles los votos se traducen en escaños o asientos en el Congreso. 
 
 
-  * ¿Cómo se trazan los distritos electorales?
+  **¿Cómo se trazan los distritos electorales?**
 
 
   El dibujo de estos distritos no es único o estándar debido a que existen distintos criterios que pueden utilizarse para su delimitación.  Estos criterios pueden utilizarse de manera simultánea en algunos casos o como criterio único, según lo delimite la autoridad electoral. Estas condiciones son: 
@@ -30,14 +30,10 @@ seccionA1: >-
   El criterio de delimitación electoral más común es el de equidad de población. Este hace referencia a la categoría en la que todas las unidades electorales se delimitan mediante una misma cantidad de población (Ej. 80,000 personas por cada distrito). Este criterio garantiza la noción de que todos los votos equivalen lo mismo; limitando la sobre- o subrepresentación de la población en dichos distritos electorales. 
 
 
-
-
   **2. Delimitaciones geográficas**
 
 
   La geografía, en cuanto a lo que delimitación de los distritos electorales se refiere, define las fronteras electorales con base en los límites administrativos del Estado; posiblemente establecidos según los “límites naturales como cordilleras, lagos, ríos e islas” (Fortín, 2016).  Este criterio geográfico es naturalmente compatible con algunas otras variables como el acceso al territorio y la densidad poblacional del mismo. 
-
-
 
 
   **3. Comunidades de interés (regiones)**
@@ -64,9 +60,6 @@ seccionA2: >-
 
 
   Por su parte, los países que no rediseñan sus distritos electorales tienden a contar con distritos que coinciden con las divisiones políticas administrativas de sus estados y se encuentran definidos en la Constitución. Ese es el caso de Guatemala y de la mayoría de países en América Latina, por lo que plantear un rediseño de los distritos electorales suele ser sumamente complicado (reforma constitucional). 
-
-
-  `<embed src="https://sistemaranking.redciudadana.org/mapas/m1c" type="text/html" height="780px" width="780px" >`
 
 
   * **¿Cuántos representantes se eligen por distrito?**
