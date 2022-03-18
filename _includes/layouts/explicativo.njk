@@ -66,7 +66,7 @@
                 </div>
                 <!--COLUMNA 2-->
                 <div class="col-lg-6 col-sm-12" style="height:800px;overflow-y:scroll; background:#3385C7">
-                   {{ seccionB1 | safe }}
+                   <span class="audio-visuales">{{ seccionB1 | safe }}</span>
                 </div>
             </div>
 		</section><!-- #content end -->
@@ -78,7 +78,7 @@
             <div class="row" >
                 <!--COLUMNA 2-->
                 <div class="col-lg-6 col-sm-12" style="height:800px;overflow-y:scroll;background:#3385C7">
-                    <iframe style="padding:10%" height="600px" src="{{ seccionB2 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                 
+                    <span class="audio-visuales">{{ seccionB2 | mdIt | safe }}</span>
                 </div>
                 <!--COLUMNA 1-->
                 <div class="col-lg-6 col-sm-12" style="padding:0!important">
@@ -89,7 +89,7 @@
                             <img style="margin:2% auto"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
                             <h2>{{tseccionA2}}</h2>
-                            <span>{{ seccionA2 }}</span>
+                            <span>{{ seccionA2 | mdIt | safe }}</span>
                         </div>
                     </div>
                     
@@ -113,7 +113,7 @@
                             <img style="margin:2% auto"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
                             <h2>{{tseccionA3}}</h2>
-                            <span>{{ seccionA3 }}</span>
+                            <span>{{ seccionA3 | mdIt | safe }}</span>
                         </div>
                     </div>
                     
@@ -121,7 +121,7 @@
                 </div>
                 <!--COLUMNA 2-->
                 <div class="col-lg-6 col-sm-12" style="height:800px;overflow-y:scroll; background:#3385C7">
-                    <iframe style="padding:10%" height="600px" src="{{ seccionB3 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                 
+                    <span class="audio-visuales">{{ seccionB3 | safe }}</span>                 
                 </div>
             </div>
 		</section><!-- #content end -->
@@ -133,7 +133,7 @@
             <div class="row" >
                 <!--COLUMNA 2-->
                 <div class="col-lg-6 col-sm-12" style="height:800px;overflow-y:scroll;background:#3385C7">
-                    <iframe style="padding:10%" height="600px" src="{{ seccionB4 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                 
+                    <span class="audio-visuales">{{ seccionB4 | mdIt | safe }}</span>
                 </div>
                 <!--COLUMNA 1-->
                 <div class="col-lg-6 col-sm-12" style="padding:0!important">
@@ -144,7 +144,7 @@
                             <img style="margin:2% auto"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
                             <h2>{{tseccionA4}}</h2>
-                            <span>{{ seccionA4 }}</span>
+                            <span>{{ seccionA4 | mdIt | safe }}</span>
                         </div>
                     </div>
                     
