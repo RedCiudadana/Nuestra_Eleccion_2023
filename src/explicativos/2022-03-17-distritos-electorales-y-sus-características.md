@@ -117,10 +117,10 @@ seccionA4: >-
 
 
   <!--EndFragment-->
-seccionB3: <iframe width="560" height="315"
+seccionB3: '`<iframe width="560" height="315"
   src="https://www.youtube.com/embed/36Al4aseSTw" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`'
 seccionB4: "![](https://redciudadana.github.io/Pagina2021RC/assets/ELEMENTOS/HO\
   ME/PROYECTOS/07_CANDIDATOS.png)"
 sliderconclusion: /images/posts/01.png
