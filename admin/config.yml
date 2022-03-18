@@ -43,7 +43,12 @@ collections:
           hint: "Texto que se desplegará en el texto 1 de la izquierda",
           required: false,
         }
-      - { label: "Icono Seccion A1", name: "iseccionA1", widget: "image" }
+      - {
+          label: "Icono Seccion A1",
+          name: "iseccionA1",
+          widget: "image",
+          required: false,
+        }
       - {
           name: "tseccionA2",
           label: "Titulo SeccionA2",
@@ -57,7 +62,12 @@ collections:
           hint: "Texto que se desplegará en el texto 2 de la izquierda",
           required: false,
         }
-      - { label: "Icono Seccion A2", name: "iseccionA2", widget: "image" }
+      - {
+          label: "Icono Seccion A2",
+          name: "iseccionA2",
+          widget: "image",
+          required: false,
+        }
       - {
           name: "seccionB1",
           label: "SeccionB1",
@@ -85,7 +95,12 @@ collections:
           hint: "Texto que se desplegará en el texto 3 de la izquierda",
           required: false,
         }
-      - { label: "Icono Seccion A3", name: "iseccionA3", widget: "image" }
+      - {
+          label: "Icono Seccion A3",
+          name: "iseccionA3",
+          widget: "image",
+          required: false,
+        }
       - {
           name: "tseccionA4",
           label: "Titulo SeccionA4",
@@ -99,7 +114,12 @@ collections:
           hint: "Texto que se desplegará en el texto 4 de la izquierda",
           required: false,
         }
-      - { label: "Icono Seccion A4", name: "iseccionA4", widget: "image" }
+      - {
+          label: "Icono Seccion A4",
+          name: "iseccionA4",
+          widget: "image",
+          required: false,
+        }
       - {
           name: "seccionB3",
           label: "SeccionB3",
