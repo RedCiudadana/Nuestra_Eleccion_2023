@@ -7,4 +7,10 @@ correo: lab@redciudadana.org
 date: 2022-02-19T14:19:38.099Z
 highlight: false
 ---
-Aqui va el texto del cuerpo
+**Aqui va el texto del cuerpo**
+
+Lista
+
+* Item
+* Item
+* Item
