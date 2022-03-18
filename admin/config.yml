@@ -114,6 +114,12 @@ collections:
           hint: "Embeds o Audiovisuales",
           required: false,
         }
+      - {
+          label: "Slider Conclusion",
+          name: "sliderconclusion",
+          widget: "image",
+        }
+      - { name: "tconclusion", label: "Título Conclusion" }
       - { name: "conclusion", label: "Conclusion" }
   - name: "iniciativas" # Used in routes, e.g., /admin/collections/blog
     label: "Iniciativas" # Used in the UI
