@@ -66,6 +66,9 @@ seccionA2: >-
   Por su parte, los países que no rediseñan sus distritos electorales tienden a contar con distritos que coinciden con las divisiones políticas administrativas de sus estados y se encuentran definidos en la Constitución. Ese es el caso de Guatemala y de la mayoría de países en América Latina, por lo que plantear un rediseño de los distritos electorales suele ser sumamente complicado (reforma constitucional). 
 
 
+  <embed src="https://sistemaranking.redciudadana.org/mapas/m1c" type="text/html" height="780px" width="780px" >
+
+
   * **¿Cuántos representantes se eligen por distrito?**
 
 
