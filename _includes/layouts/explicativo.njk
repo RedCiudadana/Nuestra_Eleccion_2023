@@ -58,7 +58,7 @@
                             <img style="margin:2% auto"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
                             <h2>{{tseccionA1}}</h2>
-                            <span>{{ seccionA1 }}</span>
+                            <span class="contenido-markdowit">{{ seccionA1 | mdIt | safe }}</span>
                         </div>
                     </div>
                     
@@ -66,7 +66,7 @@
                 </div>
                 <!--COLUMNA 2-->
                 <div class="col-lg-6 col-sm-12" style="height:800px;overflow-y:scroll; background:#3385C7">
-                   {{ seccionB1 }}
+                   {{ seccionB1 | safe }}
                 </div>
             </div>
 		</section><!-- #content end -->

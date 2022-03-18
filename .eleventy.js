@@ -1,7 +1,9 @@
 const moment = require("moment");
+const MarkdownIt = require('markdown-it');
 const now = new Date();
 
 module.exports = function (eleventyConfig) {
+    let md = new MarkdownIt();
 
     eleventyConfig.setTemplateFormats("njk,html,md");
     
@@ -13,7 +15,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('images');
     eleventyConfig.addPassthroughCopy('admin');
 
-    eleventyConfig.addNunjucksFilter("limit", function(array, limit) {
+    eleventyConfig.addNunjucksFilter("mdIt", function(content) {
+        return md.render(content);
+    });
+
+    eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
         return array.slice(0, limit);
     });
 
