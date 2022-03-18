@@ -23,7 +23,7 @@ permalink: "/explicativos/index.html"
 					</div>
 					
 					<div class="align-self-center center  pb-0  mb-0 my-lg-4">
-						<h1 class="text-white">Lorem Ipsum dolor sit amet, consectetuer</h1>
+						<h1 class="text-white" style="font-size:30px; font-weight:700">Lorem Ipsum dolor sit amet, consectetuer</h1>
 						<h3>Lorem Ipsum dolor sit amet,</h3>
 					</div>
 
@@ -124,7 +124,7 @@ permalink: "/explicativos/index.html"
                     <br>
                     <div class="row">
                         <div class="col-md-4 col-lg-4" style="border-right:#3385C7 0.2px solid">
-                            <h4 class="text-white">Lorem ipsum dolor</h4>
+                            <h4 class="text-white" >Lorem ipsum dolor</h4>
 							{% for explicativo in collections.explicativos | reverse | limit(6)%}
                             <a href="{{explicativo.url}}" ><div class="d-flex" >
                                 <h6 class="text-white" style="margin:0!important">{{loop.index}}. &nbsp {{explicativo.data.title}}</h6>
