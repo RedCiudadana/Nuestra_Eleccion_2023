@@ -47,30 +47,7 @@ seccionA1: >-
 
   Por último, recientemente se han destinado distritos especiales para garantizar la representación de grupos minoritarios que históricamente han sido relegados. Estos grupos pueden tratarse de grupos raciales, étnicos o hasta grupos religiosos. Este tipo de circunscripciones especiales busca garantizar la representación de ciertos grupos, como podría ser, en el contexto guatemalteco, distritos con representación de población maya e indígina. No obstante, el dibujo y elección dentro de dichos distritos genera una serie de dificultades logísticas y administrativas, por lo que no suelen ser muy utilizados.
 tseccionA2: ¿Quién dibuja los distritos electorales?
-seccionA2: >-
-  A partir de los criterios mencionados, las autoridades electorales de cada
-  país dibujan los distritos electorales. No obstante, en algunos casos, estas
-  circunscripciones no son fijas y pueden sufrir modificaciones según lo decida
-  la autoridad electoral; y la legislación electoral lo permita. Los países que
-  periódicamente tienden a redibujar sus circunscripciones electorales cuentan
-  con un marco normativo y criterios definidos para el trazo de los nuevos
-  límites de los distritos electorales. Esos criterios se encuentran en la
-  Constitución del país o en la normativa electoral específica y responden, en
-  su mayoría, a las categorías de dibujo expuestas previamente. 
-
-
-  Por su parte, los países que no rediseñan sus distritos electorales tienden a contar con distritos que coinciden con las divisiones políticas administrativas de sus estados y se encuentran definidos en la Constitución. Ese es el caso de Guatemala y de la mayoría de países en América Latina, por lo que plantear un rediseño de los distritos electorales suele ser sumamente complicado (reforma constitucional). 
-
-
-  * **¿Cuántos representantes se eligen por distrito?**
-
-
-  Los distritos electorales pueden elegir a una diversidad de funcionarios públicos en simultáneo, dependiendo de su magnitud. La magnitud de un distrito electoral hace referencia a la cantidad de escaños o cargos públicos que se eligen en cada uno de estos. Es decir, a mayor la magnitud del distrito, mayor el número de escaños que se repartirán en ese distrito. Por ejemplo, si un distrito tiene magnitud de 11 (distrito Guatemala) son 11 los diputados que deben elegirse en esa circunscripción. Por lo tanto, los distritos electorales pueden ser: 
-
-
-  1. **Uninominales**; distritos en donde se elige únicamente a un representante en total. 
-
-  2. **Plurinominales**; distritos en donde se eligen dos o más representantes.
+seccionA2: ""
 seccionB1: <embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
   type="text/html" height="780px" width="780px" >
 seccionB2: "![](/images/posts/lab-electoral-09.png)"
