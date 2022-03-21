@@ -36,14 +36,20 @@ seccionA3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   condimentum lacinia quis. Molestie nunc non blandit massa enim nec dui nunc.
   Non pulvinar neque laoreet suspendisse interdum consectetur libero. Augue
   mauris augue neque gravida in fermentum et.
-seccionA4: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida arcu ac
-  tortor dignissim. Sollicitudin aliquam ultrices sagittis orci a scelerisque
-  purus. Libero justo laoreet sit amet cursus. Arcu bibendum at varius vel. Eu
-  ultrices vitae auctor eu augue ut lectus. Sit amet massa vitae tortor
-  condimentum lacinia quis. Molestie nunc non blandit massa enim nec dui nunc.
-  Non pulvinar neque laoreet suspendisse interdum consectetur libero. Augue
-  mauris augue neque gravida in fermentum et.
+seccionA4: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Gravida arcu ac tortor dignissim.
+  Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Libero justo
+  laoreet sit amet cursus. Arcu bibendum at varius vel. Eu ultrices vitae auctor
+  eu augue ut lectus. Sit amet massa vitae tortor condimentum lacinia quis.
+  Molestie nunc non blandit massa enim nec dui nunc. Non pulvinar neque laoreet
+  suspendisse interdum consectetur libero. Augue mauris augue neque gravida in
+  fermentum et.
+
+
+
+
+  <embed src="https://sistemaranking.redciudadana.org/mapas/m1c" type="text/html" height="780px" width="780px" >
 sliderconclusion: /images/posts/01.png
 txtslider2: SECCIONA2
 seccionB2: https://www.youtube.com/embed/ZfPCUriMSus
