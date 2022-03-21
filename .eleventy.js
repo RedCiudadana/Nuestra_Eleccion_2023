@@ -1,7 +1,6 @@
 const moment = require("moment");
 const MarkdownIt = require('markdown-it');
 const now = new Date();
-const marked = require("marked")
 const rmj = require('render-markdown-js')
 
 module.exports = function (eleventyConfig) {
@@ -19,10 +18,6 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addNunjucksFilter("mdIt", function(content) {
         return md.render(content);
-    });
-
-    eleventyConfig.addNunjucksFilter("mkIt", function(content) {
-        return marked.parse(content);
     });
 
     eleventyConfig.addNunjucksFilter("rmj", function(content) {
