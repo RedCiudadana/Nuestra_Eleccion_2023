@@ -1,6 +1,7 @@
 const moment = require("moment");
 const MarkdownIt = require('markdown-it');
 const now = new Date();
+const marked = require("marked")
 
 module.exports = function (eleventyConfig) {
     let md = new MarkdownIt();
@@ -17,6 +18,10 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addNunjucksFilter("mdIt", function(content) {
         return md.render(content);
+    });
+
+    eleventyConfig.addNunjucksFilter("mkIt", function(content) {
+        return marked.parse(content);
     });
 
     eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
