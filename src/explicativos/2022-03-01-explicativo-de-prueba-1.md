@@ -27,10 +27,6 @@ seccionA2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   Non pulvinar neque laoreet suspendisse interdum consectetur libero. Augue
   mauris augue neque gravida in fermentum et.
 seccionB1: https://www.youtube.com/embed/ZfPCUriMSus
-seccionB2: https://www.youtube.com/embed/ZfPCUriMSus
-slider2: /images/posts/01.png
-tslider2: SECCIONA2
-txtslider2: SECCIONA2
 tseccionA3: SECCIONA3
 seccionA3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida arcu ac
@@ -40,7 +36,6 @@ seccionA3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   condimentum lacinia quis. Molestie nunc non blandit massa enim nec dui nunc.
   Non pulvinar neque laoreet suspendisse interdum consectetur libero. Augue
   mauris augue neque gravida in fermentum et.
-tseccionA4: SECCIONA4
 seccionA4: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida arcu ac
   tortor dignissim. Sollicitudin aliquam ultrices sagittis orci a scelerisque
@@ -49,10 +44,17 @@ seccionA4: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   condimentum lacinia quis. Molestie nunc non blandit massa enim nec dui nunc.
   Non pulvinar neque laoreet suspendisse interdum consectetur libero. Augue
   mauris augue neque gravida in fermentum et.
-seccionB3: '`<embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
-  type="text/html" height="780px" width="780px" >`'
-seccionB4: '`<embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
-  type="text/html" height="780px" width="780px" >`'
+sliderconclusion: /images/posts/01.png
+txtslider2: SECCIONA2
+seccionB2: https://www.youtube.com/embed/ZfPCUriMSus
+tseccionA4: SECCIONA4
+seccionB3: <embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
+  type="text/html" height="780px" width="780px" >
+seccionB4: <embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
+  type="text/html" height="780px" width="780px" >
+slider2: /images/posts/01.png
+tconclusion: Conclusion
+tslider2: SECCIONA2
 conclusion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida arcu ac
   tortor dignissim. "
