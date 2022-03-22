@@ -18472,6 +18472,10 @@ label.checkbox {
   padding: 5%;
 }
 
+.audio-visuales > h1 > a {
+  display: none !important;
+}
+
 .audio-visuales > * {
   margin: auto;
   height: 100%;
