@@ -18446,3 +18446,18 @@ label.checkbox {
   list-style: disc;
   padding-block: 5px;
 }
+
+.audio-visuales > * {
+  margin: auto;
+  height: 100%;
+}
+
+.audio-visuales > * > * {
+  margin: auto;
+  height: 100%;
+}
+
+.audio-visuales {
+  width: 100%;
+  height: 100%;
+}
