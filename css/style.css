@@ -18447,6 +18447,31 @@ label.checkbox {
   padding-block: 5px;
 }
 
+.audio-visuales > p {
+  margin: auto;
+  height: auto;
+  color: #fff;
+  width: 100%;
+  padding: 5%;
+}
+
+.audio-visuales > p > img {
+  margin: auto;
+  height: auto;
+  color: #fff;
+  width: 100%;
+  padding: 5%;
+}
+
+.audio-visuales > h1 {
+  margin: auto;
+  height: auto;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 5%;
+}
+
 .audio-visuales > * {
   margin: auto;
   height: 100%;
