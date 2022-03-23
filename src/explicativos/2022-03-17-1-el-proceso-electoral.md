@@ -17,6 +17,7 @@ seccionA1: >-
 
 
   <!--EndFragment-->
+iseccionA1: /images/posts/lab-electoral-02.png
 tseccionA2: Las fases del proceso electoral
 seccionA2: >-
   <!--StartFragment-->
@@ -52,15 +53,12 @@ seccionA2: >-
 
 
   <!--EndFragment-->
+iseccionA2: /images/posts/lab-electoral-05.png
 seccionB1: "![](https://soy.usac.edu.gt/wp-content/uploads/2019/03/IMG_0078.jpg)"
 seccionB2: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-slider2: /images/posts/01.png
-tslider2: Momentos claves para la participación ciudadana
-txtslider2: El proceso electoral implica un espacio amplio para integrar al
-  ciudadano como el actor principal del mismo.
 tseccionA3: Momentos claves para la participación ciudadana
 seccionA3: >-
   <!--StartFragment-->
@@ -76,6 +74,7 @@ seccionA3: >-
 
 
   <!--EndFragment-->
+iseccionA3: /images/posts/lab-electoral-03.png
 tseccionA4: Glosario de términos
 seccionA4: >-
   <!--StartFragment-->
@@ -99,7 +98,9 @@ seccionA4: >-
 
 
   <!--EndFragment-->
-seccionB3: "![](https://soy.usac.edu.gt/wp-content/uploads/2019/03/llega.jpg)"
+iseccionA4: /images/posts/lab-electoral-01.png
+seccionB3: <embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
+  type="text/html" height="780px" width="780px" >
 seccionB4: >-
   <!--StartFragment-->
 
@@ -117,6 +118,12 @@ seccionB4: >-
 
 
   <!--EndFragment-->
+sliderconclusion: /images/posts/01.png
+txtslider2: El proceso electoral implica un espacio amplio para integrar al
+  ciudadano como el actor principal del mismo.
+slider2: /images/posts/01.png
+tconclusion: Conclusión
+tslider2: Momentos claves para la participación ciudadana
 conclusion: "El proceso electoral es el conjunto de etapas o fases sucesivas y
   ordenadas, dirigidas por un órgano electoral fundamentadas por un cuerpo
   legal, teniendo como fin realizar unas "
