@@ -215,27 +215,38 @@ permalink: "index.html"
 		============================================= -->
 
 				<div class="section py-6 my-6" style="background-color: #e8f0f9">
-					<div class="container" style="display:flex;justify-content:center">
-						<div class="row align-items-center col-mb-50">
-							<!--div class="col-md-6">
-								<img src="demos/forum/images/doc.svg" alt="Doc Image">
-							</div-->
-							<div class="col-md-12 " >
-								<div class="row posts-md col-mb-30" style="align-items:center">
-									
-									<div class="entry col-sm-6 col-xl-12">
-										<div class="grid-inner">
-											<h3>Suscribete</h3>
-											<p >
-											Recibe el resumen del proceso de elección del Fiscal General del Ministerio Público de Guatemala. Se envía los viernes.
-											</p>
-											<a href="" class="button button-large button-border rounded-1 fw-medium nott bg-alt2 ls0 ms-0">Suscribirse</a>
-										</div>
-									</div>
-									
+					<div class="content-wrap">
+						<div class="container clearfix">
+							<h1 class="" style="font-size:30px; font-weight:700">Explicativos</h1>
+							<br>
+							<br>
+							<div class="row">
+								<div class="col-md-4 col-lg-4 col-sm-12" style="border-right:#3385C7 0.2px solid">
+									{% for explicativo in collections.explicativos | reverse | limit(4)%}
+									<a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
+										<h6 class=" link_explicativo" style="margin:0!important">{{loop.index}}. &nbsp {{explicativo.data.title}}</h6>
+									</div></a>
+									{% endfor %}
 								</div>
+								<div class="col-md-4 col-lg-4 col-sm-12" style="border-right:#3385C7 0.2px solid">
+									{% for explicativo in collections.explicativos | reverse | limitPart(4,8)%}
+									<a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
+										<h6 class=" link_explicativo" style="margin:0!important">{% for explicativo2 in collections.explicativos | reverse%}{%if explicativo2 === explicativo %}{{loop.index}}{%endif%}{% endfor %}. &nbsp {{explicativo.data.title}}</h6>
+										
+									</div></a>
+									{% endfor %}
+								</div>
+								<div class="col-md-4 col-lg-4 col-sm-12">
+									{% for explicativo in collections.explicativos | reverse | limitPart(9,12)%}
+									<a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
+										<h6 class=" link_explicativo" style="margin:0!important">{% for explicativo2 in collections.explicativos | reverse%}{%if explicativo2 === explicativo %}{{loop.index}}{%endif%}{% endfor %}. &nbsp {{explicativo.data.title}}</h6>
+									</div></a>
+									{% endfor %}
+								</div>
+
 							</div>
 						</div>
+					</div>
 					</div>
 				</div>
 

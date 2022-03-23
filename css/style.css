@@ -18450,7 +18450,6 @@ label.checkbox {
 .audio-visuales > p {
   margin: auto;
   height: auto;
-  color: #fff;
   width: 100%;
   padding: 5%;
 }
@@ -18466,7 +18465,6 @@ label.checkbox {
 .audio-visuales > h1 {
   margin: auto;
   height: auto;
-  color: #fff;
   font-size: 30px;
   font-weight: 700;
   padding: 5%;
@@ -18493,4 +18491,11 @@ label.checkbox {
 
 .link_explicativo {
   padding-block: 5px;
+}
+
+.Flipped {
+  direction: rtl;
+}
+.Content_F {
+  direction: ltr;
 }
