@@ -6,6 +6,7 @@
 
 {% block content %}
 
+
         <!-- Slider
 		============================================= -->
 		<section id="slider" class="slider-element" style="background-image: url('{{slider}}');backgorund-size:cover">
@@ -79,7 +80,7 @@
                 <!--COLUMNA 2-->
                 <div class="col-lg-6 col-sm-12 d-flex justify-content-center p-0  Flipped" style="overflow-y:scroll;overflow-x:hidden;background:#fff; align-items:center">
                     <div class="Content_F audio-visuales">
-                        <span>{{ seccionB2 | rmj | safe }}</span>
+                        <span class="audio-visuales">{{ seccionB2 | rmj | safe }}</span>
                     </div>
                 </div>
                 <!--COLUMNA 1-->
@@ -172,5 +173,17 @@
 				</div>
 			</div>
 		</section>
-    
+            
+{% endblock %}
+
+
+{% block body_javascripts %}
+    <script>
+    	var myVar;
+
+		function myFunction() {
+		myVar = setTimeout(showPage, 5000);
+		}
+
+    </script>
 {% endblock %}

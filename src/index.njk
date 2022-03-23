@@ -216,7 +216,7 @@ permalink: "index.html"
 
 				<div class="section py-6 my-6" style="background-color: #e8f0f9">
 					<div class="content-wrap">
-						<div class="container clearfix">
+						<div class="container clearfix" style="padding:0 10%">
 							<h1 class="" style="font-size:30px; font-weight:700">Explicativos</h1>
 							<br>
 							<br>
@@ -224,14 +224,14 @@ permalink: "index.html"
 								<div class="col-md-4 col-lg-4 col-sm-12" style="border-right:#3385C7 0.2px solid">
 									{% for explicativo in collections.explicativos | reverse | limit(4)%}
 									<a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
-										<h6 class=" link_explicativo" style="margin:0!important">{{loop.index}}. &nbsp {{explicativo.data.title}}</h6>
+										<h6 class=" " style="margin:0!important">{{loop.index}}. &nbsp {{explicativo.data.title}}</h6>
 									</div></a>
 									{% endfor %}
 								</div>
 								<div class="col-md-4 col-lg-4 col-sm-12" style="border-right:#3385C7 0.2px solid">
 									{% for explicativo in collections.explicativos | reverse | limitPart(4,8)%}
 									<a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
-										<h6 class=" link_explicativo" style="margin:0!important">{% for explicativo2 in collections.explicativos | reverse%}{%if explicativo2 === explicativo %}{{loop.index}}{%endif%}{% endfor %}. &nbsp {{explicativo.data.title}}</h6>
+										<h6 class=" " style="margin:0!important">{% for explicativo2 in collections.explicativos | reverse%}{%if explicativo2 === explicativo %}{{loop.index}}{%endif%}{% endfor %}. &nbsp {{explicativo.data.title}}</h6>
 										
 									</div></a>
 									{% endfor %}
@@ -239,7 +239,7 @@ permalink: "index.html"
 								<div class="col-md-4 col-lg-4 col-sm-12">
 									{% for explicativo in collections.explicativos | reverse | limitPart(9,12)%}
 									<a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
-										<h6 class=" link_explicativo" style="margin:0!important">{% for explicativo2 in collections.explicativos | reverse%}{%if explicativo2 === explicativo %}{{loop.index}}{%endif%}{% endfor %}. &nbsp {{explicativo.data.title}}</h6>
+										<h6 class=" " style="margin:0!important">{% for explicativo2 in collections.explicativos | reverse%}{%if explicativo2 === explicativo %}{{loop.index}}{%endif%}{% endfor %}. &nbsp {{explicativo.data.title}}</h6>
 									</div></a>
 									{% endfor %}
 								</div>
@@ -340,5 +340,5 @@ permalink: "index.html"
 {% endblock %}
 
 {% block body_javascripts %}
-
+	
 {% endblock %}

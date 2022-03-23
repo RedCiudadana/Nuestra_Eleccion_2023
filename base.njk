@@ -34,8 +34,8 @@
 
 </head>
 
-<body class="stretched search-overlay">
-
+<body class="stretched search-overlay" onload="myFunction()">
+	<div id="loader" ></div>
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
@@ -219,6 +219,19 @@
       }
     </script>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+	<script>
+    	var myVar;
+
+		function myFunction() {
+		myVar = setTimeout(showPage, 0);
+		}
+
+		function showPage() {
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("wrapper").style.display = "block";
+		}
+    </script>
 
     {% block body_javascripts %}
 
