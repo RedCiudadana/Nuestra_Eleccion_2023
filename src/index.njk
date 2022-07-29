@@ -5,14 +5,14 @@ permalink: "index.html"
 {% extends "base.njk" %}
 
 {% block head %}
-<title>Lab Electoral | Red Ciudadana</title>
+<title>Nuestra Elección | Red Ciudadana</title>
 {% endblock %}
 
 {% block content %}
         <!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element bg-color" style="background-image:url('elementos/ELEMENTOS/SLIDER/01.png')">
-			<div class="container">
+		<section id="slider" class="slider-element bg-color">
+			<div class="container ">
 				<div class="row h-100">
 					<div class="col-lg-6 d-flex align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4">
 						<h2 class="display-4 text-white" style="font-weight: 800">Lab Electoral</h2>
@@ -29,7 +29,7 @@ permalink: "index.html"
 					</div>
 
 					<div class="col-lg-6 d-flex align-self-center flex-column">
-						<img src="elementos/ELEMENTOS/SLIDER/02.png" alt="Hero Image" style="z-index: 3;">
+						<img src="/elementos/elementos_lab/HOME/NE-23.png" alt="Hero Image" style="z-index: 3;">
 					</div>
 				</div>
 			</div>
@@ -45,7 +45,7 @@ permalink: "index.html"
 
 		<!-- Content
 		============================================= -->
-		<section id="content">
+		<section id="content px-4">
 			<div class="content-wrap">
 
 		<!-- Nosotros
@@ -53,7 +53,7 @@ permalink: "index.html"
 
 				<div class="container clearfix">
 					<div class="heading-block center">
-						<h2>Laboratorio Electoral</h2>
+						<h2>Nuestra Elección</h2>
 						<span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span>
 					</div>
 
@@ -61,7 +61,7 @@ permalink: "index.html"
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box media-box">
 								<div class="fbox-media" >
-									<img class="imageinicio m-auto" src="elementos/01_MEJORAS WEB/ELEMENTOS/LAB ELECTORAL-10.png" alt="Why choose Us?">
+									<img class="imageinicio m-auto" src="/elementos/elementos_lab/HOME/NE-25.png" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0 text-center">
 									<h3 class="lower-case">Políticas y Normas<!--span class="subtitle">Because we are Reliable.</span--></h3>
@@ -73,7 +73,7 @@ permalink: "index.html"
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img class="imageinicio m-auto" src="elementos/01_MEJORAS WEB/ELEMENTOS/LAB ELECTORAL-11.png" alt="Why choose Us?">
+									<img class="imageinicio m-auto" src="/elementos/elementos_lab/HOME/NE-26.png" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0 text-center">
 									<h3 class="lower-case">Tecnologías<!--span class="subtitle">To Redefine your Brand.</span--></h3>
@@ -85,7 +85,7 @@ permalink: "index.html"
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img class="imageinicio m-auto" src="elementos/01_MEJORAS WEB/ELEMENTOS/LAB ELECTORAL-12.png" alt="Why choose Us?">
+									<img class="imageinicio m-auto" src="/elementos/elementos_lab/HOME/NE-27.png" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0 text-center">
 									<h3 class="lower-case">Adopción Digital<!--span class="subtitle">Make our Customers Happy.</span--></h3>
@@ -100,7 +100,7 @@ permalink: "index.html"
 		<!-- Podcast
 		============================================= -->
 
-				<div class="section py-6 my-6" style="background-color: #e8f0f9">
+				<div class="section py-6 my-6" style="background-color: #46495F">
 					{% if collections.podcastsHighlighted %}
 					{% for podcast in collections.podcastsHighlighted | limit(1)%}
 					<div class="container">
@@ -108,18 +108,19 @@ permalink: "index.html"
 							<!--div class="col-md-6">
 								<img src="demos/forum/images/doc.svg" alt="Doc Image">
 							</div-->
-							<div class="col-md-12 text-center">
+							<div class="col-md-12 text-white">
 								<div class="row posts-md col-mb-30" style="align-items:center">
 									
-									<div class="entry col-sm-6 col-xl-4">
+									<div class="entry col-sm-6 col-xl-6">
 										<div class="grid-inner">
 											<span>Podcast</span>
 											<h3>{{podcast.data.title}}</h3>
+											<p>{{podcast.data.description}}</p>
 											<a href="" class="button button-large button-border rounded-1 fw-medium nott bg-alt2 ls0 ms-0">Suscribirse</a>
 										</div>
 									</div>
 
-									<div class="entry col-sm-6 col-xl-4">
+									<div class="entry col-sm-6 col-xl-6">
 										<div class="grid-inner">
 											<iframe src="{{podcast.data.link}}" width="100%"
                 							height="232" frameBorder="0" allowfullscreen=""
@@ -127,14 +128,6 @@ permalink: "index.html"
 										</div>
 									</div>
 
-									<div class="entry col-sm-6 col-xl-4">
-										<div class="grid-inner">
-											<span>SUSCRÍBITE AHORA</span>
-											<h3>Lorem ipsum dolor sit amet,</h3>
-											<p>{{podcast.data.description}}</p>
-										</div>
-									</div>
-									
 								</div>
 							</div>
 						</div>
