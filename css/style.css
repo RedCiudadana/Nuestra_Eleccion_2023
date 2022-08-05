@@ -18570,3 +18570,36 @@ label.checkbox {
 .texto-intro{
   font-size: 20px;
 }
+
+.titulo-podcast{
+  font-size: 35px!important;
+  color: white!important;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.subtitulo-podcast{
+  font-size: 20px!important;
+  color: white!important;
+  margin: 10px 0;
+}
+
+.texto-podcast{
+  font-size: 20px!important;
+  color: white!important;
+  margin: 10px 0;
+  font-weight: 100;
+}
+
+.boton-podcast{
+  background-color: #f4ad4d;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  max-width: fit-content;
+}
+
+.boton-podcast a{
+  color: white!important;
+  font-size: 20px!important;
+}
