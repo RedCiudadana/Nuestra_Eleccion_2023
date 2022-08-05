@@ -250,7 +250,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444;
+  color: #46495f!important;
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 30px 0;
@@ -271,7 +271,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 30px!important;
 }
 
 h4 {
@@ -18565,4 +18565,8 @@ label.checkbox {
 
 #wrapper {
   display: none;
+}
+
+.texto-intro{
+  font-size: 20px;
 }
