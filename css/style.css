@@ -18603,3 +18603,18 @@ label.checkbox {
   color: white!important;
   font-size: 20px!important;
 }
+
+.cuadro_explicativo{
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.5s;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.cuadro_explicativo:hover{
+  background: #e96763;
+  color: #fff!important;
+}
