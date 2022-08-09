@@ -18618,3 +18618,16 @@ label.checkbox {
   background: #e96763;
   color: #fff!important;
 }
+
+.cuadro_blog{
+  border: #ccc 1px solid;
+  margin: 20px;
+}
+
+.cuadro_blog img{
+  width: 100%;
+}
+
+.cuadro_blog{
+  color: rgb(0,0,0,0.8)!important;
+}

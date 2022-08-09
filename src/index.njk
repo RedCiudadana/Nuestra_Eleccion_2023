@@ -6,6 +6,7 @@ permalink: "index.html"
 
 {% block head %}
 <title>Nuestra Elección | Red Ciudadana</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 {% endblock %}
 
 {% block content %}
@@ -150,22 +151,22 @@ permalink: "index.html"
 						<div class="row posts-md col-mb-30 col-xl-6">
 								
 
-							<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Lo último</h2>
+							<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Eventos</h2>
 
-							{% for blog in collections.blogs | reverse | limit(5) %}
+							{% for evento in collections.eventos | reverse | limit(5) %}
 					
 				
-							<a href="{{blog.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
-							<img src="{{ blog.data.image }}" alt="Evento" class="w-36">
+							<a href="{{evento.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
+							<img src="{{ evento.data.image }}" alt="Evento" class="w-36">
 							<div class="pl-8 my-auto" style="text-align:left">
 								<h5 class="font-bold text-lg">
-								{{blog.data.title }}
+								{{evento.data.title }}
 								</h5>
 								<span class="text-sm">
-								{{blog.data.date | dateFormat('DD/MM/YYYY')}}
+								{{evento.data.date | dateFormat('DD/MM/YYYY')}}
 								</span><br>
 								<span class="text-sm">
-								{{blog.data.description}}
+								{{evento.data.description}}
 								</span>
 							</div>
 							</a>
@@ -173,7 +174,7 @@ permalink: "index.html"
 							{% endfor %}
 
 							<div class="mb-6" style="display:flex; justify-content:flex-end">
-								<a href="/blogs/index.html">Más Blogs<i class="icon-arrow-right" style="margin-left:5px"></i></a>
+								<a href="/eventos/index.html">Más Eventos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
 							</div>		
 				
 						</div>
@@ -238,30 +239,36 @@ permalink: "index.html"
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
 						</div-->
 
-						<div class="row posts-md col-mb-30 col-xl-6">
+						<div class="row posts-md col-mb-30">
 
-							<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Eventos</h2>
+							<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Blogs</h2>
+							<div class="row d-flex">
+								{% for blog in collections.blogs | reverse | limit(5) %}
+								<div class="col-md-4 col-lg-4 col-sm-12">
+									<div class="cuadro_blog ">
+										<a href="{{blog.url}}"><img src="{{ blog.data.image }}" alt="Evento" class="w-36"></a>
+										<div class="px-4 py-4 text-left">
+											<i class="fa-solid fa-calendar"></i><span class="text-sm">
+											{{blog.data.date | dateFormat('DD/MM/YYYY')}}
+											</span><br>
+											<br>
+											<h5 class="font-bold text-lg">
+											{{blog.data.title }}
+											</h5>
+											
+											<span class="text-sm">
+											{{blog.data.description}}
+											</span>
+											
+										</div>
+										<a href="{{blog.url}}"><div class="px-4 pb-2 pt-2 text-left" style="border:#ccc 1px solid">
+											<span>Ver más <i class="fa-solid fa-caret-right"></i></span>
+										</div></a>
 
-							{% for evento in collections.eventos | reverse | limit(5) %}
-					
-				
-							<a href="{{evento.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
-							<img src="{{ evento.data.image }}" alt="Evento" class="w-36">
-							<div class="pl-8 my-auto" style="text-align:left">
-								<h5 class="font-bold text-lg">
-								{{evento.data.title }}
-								</h5>
-								<span class="text-sm">
-								{{evento.data.date | dateFormat('DD/MM/YYYY')}}
-								</span><br>
-								<span class="text-sm">
-								{{evento.data.description}}
-								</span>
+									</div>
+								</div>
+								{% endfor %}
 							</div>
-							</a>
-
-							{% endfor %}
-
 							<div class="mb-6" style="display:flex; justify-content:flex-end">
 								<a href="/eventos/index.html">Más Eventos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
 							</div>
@@ -270,24 +277,7 @@ permalink: "index.html"
 				
 						</div>
 
-						<div class="row posts-md col-mb-30 col-xl-3">
-							<h3 class="uppercase font-bold text-base tracking-wider my-auto mb-4 pb-4"style="text-align:left;margin:1rem 0">Podcasts</h3>
-
-							{% for podcast in collections.podcasts | reverse | limit(4)%}
-							<div class="entry ">
-								<div class="grid-inner">
-									<iframe height="155px" src="{{podcast.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									<p class="txt-video">{{podcast.data.description}}</p>
-								</div>
-								
-							</div>
-							{% endfor %}
-
-							<div class="mb-6">
-								<div style="display:flex; justify-content:flex-end">
-								<a href="/podcasts/index.html">Más Podcasts<i class="icon-arrow-right" style="margin-left:5px"></i></a>
-							</div>	
-						</div>	
+						
 						
 
 					</div>	
