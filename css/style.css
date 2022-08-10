@@ -18622,6 +18622,12 @@ label.checkbox {
 .cuadro_blog{
   border: #ccc 1px solid;
   margin: 20px;
+  box-shadow: #ccc 3px 3px 3px!important;
+  transition: 0.5s;
+}
+
+.cuadro_blog:hover{
+  transform: translate(2px , -5px);
 }
 
 .cuadro_blog img{
