@@ -36,8 +36,17 @@
 
 </head>
 
-<body class="stretched search-overlay" onload="myFunction()">
-	<div id="loader" ></div>
+<body class="stretched search-overlay">
+	<!-- Preloader Start -->
+	<div id="preloader-active">
+		<div class="preloader d-flex align-items-center justify-content-center">
+			<div class="preloader-inner position-relative">
+				<div class="text-center">
+					<img src="/elementos/loader.gif" style="width:50%;height:auto;margin:auto" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
@@ -225,17 +234,19 @@
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 	<script>
-    	var myVar;
-
-		function myFunction() {
-		myVar = setTimeout(showPage, 0);
-		}
-
-		function showPage() {
-		document.getElementById("loader").style.display = "none";
-		document.getElementById("wrapper").style.display = "block";
-		}
-    </script>
+		(function ($) {
+			("use strict");
+			// Page loading
+			$(window).on("load", function () {
+				$("#preloader-active").delay(450).fadeOut("slow");
+				$("body").delay(450).css({
+					overflow: "visible"
+				});
+				$("#onloadModal").modal("show");
+			});
+		
+		})(jQuery);
+	</script>
 
     {% block body_javascripts %}
 
