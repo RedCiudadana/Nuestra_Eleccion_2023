@@ -208,100 +208,94 @@ permalink: "index.html"
 		<!-- Explicativos
 		============================================= -->
 
-				<div class="section py-6 my-6" style="background-color: #e8f0f9">
-					<div class="content-wrap">
-						<div class="container clearfix" >
-							<h1 style="font-size:30px; font-weight:700; margin-bottom:30px">Explicativos</h1>
-	
-							<div class="row ">
-								{% for explicativo in collections.explicativos | reverse %}
-									<div class="col-md-4 col-lg-4 col-sm-12 " style="margin:10px 0!important">
-										<a class="link_explicativo" href="{{explicativo.url}}" ><div class="cuadro_explicativo">
-											<h2>{{loop.index}}. &nbsp {{explicativo.data.title}}</h2>
-										</div></a>
-									</div>
-								{% endfor %}
-								
+			<div class="section py-6 my-6" style="background-color: #e8f0f9">
+				<div class="content-wrap">
+					<div class="container clearfix" >
+						<h1 style="font-size:30px; font-weight:700; margin-bottom:30px">Explicativos</h1>
+
+						<div class="row ">
+							{% for explicativo in collections.explicativos | reverse %}
+							<div class="col-md-4 col-lg-4 col-sm-12 " style="margin:10px 0!important">
+								<a class="link_explicativo" href="{{explicativo.url}}" ><div class="cuadro_explicativo">
+									<h2>{{loop.index}}. &nbsp {{explicativo.data.title}}</h2>
+								</div></a>
 							</div>
+							{% endfor %}
+							
 						</div>
 					</div>
-					</div>
 				</div>
+			</div>
 
 		<!-- Blogs y Podcasts
 		============================================= -->
 				
 			
-				<div class="container my-4">
-					<div class="row text-center mb-5"  style="justify-content:space-evenly;align-items:flex-start">
-						<!--div class="col-lg-6">
-							<h3 class="display-4 fw-bolder mb-3">Publicaciones</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
-						</div-->
+			<div class="container my-4">
+				<div class="row text-center mb-5"  style="justify-content:space-evenly;align-items:flex-start">
+					<!--div class="col-lg-6">
+						<h3 class="display-4 fw-bolder mb-3">Publicaciones</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
+					</div-->
 
-						<div class="row posts-md col-mb-30">
+					<div class="row posts-md col-mb-30">
 
-							<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Blogs</h2>
-							<div class="row d-flex">
-								{% for blog in collections.blogs | reverse | limit(5) %}
-								<div class="col-md-4 col-lg-4 col-sm-12">
-									<div class="cuadro_blog ">
-										<a href="{{blog.url}}"><img src="{{ blog.data.image }}" alt="Evento" class="w-36"></a>
-										<div class="px-4 py-4 text-left">
-											<i class="fa-solid fa-calendar"></i><span class="text-sm">
-											{{blog.data.date | dateFormat('DD/MM/YYYY')}}
-											</span><br>
-											<br>
-											<h5 class="font-bold text-lg">
-											{{blog.data.title }}
-											</h5>
-											
-											<span class="text-sm">
-											{{blog.data.description}}
-											</span>
-											
-										</div>
-										<a href="{{blog.url}}"><div class="px-4 pb-2 pt-2 text-left" style="border-top:#ccc 1px solid">
-											<span>Ver más <i class="fa-solid fa-caret-right"></i></span>
-										</div></a>
-
+						<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Blogs</h2>
+						<div class="row d-flex">
+							{% for blog in collections.blogs | reverse | limit(5) %}
+							<div class="col-md-4 col-lg-4 col-sm-12">
+								<div class="cuadro_blog ">
+									<a href="{{blog.url}}"><img src="{{ blog.data.image }}" alt="Evento" class="w-36"></a>
+									<div class="px-4 py-4 text-left">
+										<i class="fa-solid fa-calendar"></i><span class="text-sm">
+										{{blog.data.date | dateFormat('DD/MM/YYYY')}}
+										</span><br>
+										<br>
+										<h5 class="font-bold text-lg">
+										{{blog.data.title }}
+										</h5>
+										
+										<span class="text-sm">
+										{{blog.data.description}}
+										</span>
+										
 									</div>
-								</div>
-								{% endfor %}
-							</div>
-							<div class="mb-6" style="display:flex; justify-content:flex-end">
-								<a href="/eventos/index.html">Más Eventos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
-							</div>
+									<a href="{{blog.url}}"><div class="px-4 pb-2 pt-2 text-left" style="border-top:#ccc 1px solid">
+										<span>Ver más <i class="fa-solid fa-caret-right"></i></span>
+									</div></a>
 
-							
-				
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+						<div class="mb-6" style="display:flex; justify-content:flex-end">
+							<a href="/eventos/index.html">Más Eventos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
 						</div>
 
 						
-						
+			
+					</div>
 
-					</div>	
-				</div>
+					
+					
+
+				</div>	
 			</div>
+
 
 		
 		<!-- Colaboraciones
 		============================================= -->
-
-
-
-			<div>
-			
-				<div class="container my-4" >
-					<div class="row justify-content-center text-center mb-5">
-						<div class="col-lg-6" style="margin:3rem 0">
-							<hP class=" mb-3">GRACIAS AL APOYO DE </P>
-							<img style="margin:auto" class="filter" src="/elementos/ELEMENTOS/LOGOTIPO/NED.png" alt="Canvas Logo">
-						</div>	
+		
+			<div class="container my-4" >
+				<div class="row justify-content-center text-center mb-5">
+					<div class="col-lg-6" style="margin:3rem 0">
+						<hP class=" mb-3">GRACIAS AL APOYO DE </P>
+						<img style="margin:auto" class="filter" src="/elementos/ELEMENTOS/LOGOTIPO/NED.png" alt="Canvas Logo">
 					</div>	
-				</div>
-
+				</div>	
 			</div>
+
 
 		</section><!-- #content end -->
 {% endblock %}

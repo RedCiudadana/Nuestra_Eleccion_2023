@@ -12,7 +12,7 @@ permalink: "/explicativos/index.html"
 
         <!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element bg-color" style="background-image:url('/elementos/SLIDER-02.png')">
+		<section id="slider" class="slider-element" style="background:#f6bfc0">
 			<div class="container" >
 				<div class="row h-100">
 					<div class="col-md-6 align-self-left left pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding-bottom:0!important;margin-bottom:0!important">
@@ -23,7 +23,7 @@ permalink: "/explicativos/index.html"
 					</div>
 					
 					<div class="align-self-center center  pb-0  mb-0 my-lg-4">
-						<h1 class="text-white" style="font-size:30px; font-weight:700">Lorem Ipsum dolor sit amet, consectetuer</h1>
+						<h1  style="font-size:30px; font-weight:700">Lorem Ipsum dolor sit amet, consectetuer</h1>
 						<h3>Lorem Ipsum dolor sit amet,</h3>
 					</div>
 
@@ -32,7 +32,7 @@ permalink: "/explicativos/index.html"
 						<img data-animate="fadeInRight" data-delay="800" style="margin: -80px 200px 0;" src="/elementos/NUBE_04.png">
 					</div>
 					<div id="nub2" class="col-md-6 align-self-right right " style="padding-bottom:0!important;margin-bottom:0!important;text-align:end">
-						<img data-animate="fadeInRight" data-delay="800" style="margin: -200px 60px 0;" src="/elementos/NUBE_02.png">
+						<img data-animate="fadeInRight" data-delay="800" style="margin: -150px 335px 0;" src="/elementos/NUBE_02.png">
 					</div>
 
 					<style>
@@ -109,7 +109,7 @@ permalink: "/explicativos/index.html"
 				</div>
 			</div>
 			<div class="w-100">
-				<img src="/elementos/SLIDER-01.png">
+				<img src="/elementos/elementos_lab/OTROS SECCIONES ELEMENTOS/OTROS SECCIONES ELEMENTOS/SLIDER/ne20.png">
 			</div>
 		</section>
 
@@ -117,38 +117,27 @@ permalink: "/explicativos/index.html"
 		============================================= -->
 		<section id="content" style="background:#073350">
 
-            <div class="content-wrap">
-				<div class="container clearfix">
-                    <h1 class="text-white" style="font-size:30px; font-weight:700">Explicativos</h1>
-                    <br>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-4 col-lg-4 col-sm-12" style="border-right:#3385C7 0.2px solid">
-							{% for explicativo in collections.explicativos | reverse | limit(4)%}
-                            <a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
-                                <h6 class="text-white link_explicativo" style="margin:0!important">{{loop.index}}. &nbsp {{explicativo.data.title}}</h6>
-                            </div></a>
-							{% endfor %}
-                        </div>
-						<div class="col-md-4 col-lg-4 col-sm-12" style="border-right:#3385C7 0.2px solid">
-							{% for explicativo in collections.explicativos | reverse | limitPart(4,8)%}
-                            <a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
-                                <h6 class="text-white link_explicativo" style="margin:0!important">{% for explicativo2 in collections.explicativos | reverse%}{%if explicativo2 === explicativo %}{{loop.index}}{%endif%}{% endfor %}. &nbsp {{explicativo.data.title}}</h6>
-								
-                            </div></a>
-							{% endfor %}
-                        </div>
-						<div class="col-md-4 col-lg-4 col-sm-12">
-							{% for explicativo in collections.explicativos | reverse | limitPart(9,12)%}
-                            <a class="link_explicativo" href="{{explicativo.url}}" ><div class="d-flex" >
-                                <h6 class="text-white link_explicativo" style="margin:0!important">{% for explicativo2 in collections.explicativos | reverse%}{%if explicativo2 === explicativo %}{{loop.index}}{%endif%}{% endfor %}. &nbsp {{explicativo.data.title}}</h6>
-                            </div></a>
-							{% endfor %}
-                        </div>
+            <!-- Explicativos
+		============================================= -->
 
-                    </div>
-                </div>
-            </div>
+			<div class="section py-6 m-0" style="background-color: #e8f0f9">
+				<div class="content-wrap">
+					<div class="container clearfix" >
+						<h1 style="font-size:30px; font-weight:700; margin-bottom:30px">Explicativos</h1>
+
+						<div class="row ">
+							{% for explicativo in collections.explicativos | reverse %}
+							<div class="col-md-4 col-lg-4 col-sm-12 " style="margin:10px 0!important">
+								<a class="link_explicativo" href="{{explicativo.url}}" ><div class="cuadro_explicativo">
+									<h2>{{loop.index}}. &nbsp {{explicativo.data.title}}</h2>
+								</div></a>
+							</div>
+							{% endfor %}
+							
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</section><!-- #content end -->
 
