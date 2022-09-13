@@ -7751,7 +7751,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 .content-wrap {
   position: relative;
-  padding: 80px 0;
+  padding:  0;
   overflow: hidden;
 }
 
@@ -10100,6 +10100,67 @@ td.actions {
 /* ----------------------------------------------------------------
 	Buttons
 -----------------------------------------------------------------*/
+
+/* 07. btn */
+.btn {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 21px 44px 21px 40px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transform: perspective(1px) translateZ(0px);
+  transform: perspective(1px) translateZ(0px);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  vertical-align: middle;
+  background: #E86762;
+  border-radius: 5px;
+  border: none; }
+  .btn i {
+    font-size: 16px;
+    position: relative;
+    left: 6px; }
+
+.btn:hover {
+  color: white!important; }
+
+.btn::before {
+  background: #232830;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid #232830;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0 0;
+  -ms-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 5px; }
+
+.btn:hover::before {
+  -webkit-transform: scaley(1);
+  -ms-transform: scaley(1);
+  transform: scaley(1); }
 
 .button {
   display: inline-block;
@@ -15374,6 +15435,30 @@ label.label-muted {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 
+
+.contact_form{
+  width: 100%;
+}
+
+.contact_form input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #46495f
+}
+
+.contact_form textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #46495f
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #46495f!important;
+  opacity: 1; /* Firefox */
+}
+
 label.error {
   margin-top: 5px;
   color: #e42c3e;
@@ -19307,3 +19392,23 @@ label.checkbox {
 .footer-middle-area {
   background-size: cover;
   background-position: center center; }
+
+
+/*Form de contato*/
+
+
+.contact_form{
+  width: 100%;
+}
+
+.contact_form input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#message{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}

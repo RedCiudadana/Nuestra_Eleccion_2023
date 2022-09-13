@@ -15,41 +15,68 @@ permalink: "contacto/index.html"
 		<section id="content">
 			<div class="content-wrap">
 
-                <!-- event-area-start -->
-                <div class="event-area pt-60 pb-130">
-                    <div class="container">
-                        <div class="row h-100">
-                            <div class="col-lg-6 d-flex align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4">
-                                <h2 class="display-4 " style="font-weight: 800">Contáctanos</h2>
-                                <p >Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-                                </p>
-                                <div class="d-flex center pt-5">
-                                    <img src="/elementos/ELEMENTOS/ICONOS/03.png">
-                                    <h4 style="align-self:end;margin-left:10px">Lorem ipsum dolor sit</h4>
-                                </div>
-                                <div class="d-flex center pt-5">
-                                    <img src="/elementos/ELEMENTOS/ICONOS/04.png">
-                                    <h4 style="align-self:end;margin-left:10px">Lorem ipsum dolor sit</h4>
+                <!-- contact-address-area-strat -->
+                <div class="container pt-130 pb-130">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12 mb-40">
+                            <h1 style="font-size:30px;font-weight:900" class="mb-20">Para más información de eventos, dudas o de nuestro trabajo</h1>
+                            <p class="mb-20">Llena el siguiente formulario y nuestro equipo te estará contactando</p>
+                            <h6 class="mb-20">Síguenos a través de nuestras redes sociales</h6>
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12 d-flex">
+                                    <a href="https://www.facebook.com/Redciudadanagt"><img width="80%" src="/elementos/contacto/REDES-43.png"></a>
+                                    <a href="https://twitter.com/redxguate"><img width="80%" src="/elementos/contacto/REDES-44.png"></a>
+                                    <a href="https://www.instagram.com/redxguate/"><img width="80%" src="/elementos/contacto/REDES-45.png"></a>
+                                    <a href="https://www.youtube.com/channel/UCQwc62j7beStZYFzwPxBEQg"><img width="80%" src="/elementos/contacto/REDES-46.png"></a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                            <form class="contact_form" id="form" target="_self" onsubmit="return postToForm();" action="" autocomplete="off">
+                                <input id="name" name="entry.1064235632" type="string" required placeholder="Nombre Completo"/>
+                                <input id="email" name="entry.1330832081" type="email" required placeholder="Correo Electrónico"/>
+                                <input id="affair" name="entry.1233483376" type="string" placeholder="Asunto / Motivo de Contacto"/>
+                                <textarea id="message" name="entry.608682247" type="string" required placeholder="Mensaje"></textarea>
+                                <button id="send" type="submit" class="btn">Envíanos un Mensaje</button>
+                            </form>
 
-                            <div class="col-lg-6 d-flex align-self-center flex-column">
-                                <img src="/elementos/ELEMENTOS/SLIDER/03.png" alt="Hero Image" style="z-index: 3;">
-                            </div>
+                            <h3 id="success-msg" style="display:none;"> Su mensaje ha sido enviado</h3>
                         </div>
                     </div>
                 </div>
-
-
-
-                </div>
-            </div>
-            <!-- event-area-end -->
 
 			</div>
 		</section><!-- #content end -->
 
 		
+{% endblock %}
+
+{% block body_javascripts %}
+        <script>
+            function postToForm() {
+                var field1 = $("#name").val();
+                var field2 = $("#email").val();
+                var field3 = $("#affair").val();
+                var field4 = $("#message").val();
+
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSe2DNIWZVQugZ_G-rQCzO9EKpWr66ZXe8rbBBHtKYduKIeXyQ/formResponse?",
+					data: {"entry.1064235632": field1, "entry.1330832081": field2, "entry.1233483376": field3, "entry.608682247": field4},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+					{
+					},
+					error: function(x, y, z)
+						{
+
+							$('#success-msg').show();
+							$('#form').hide();
+							
+						}
+                });
+				return false;
+            }
+        </script>
+
 {% endblock %}
