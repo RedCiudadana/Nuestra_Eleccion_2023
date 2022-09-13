@@ -1,5 +1,6 @@
 ---
 title: Explicativo de prueba 1
+icono_explicativo: /images/posts/nuestra-eleccion-18.png
 date: 2022-03-01T14:14:13.300Z
 slider: /images/posts/01.png
 tslider: Explicativo de prueba 1
