@@ -13,7 +13,7 @@ permalink: "index.html"
         <!-- Slider
 		============================================= -->
 		<section id="slider" class="slider-element bg-color">
-			<div class="container ">
+			<div class="container pt-100">
 				<div class="row h-100">
 					<div class="col-lg-6 d-flex align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4">
 						<h2 class="display-4 text-white" style="font-weight: 800">Lab Electoral</h2>
@@ -242,7 +242,7 @@ permalink: "index.html"
 
 						<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Blogs</h2>
 						<div class="row d-flex">
-							{% for blog in collections.blogs | reverse | limit(5) %}
+							{% for blog in collections.blogs | reverse | limit(3) %}
 							<div class="col-md-4 col-lg-4 col-sm-12">
 								<div class="cuadro_blog ">
 									<a href="{{blog.url}}"><img src="{{ blog.data.image }}" alt="Evento" class="w-36"></a>
