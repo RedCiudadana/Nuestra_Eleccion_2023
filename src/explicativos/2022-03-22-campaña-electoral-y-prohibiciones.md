@@ -1,5 +1,6 @@
 ---
 title: Campaña electoral y prohibiciones
+icono_explicativo: /images/posts/nuestra-eleccion-12.png
 date: 2022-03-22T04:10:25.718Z
 slider: /images/posts/01.png
 tslider: Campaña electoral y prohibiciones
