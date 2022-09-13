@@ -1,5 +1,6 @@
 ---
 title: Financiamiento electoral
+icono_explicativo: /images/posts/nuestra-eleccion-19.png
 date: 2022-03-22T03:55:37.665Z
 slider: /images/posts/01.png
 tslider: Financiamiento electoral
