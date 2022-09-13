@@ -1,5 +1,6 @@
 ---
 title: Distritos electorales y sus características
+icono_explicativo: /images/posts/nuestra-eleccion-17.png
 date: 2022-03-17T17:30:46.555Z
 slider: /images/posts/01.png
 tslider: Distritos electorales y sus características
