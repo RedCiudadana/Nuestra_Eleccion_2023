@@ -1,5 +1,6 @@
 ---
 title: "Participación y representación política de la mujer "
+icono_explicativo: /images/posts/nuestra-eleccion-13.png
 date: 2022-03-22T03:44:23.153Z
 slider: /images/posts/01.png
 tslider: democracia, representación política, participación política,
