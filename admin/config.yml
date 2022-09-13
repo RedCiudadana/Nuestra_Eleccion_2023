@@ -168,31 +168,9 @@ collections:
           default: false,
           hint: "Display posts in home's highlights",
         }
-  - name: "publicaciones" # Used in routes, e.g., /admin/collections/blog
-    label: "Publicaciones" # Used in the UI
-    folder: "src/publicaciones" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    editor:
-      preview: false # Disable the editor preview and use instead 'preview links'
-    fields: # The fields for each document, usually in front matter
-      - { name: "title", label: "Title" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { name: "description", label: "Description" }
-      - { name: "autor", label: "Autor" }
-      - { name: "correo", label: "Correo" }
-      - { name: "date", label: "Date", widget: "datetime" }
-      - { name: "body", label: "Body", widget: "markdown" }
-      - {
-          name: "highlight",
-          label: "Highlight",
-          widget: "boolean",
-          default: false,
-          hint: "Display posts in home's highlights",
-        }
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "src/blogs" # The path to the folder where the documents are stored
+  - name: "novedades" # Used in routes, e.g., /admin/collections/blog
+    label: "Novedades" # Used in the UI
+    folder: "src/novedades" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:

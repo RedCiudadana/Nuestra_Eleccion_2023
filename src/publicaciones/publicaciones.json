@@ -1,5 +1,0 @@
-{
-    "tags": "publicaciones",
-    "permalink": "publicaciones/{{ page.fileSlug }}/index.html",
-    "layout": "layouts/publicacion.njk"
-}

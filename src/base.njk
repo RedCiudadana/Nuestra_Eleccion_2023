@@ -5,7 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Red Ciudadana" />
 
-	<link rel="icon" href="/elementos/FABICON.ico" type="image/png">
+	<link rel="icon" href="/elementos/redciudadana.png" type="image/png">
 
 	<!-- Stylesheets
 	============================================= -->
@@ -29,7 +29,8 @@
 	<link rel="stylesheet" href="/demos/forum/forum.css" type="text/css" /> <!-- Forum Custom Css -->
 	<link rel="stylesheet" href="/demos/forum/css/fonts.css" type="text/css" /> <!-- Forum Custom Fonts -->
 	<!-- / -->
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
 
     {% block head %}
     {% endblock %}
@@ -65,21 +66,27 @@
 							<a href="/index.html" class="retina-logo"><img style="padding:5%" src="/elementos/elementos_lab/HOME/NE-24.png" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
-
+						<a style="display:none" href="javascript:menu()"><i class="fa fa-bars text-white" style="font-size:25px"></i></a>
 						<!-- Primary Navigation
 						============================================= -->
 						<nav class="primary-menu">
 
 
-							<ul class="menu-container">
+							<ul id="menu-container" class="menu-container">
+								<li class="menu-item "><a class="menu-link" href="/index.html">Inicio</a></li>
 								<li class="menu-item "><a class="menu-link" href="/explicativos/index.html">Explicativos</a></li>
 								<li class="menu-item "><a class="menu-link" href="/iniciativas/index.html">Iniciativas</a></li>
-								<li class="menu-item"><a class="menu-link" href="/publicaciones/index.html">Publicaciones</a></li>
-								<li class="menu-item"><a class="menu-link" target="_blank" href="https://datoselectorales.redciudadana.org/">Datos</a></li>
+								<li class="menu-item"><a class="menu-link" target="_blank" href="https://datoselectorales.redciudadana.org/">Datos Abiertos</a></li>
+								<li class="menu-item"><a class="menu-link" href="/novedades/index.html">Novedades</a></li>
 								<li class="menu-item"><a class="menu-link" href="/contacto/index.html">Contacto</a></li>
 							</ul>
 
+							
+							
+
 						</nav><!-- #primary-menu end -->
+
+						
 
 					</div>
 				</div>
@@ -103,7 +110,7 @@
                         <div class="col-xl-4 col-lg-4 col-md-4">
                             <div class="footer-wrapper mb-30">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="/elementos/LOGO-RED_BLANCO.png" alt=""></a>
+                                    <a href="https://redciudadana.org/"><img src="/elementos/LOGO-RED_BLANCO.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +132,7 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="copyright text-center">
-                                    <p style="color:#748188!important"><!--i class="far fa-copyright"></i> 2020 <a href="#">Fundee.</a--> Asociación Civil Red Ciudadana</p>
+                                    <a href="https://redciudadana.org/"><p style="color:#748188!important"><!--i class="far fa-copyright"></i> 2020 <a href="#">Fundee.</a--> Asociación Civil Red Ciudadana</p></a>
                                 </div>
                             </div>
                         </div>
@@ -152,6 +159,17 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="/js/functions.js"></script>
+
+	<script>
+		const menu => () {
+			if( document.getElementById("menu-container").style.display = "none";){
+				menu.style.display == "block"
+			}
+			else{
+				menu.style.display == "none"
+			}
+		}
+	</script>
 
 	<script>
 		jQuery(document).ready( function(){
@@ -207,6 +225,8 @@
 		
 		})(jQuery);
 	</script>
+
+	
 
     {% block body_javascripts %}
 

@@ -23,8 +23,8 @@ permalink: "/explicativos/index.html"
 					</div>
 					
 					<div class="align-self-center center  pb-0  mb-0 my-lg-4">
-						<h1  style="font-size:30px; font-weight:700">Lorem Ipsum dolor sit amet, consectetuer</h1>
-						<h3>Lorem Ipsum dolor sit amet,</h3>
+						<h1  style="font-size:35px; font-weight:700">Explicativos del sistema electoral</h1>
+						<h3 style="font-size:25px!important; font-weight:300">Conoce más sobre sobre el funcionamiento <br>del sistema electoral y de partidos políticos.</h3>
 					</div>
 
 
@@ -129,7 +129,8 @@ permalink: "/explicativos/index.html"
 							{% for explicativo in collections.explicativos | reverse %}
 							<div class="col-md-4 col-lg-4 col-sm-12 " style="margin:10px 0!important">
 								<a class="link_explicativo" href="{{explicativo.url}}" ><div class="cuadro_explicativo">
-									<h2>{{loop.index}}. &nbsp {{explicativo.data.title}}</h2>
+									<img width="12%" style="margin-right:25px" src="{{explicativo.data.icono_explicativo}}">
+									<h2>{{explicativo.data.title}}</h2>
 								</div></a>
 							</div>
 							{% endfor %}
