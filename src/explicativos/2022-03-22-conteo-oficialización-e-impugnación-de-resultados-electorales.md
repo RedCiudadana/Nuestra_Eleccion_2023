@@ -1,5 +1,6 @@
 ---
 title: Conteo, oficialización e impugnación de resultados electorales
+icono_explicativo: /images/posts/nuestra-eleccion-16.png
 date: 2022-03-22T04:03:54.316Z
 slider: /images/posts/01.png
 tslider: Conteo, oficialización e impugnación de resultados electorales
