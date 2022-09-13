@@ -1,5 +1,6 @@
 ---
-title: 1. El proceso electoral
+title: El proceso electoral
+icono_explicativo: /images/posts/nuestra-eleccion-14.png
 date: 2022-03-17T17:03:42.523Z
 slider: /images/posts/01.png
 tslider: "El proceso electoral "
