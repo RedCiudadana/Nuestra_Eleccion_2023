@@ -2,7 +2,7 @@
 title: Conteo, oficialización e impugnación de resultados electorales
 icono_explicativo: /images/posts/nuestra-eleccion-16.png
 date: 2022-03-22T04:03:54.316Z
-slider: /images/posts/01.png
+slider: /images/posts/04.png
 tslider: Conteo, oficialización e impugnación de resultados electorales
 txtslider: democracia, elecciones generales, conteo de resultados, resultados
   oficiales, impugnación de resultados electorales, resultados preliminares
@@ -80,7 +80,7 @@ seccionB4: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-sliderconclusion: /images/posts/01.png
+sliderconclusion: /images/posts/04.png
 tconclusion: Conclusión
 conclusion: "Para que una elección y sus resultados gocen de la necesaria
   credibilidad a los ojos de los ciudadanos es necesario que se respeten los
