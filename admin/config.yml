@@ -243,5 +243,33 @@ collections:
           default: false,
           hint: "Display podcast in home's highlights",
         }
+  - name: "dashborad_empadronamiento" # Used in routes, e.g., /admin/collections/podcast
+    label: "Dashboard Empadronamiento" # Used in the UI
+    folder: "src/dashboard_empadronamiento" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Título" }
+      - { name: "enlace_grafica", label: "Enlace de la Gráfica" }
+  - name: "reporte_empadronamiento" # Used in routes, e.g., /admin/collections/podcast
+    label: "Reportes de Empadronamiento" # Used in the UI
+    folder: "src/reportes_empadronamiento" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Título" }
+      - { name: "description", label: "Descripción" }
+      - { name: "link", label: "Enlace del reporte" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display podcast in home's highlights",
+        }
 
 show_preview_links: true

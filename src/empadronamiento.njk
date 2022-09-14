@@ -1,0 +1,76 @@
+---
+permalink: "empadronamiento/index.html"
+---
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>Nuestra Elección | Empadronamiento</title>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+{% endblock %}
+
+{% block content %}
+        <!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element" style="background-image: url('/elementos/04.png');backgorund-size:cover">
+			<div class="container">
+				<div class="row h-100 center align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding:0 20%">
+                    <h1 class="text-white" style="font-size:30px; font-weight:700">Empadronate</h1>
+                    <br>
+                    <p class="text-white">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    </p>
+
+                    <div id="resultado" class="pt-40"></div>
+				</div>
+			</div>
+		</section>
+
+        <!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+
+                <!-- contact-address-area-strat -->
+                <div class="container pt-130 pb-130">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 mb-40">
+                            
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
+                            
+                        </div>
+                    </div>
+                </div>
+
+			</div>
+		</section><!-- #content end -->
+
+		
+{% endblock %}
+
+{% block body_javascripts %}
+
+    <script type="text/javascript"> 
+        var final = moment("2023-03-23");
+        setInterval(function() {
+            var inicio = moment();
+            var duracion = final.diff(inicio);
+            var intervalo = moment(duracion);
+            var mes = intervalo.month()+1;
+            var diaDelMes = intervalo.date();
+            var hora = intervalo.hour();
+            var minuto = intervalo.minute();
+            var segundo = intervalo.second();
+            var resultado = (intervalo.format("MM/DD HH:mm:ss"));
+//            $("#resultado").html(mes + " Meses " + diaDelMes + " Dias " + hora + " Horas " + minuto + " Minutos " + segundo + " Segundos");
+            $("#resultado").html(mes + " Meses " + diaDelMes + " Dias " + hora + " Horas ");
+//            $("#minuto").html(minuto);
+//           $("#segundo").html(segundo);
+        }, 1000);
+        
+    </script>
+
+{% endblock %}
