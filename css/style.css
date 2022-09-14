@@ -19412,3 +19412,19 @@ label.checkbox {
   margin-bottom: 20px;
   padding: 10px;
 }
+
+.menu_bars{
+  display: none;
+  transition: 1s;
+}
+
+@media (max-width: 992px) {
+  .menu_bars{
+    display: block;
+  }
+
+  #logo a img{
+    width: 100%;
+    height: auto;
+  }
+}

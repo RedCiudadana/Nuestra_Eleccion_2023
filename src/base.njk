@@ -68,7 +68,7 @@
 							<a href="/index.html" class="retina-logo"><img style="padding:5%" src="/elementos/elementos_lab/HOME/RED.png" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
-						<a style="display:none" href="javascript:menu()"><i class="fa fa-bars text-white" style="font-size:25px"></i></a>
+						<button class="menu_bars" onclick='menu()'><i class="fa fa-bars text-white" style="font-size:25px"></i></button>
 						<!-- Primary Navigation
 						============================================= -->
 						<nav class="primary-menu">
@@ -162,13 +162,17 @@
 	============================================= -->
 	<script src="/js/functions.js"></script>
 
-	<script>
-		const menu => () {
-			if( document.getElementById("menu-container").style.display = "none";){
-				menu.style.display == "block"
+	<script type="text/javascript">
+		function menu() {
+			menu_div = document.getElementById("menu-container");
+			if( menu_div.style.display == "none"){
+				menu_div.style.display = "block";
+			}
+			else if(menu_div.style.display == "block"){
+				menu_div.style.display = "none";
 			}
 			else{
-				menu.style.display == "none"
+				menu_div.style.display = "block";
 			}
 		}
 	</script>
