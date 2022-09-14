@@ -42,7 +42,7 @@ permalink: "novedades/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pag
 
                                 <div class="col-md-4 col-lg-4 col-sm-12  my-4">
                                     <div class="cuadro_blog h-100">
-                                        <a href="{{blog.url}}"><img src="{{ item.data.image }}" alt="Evento" class="w-36"></a>
+                                        <a href="{{item.url}}"><img src="{{ item.data.image }}" alt="Evento" class="w-36"></a>
                                         <div class="px-4 py-4 text-left">
                                             <i class="fa-solid fa-calendar"></i><span class="text-sm">
                                             {{item.data.date | dateFormat('DD/MM/YYYY')}}
