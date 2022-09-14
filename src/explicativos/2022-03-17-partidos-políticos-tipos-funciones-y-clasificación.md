@@ -2,7 +2,7 @@
 title: Partidos políticos (tipos, funciones y clasificación)
 icono_explicativo: /images/posts/nuestra-eleccion-15.png
 date: 2022-03-17T17:35:21.274Z
-slider: /images/posts/01.png
+slider: /images/posts/04.png
 tslider: Partidos políticos (tipos, funciones y clasificación)
 txtslider: democracia, participación ciudadana, partidos políticos,
   participación política, administración del Estado, tipos de partidos,
@@ -110,7 +110,7 @@ seccionB4: >-
 
 
   CEN: Comité Ejecutivo Nacional, principal encargado de la postulación y toma de decisiones a lo interno de los partidos políticos guatemaltecos.
-sliderconclusion: /images/posts/01.png
+sliderconclusion: /images/posts/04.png
 tconclusion: Conclusion
 conclusion: Los partidos políticos son un grupo de personas que buscan el
   control del aparato de gobierno a través de obtener puestos en una elección
