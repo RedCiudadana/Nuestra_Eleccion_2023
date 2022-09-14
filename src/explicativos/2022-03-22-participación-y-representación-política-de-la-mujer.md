@@ -2,7 +2,7 @@
 title: "Participación y representación política de la mujer "
 icono_explicativo: /images/posts/nuestra-eleccion-13.png
 date: 2022-03-22T03:44:23.153Z
-slider: /images/posts/01.png
+slider: /images/posts/04.png
 tslider: democracia, representación política, participación política,
   subrepresentación femenina, cuotas de género, paridad
 txtslider: "Participación y representación política de la mujer "
@@ -85,7 +85,7 @@ seccionB4: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-sliderconclusion: /images/posts/01.png
+sliderconclusion: /images/posts/04.png
 tconclusion: Conclusiones
 conclusion: "En términos generales, la implementación de las cuotas y la paridad
   política han tenido una incidencia directa  en la consecución de una mayor

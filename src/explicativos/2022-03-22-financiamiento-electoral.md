@@ -2,7 +2,7 @@
 title: Financiamiento electoral
 icono_explicativo: /images/posts/nuestra-eleccion-19.png
 date: 2022-03-22T03:55:37.665Z
-slider: /images/posts/01.png
+slider: /images/posts/04.png
 tslider: Financiamiento electoral
 txtslider: democracia, proceso electoral, financiamiento de partidos políticos,
   financiamiento público, financiamiento privado, régimen de financiamiento
@@ -123,7 +123,7 @@ seccionB4: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-sliderconclusion: /images/posts/01.png
+sliderconclusion: /images/posts/04.png
 tconclusion: "¿Qué sucede si no se administra correctamente el financiamiento? "
 conclusion: "El tema del financiamiento electoral y de campañas políticas ha
   cobrado mucha relevancia en la región y no particularmente por su

@@ -2,7 +2,7 @@
 title: Explicativo de prueba 1
 icono_explicativo: /images/posts/nuestra-eleccion-18.png
 date: 2022-03-01T14:14:13.300Z
-slider: /images/posts/01.png
+slider: /images/posts/04.png
 tslider: Explicativo de prueba 1
 txtslider: Textos del Slider
 tseccionA1: SeccionA1
@@ -51,7 +51,7 @@ seccionA4: >-
 
 
   <embed src="https://sistemaranking.redciudadana.org/mapas/m1c" type="text/html" height="780px" width="780px" >
-sliderconclusion: /images/posts/01.png
+sliderconclusion: /images/posts/04.png
 txtslider2: SECCIONA2
 seccionB2: https://www.youtube.com/embed/ZfPCUriMSus
 tseccionA4: SECCIONA4

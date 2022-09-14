@@ -2,7 +2,7 @@
 title: Campaña electoral y prohibiciones
 icono_explicativo: /images/posts/nuestra-eleccion-12.png
 date: 2022-03-22T04:10:25.718Z
-slider: /images/posts/01.png
+slider: /images/posts/04.png
 tslider: Campaña electoral y prohibiciones
 txtslider: "proceso electoral, partidos políticos, campaña electoral,
   proselitismo político, propaganda electoral, campaña electoral anticipada "
@@ -83,7 +83,7 @@ seccionB4: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-sliderconclusion: /images/posts/01.png
+sliderconclusion: /images/posts/04.png
 tconclusion: Conclusión
 conclusion: "De no cumplirse con la normativa electoral, en lo que a los tiempos
   y prohibiciones de campaña respecta, la autoridad electoral debe sancionar,

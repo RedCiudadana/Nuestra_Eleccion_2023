@@ -2,7 +2,7 @@
 title: El proceso electoral
 icono_explicativo: /images/posts/nuestra-eleccion-14.png
 date: 2022-03-17T17:03:42.523Z
-slider: /images/posts/01.png
+slider: /images/posts/04.png
 tslider: "El proceso electoral "
 txtslider: "democracia, convocatoria a elecciones, postulación de candidatos,
   elecciones generales, conteo y oficialización de resultados "
@@ -119,7 +119,7 @@ seccionB4: >-
 
 
   <!--EndFragment-->
-sliderconclusion: /images/posts/01.png
+sliderconclusion: /images/posts/04.png
 txtslider2: El proceso electoral implica un espacio amplio para integrar al
   ciudadano como el actor principal del mismo.
 slider2: /images/posts/01.png
