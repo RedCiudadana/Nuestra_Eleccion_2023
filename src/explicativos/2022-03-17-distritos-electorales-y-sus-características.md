@@ -2,7 +2,7 @@
 title: Distritos electorales y sus características
 icono_explicativo: /images/posts/nuestra-eleccion-17.png
 date: 2022-03-17T17:30:46.555Z
-slider: /images/posts/01.png
+slider: /images/posts/04.png
 tslider: Distritos electorales y sus características
 txtslider: democracia, distritos electorales, redistribución electoral,
   transformación de votos en escaños, listados electorales
@@ -112,7 +112,7 @@ seccionB3: <embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
   type="text/html" height="780px" width="780px" >
 seccionB4: "![](https://redciudadana.github.io/Pagina2021RC/assets/ELEMENTOS/HO\
   ME/PROYECTOS/07_CANDIDATOS.png)"
-sliderconclusion: /images/posts/01.png
+sliderconclusion: /images/posts/04.png
 tconclusion: TITULO
 conclusion: "En otras palabras, los distritos electorales son las áreas
   geográficas dentro de las cuáles los votos se traducen en escaños o asientos
