@@ -63,6 +63,16 @@ permalink: "empadronamiento/index.html"
                                 </div></a>
                                 
                             {% endfor %}
+
+                            <br><br><br>
+
+                            {% for reporte in collections.reportes_empadronamiento%}
+                                <a class="btn" href="{{reporte.data.link}}"><div>
+                                    <h1 class="text-white mb-20">{{reporte.data.title}}</h1>
+                                    <p style="font-size:10px!important">{{reporte.data.description}}</p>
+                                </div></a>
+                                
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

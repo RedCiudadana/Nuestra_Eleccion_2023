@@ -10129,14 +10129,14 @@ td.actions {
   color: white!important; }
 
 .btn::before {
-  background: #232830;
+  background: #46495F ;
   bottom: 0;
   content: "";
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  border: 1px solid #232830;
+  border: 1px solid #46495F ;
   -webkit-transform: scaleY(0);
   -ms-transform: scaleY(0);
   transform: scaleY(0);
