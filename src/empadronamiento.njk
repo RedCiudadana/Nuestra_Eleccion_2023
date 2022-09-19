@@ -64,7 +64,7 @@ permalink: "empadronamiento/index.html"
                                 
                             {% endfor %}
 
-                            <br><br><br>
+                            <!--<br><br><br>
 
                             {% for reporte in collections.reportes_empadronamiento%}
                                 <a class="btn" href="{{reporte.data.link}}"><div>
@@ -72,7 +72,7 @@ permalink: "empadronamiento/index.html"
                                     <p style="font-size:10px!important">{{reporte.data.description}}</p>
                                 </div></a>
                                 
-                            {% endfor %}
+                            {% endfor %}-->
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ permalink: "empadronamiento/index.html"
             var segundo = intervalo.second();
             var resultado = (intervalo.format("MM/DD HH:mm:ss"));
 //            $("#resultado").html(mes + " Meses " + diaDelMes + " Dias " + hora + " Horas " + minuto + " Minutos " + segundo + " Segundos");
-            $("#timer").html("<div><h1>" + mes + "</h1>" + " <h4>Meses</h4></div> " + "<div><h1>" + diaDelMes + "</h1>" + " <h4>Días</h4></div> " + "<div><h1>" + hora + "</h1>" + " <h4>Horas</h4></div> ");
+            $("#timer").html("<div><h1>" + mes + "</h1>" + " <h4>Meses</h4></div> " + "<div><h1>" + diaDelMes + "</h1>" + " <h4>Días</h4></div> " + "<div><h1>" + hora + "</h1>" + " <h4>Horas</h4></div> " + "<div><h1>" + minuto + "</h1>" + " <h4>Minutos</h4></div> ");
 //            $("#minuto").html(minuto);
 //           $("#segundo").html(segundo);
         }, 1000);

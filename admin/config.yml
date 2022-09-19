@@ -263,6 +263,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Título" }
       - { name: "description", label: "Descripción" }
+      - { label: "Imagen Recuadro", name: "image", widget: "image" }
       - { name: "link", label: "Enlace del reporte" }
       - {
           name: "highlight",
