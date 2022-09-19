@@ -1,0 +1,5 @@
+{
+    "tags": "reportes_empadronamiento",
+    "permalink": "reportes_empadronamiento/{{ page.fileSlug }}/index.html",
+    "layout": "layouts/reporte_emp.njk"
+}

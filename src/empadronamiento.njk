@@ -36,11 +36,33 @@ permalink: "empadronamiento/index.html"
                 <!-- contact-address-area-strat -->
                 <div class="container pt-130 pb-130">
                     <div class="row">
-                        <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 mb-40">
-                            <div class="flourish-embed flourish-map" data-src="visualisation/7937729"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                        <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 mb-40 px-6">
+                            {% for item in collections.dashboard_empadronamiento%}                            
+                                {{item.data.enlace_grafica | safe}}
+                            {% endfor %}
+
+                            <!--ANUNCIO-->
+                            <div class="max-w-screen-lg mx-auto mt-40 mb-40">
+                                <div class="grid grid-cols-4">
+                                    <div class="col-span-full mt-6">
+                                        <img src="/elementos/ne.gif" alt="funny GIF" width="100%">
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div class="flourish-embed flourish-table"
+                            data-src="visualisation/11184442"><script
+                            src="https://public.flourish.studio/resources/embed.js"></script></div>
                         </div>
-                        <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
-                            
+                        <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12 px-6">
+                            {% for reporte in collections.reportes_empadronamiento%}
+                                <a href="{{reporte.data.link}}"><div>
+                                    <img src="/elementos/LAB ELECTORAL-09.png">
+                                    <h1>{{reporte.data.title}}</h1>
+                                    <p>{{reporte.data.description}}</p>
+                                </div></a>
+                                
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
