@@ -19428,3 +19428,31 @@ label.checkbox {
     height: auto;
   }
 }
+
+#timer{
+  display: flex;
+  justify-content: center;
+}
+
+#timer div{
+  margin: 0 20px;
+  text-align: center;
+}
+
+#timer div h1{
+  text-align: center;
+  padding: 20px;
+  background: #46495F ;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: white!important;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+#timer div h4{
+  font-size: 30px;
+  font-weight: 900;
+}
+

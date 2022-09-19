@@ -23,7 +23,7 @@ permalink: "empadronamiento/index.html"
                         lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                     </p>
 
-                    <div id="resultado" class="pt-40"></div>
+                    <div id="timer" class="pt-40"></div>
 				</div>
 			</div>
 		</section>
@@ -37,7 +37,7 @@ permalink: "empadronamiento/index.html"
                 <div class="container pt-130 pb-130">
                     <div class="row">
                         <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 mb-40">
-                            
+                            <div class="flourish-embed flourish-map" data-src="visualisation/7937729"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
                         </div>
                         <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
                             
@@ -66,7 +66,7 @@ permalink: "empadronamiento/index.html"
             var segundo = intervalo.second();
             var resultado = (intervalo.format("MM/DD HH:mm:ss"));
 //            $("#resultado").html(mes + " Meses " + diaDelMes + " Dias " + hora + " Horas " + minuto + " Minutos " + segundo + " Segundos");
-            $("#resultado").html(mes + " Meses " + diaDelMes + " Dias " + hora + " Horas ");
+            $("#timer").html("<div><h1>" + mes + "</h1>" + " <h4>Meses</h4></div> " + "<div><h1>" + diaDelMes + "</h1>" + " <h4>Días</h4></div> " + "<div><h1>" + hora + "</h1>" + " <h4>Horas</h4></div> ");
 //            $("#minuto").html(minuto);
 //           $("#segundo").html(segundo);
         }, 1000);
