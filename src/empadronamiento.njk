@@ -14,14 +14,11 @@ permalink: "empadronamiento/index.html"
 {% block content %}
         <!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element" style="background-image: url('/elementos/04.png');backgorund-size:cover">
+		<section id="slider" class="slider-element" style="background-image: url('/elementos/slider_empadronamiento.png');backgorund-size:cover">
 			<div class="container">
 				<div class="row h-100 center align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding:0 20%">
-                    <h1 class="text-white" style="font-size:30px; font-weight:700">Empadrónate</h1>
-                    <br>
-                    <p class="text-white">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    </p>
+                    <h1 style="font-family:Arvo-Bold, sans-serif!important;font-size:50px;font-weight:900" class="text-white" style="font-size:30px; font-weight:700">Empadrónate</h1>
+                    <img src="/elementos/EMPA-03.png">
 
                     <div id="timer" class="pt-40"></div>
 				</div>
@@ -58,9 +55,9 @@ permalink: "empadronamiento/index.html"
                             <div id="reportes_parcial" style="display:block">
                             {% for reporte in collections.reportes_empadronamiento | reverse | limit(3)%}
                                 <a  href="{{reporte.data.link}}" target="_blank"><div class="mb-20">
-                                    <img src="/elementos/LAB ELECTORAL-09.png">
-                                    <h1 style="font-size:20px">{{reporte.data.title}}</h1>
-                                    <p style="font-size:15px">{{reporte.data.description}}</p>
+                                    <img src="/elementos/EMPA_WEB-07.png">
+                                    <h1 style="font-family:Arvo-Regular, sans-serif!important;font-size:20px">{{reporte.data.title}}</h1>
+                                    <p style="font-family:Arvo-Regular, sans-serif!important;font-size:15px;color:rgb(70,73,96)!important">{{reporte.data.description}}</p>
                                 </div></a>
                             {% endfor %}
                             </div>
@@ -68,9 +65,9 @@ permalink: "empadronamiento/index.html"
                             <div id="reportes_full" style="display:none">
                             {% for reporte in collections.reportes_empadronamiento | reverse%}
                                 <a  href="{{reporte.data.link}}" target="_blank"><div class="mb-20"> 
-                                    <img src="/elementos/LAB ELECTORAL-09.png">
-                                    <h1 style="font-size:20px">{{reporte.data.title}}</h1>
-                                    <p style="font-size:15px">{{reporte.data.description}}</p>
+                                    <img src="/elementos/EMPA_WEB-07.png">
+                                    <h1 style="font-family:Arvo-Regular, sans-serif!important;font-size:20px">{{reporte.data.title}}</h1>
+                                    <p style="font-family:Arvo-Regular, sans-serif!important;font-size:15px;color:rgb(70,73,96)!important">{{reporte.data.description}}</p>
                                 </div></a>
                             {% endfor %}
                             </div>

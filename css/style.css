@@ -91,38 +91,52 @@
 @font-face {
   font-family: "Metropolis-Black";
 
-  src: url("elementos/ELEMENTOS/FONT/Metropolis-Black.otf");
+  src: url("/elementos/ELEMENTOS/FONT/Metropolis-Black.otf");
 }
 
 @font-face {
   font-family: "Metropolis-Bold";
 
-  src: url("elementos/ELEMENTOS/FONT/Metropolis-Bold.otf");
+  src: url("/elementos/ELEMENTOS/FONT/Metropolis-Bold.otf");
 }
 
 @font-face {
   font-family: "Metropolis-ExtraBold";
 
-  src: url("elementos/ELEMENTOS/FONT/Metropolis-ExtraBold.otf");
+  src: url("/elementos/ELEMENTOS/FONT/Metropolis-ExtraBold.otf");
 }
 
 @font-face {
   font-family: "Metropolis-Medium";
 
-  src: url("elementos/ELEMENTOS/FONT/Metropolis-Medium.otf");
+  src: url("/elementos/ELEMENTOS/FONT/Metropolis-Medium.otf");
 }
 
 @font-face {
   font-family: "Metropolis-Regular";
 
-  src: url("elementos/ELEMENTOS/FONT/Metropolis-Regular.otf");
+  src: url("/elementos/ELEMENTOS/FONT/Metropolis-Regular.otf");
 }
 
 @font-face {
   font-family: "Metropolis-SemiBold";
 
-  src: url("elementos/ELEMENTOS/FONT/Metropolis-SemiBold.otf");
+  src: url("/elementos/ELEMENTOS/FONT/Metropolis-SemiBold.otf");
 }
+
+@font-face {
+  font-family: "Arvo-Bold";
+
+  src: url("/elementos/ELEMENTOS/FONT/Arvo-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Arvo-Regular";
+
+  src: url("/elementos/ELEMENTOS/FONT/Arvo-Regular.ttf");
+}
+
+
 
 /* ----------------------------------------------------------------
 	Bootstrap Adjustments
