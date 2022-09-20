@@ -17,7 +17,7 @@ permalink: "empadronamiento/index.html"
 		<section id="slider" class="slider-element" style="background-image: url('/elementos/04.png');backgorund-size:cover">
 			<div class="container">
 				<div class="row h-100 center align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding:0 20%">
-                    <h1 class="text-white" style="font-size:30px; font-weight:700">Empadronate</h1>
+                    <h1 class="text-white" style="font-size:30px; font-weight:700">Empadrónate</h1>
                     <br>
                     <p class="text-white">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                         lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
@@ -55,14 +55,28 @@ permalink: "empadronamiento/index.html"
                             src="https://public.flourish.studio/resources/embed.js"></script></div>
                         </div>
                         <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12 px-6">
-                            {% for reporte in collections.reportes_empadronamiento%}
-                                <a href="{{reporte.data.link}}" target="_blank"><div>
+                            <div id="reportes_parcial" style="display:block">
+                            {% for reporte in collections.reportes_empadronamiento | reverse | limit(3)%}
+                                <a  href="{{reporte.data.link}}" target="_blank"><div class="mb-20">
                                     <img src="/elementos/LAB ELECTORAL-09.png">
-                                    <h1>{{reporte.data.title}}</h1>
-                                    <p>{{reporte.data.description}}</p>
+                                    <h1 style="font-size:20px">{{reporte.data.title}}</h1>
+                                    <p style="font-size:15px">{{reporte.data.description}}</p>
                                 </div></a>
-                                
                             {% endfor %}
+                            </div>
+
+                            <div id="reportes_full" style="display:none">
+                            {% for reporte in collections.reportes_empadronamiento | reverse%}
+                                <a  href="{{reporte.data.link}}" target="_blank"><div class="mb-20"> 
+                                    <img src="/elementos/LAB ELECTORAL-09.png">
+                                    <h1 style="font-size:20px">{{reporte.data.title}}</h1>
+                                    <p style="font-size:15px">{{reporte.data.description}}</p>
+                                </div></a>
+                            {% endfor %}
+                            </div>
+
+
+                            <a href="javascript:mostrar_reportes()" id="boton_reportes" class="btn">Ver más ▾</a>
 
                             <!--<br><br><br>
 
@@ -103,6 +117,27 @@ permalink: "empadronamiento/index.html"
 //           $("#segundo").html(segundo);
         }, 1000);
         
+    </script>
+
+    <script type="text/javascript">
+        function mostrar_reportes() {              
+            parcial = document.getElementById("reportes_parcial");
+            full = document.getElementById("reportes_full");
+            boton_reportes = document.getElementById("boton_reportes");
+
+            console.log(full.style.display)
+
+            if(full.style.display  == "none"){
+                full.style.display = "block";
+                parcial.style.display = "none"
+                boton_reportes.innerHTML = "Ver Menos ▴"
+            }
+            else{
+                full.style.display = "none";
+                parcial.style.display = "block"
+                boton_reportes.innerHTML = "Ver Más ▾"
+            }
+        }
     </script>
 
 {% endblock %}

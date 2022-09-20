@@ -19442,18 +19442,20 @@ label.checkbox {
 #timer div h1{
   text-align: center;
   padding: 20px;
-  background: #46495F ;
+  background: #fff;
   border-radius: 50%;
+  color: #E86762!important;
   width: 100px;
   height: 100px;
-  color: white!important;
   font-size: 35px;
   font-weight: 900;
   margin: auto;
+  
 }
 
 #timer div h4{
   font-size: 30px;
   font-weight: 900;
+  color: white!important;
 }
 
