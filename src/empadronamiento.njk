@@ -14,13 +14,13 @@ permalink: "empadronamiento/index.html"
 {% block content %}
         <!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element" style="background-image: url('/elementos/slider_empadronamiento.png');backgorund-size:cover">
+		<section id="slider" class="slider-element" style="background-image: url('/elementos/slider_empadronamiento.png');background-size:cover;">
 			<div class="container">
 				<div class="row h-100 center align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4" style="padding:0 20%">
-                    <h1 style="font-family:Arvo-Bold, sans-serif!important;font-size:50px;font-weight:900" class="text-white" style="font-size:30px; font-weight:700">Empadrónate</h1>
+                    <h1 style="font-family:Arvo-Bold, sans-serif!important;font-size:50px;font-weight:900" class="text-white th1-responsive" style="font-size:30px; font-weight:700">Empadrónate</h1>
                     <img src="/elementos/EMPA-03.png">
-
-                    <div id="timer" class="pt-40"></div>
+                    <h6 style="font-family:Arvo-Bold, sans-serif!important;font-size:20px;font-weight:900" class="text-white">Tiempo restante para el cierre de empadronamiento:</h6>
+                    <div id="timer" class="pt-40 d-flex"></div>
 				</div>
 			</div>
 		</section>
@@ -33,7 +33,16 @@ permalink: "empadronamiento/index.html"
                 <!-- contact-address-area-strat -->
                 <div class="container pt-130 pb-130">
                     <div class="row">
-                        <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 mb-40 px-6">
+                        <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 mb-40 px-3">
+
+                            <div class="row mb-40">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="flourish-embed" data-src="visualisation/11256447"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="flourish-embed" data-src="visualisation/11256483"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                                </div>
+                            </div>
                             {% for item in collections.dashboard_empadronamiento%}                            
                                 {{item.data.enlace_grafica | safe}}
                             {% endfor %}
@@ -51,7 +60,7 @@ permalink: "empadronamiento/index.html"
                             data-src="visualisation/11184442"><script
                             src="https://public.flourish.studio/resources/embed.js"></script></div>
                         </div>
-                        <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12 px-6">
+                        <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12 px-3">
                             <div id="reportes_parcial" style="display:block">
                             {% for reporte in collections.reportes_empadronamiento | reverse | limit(3)%}
                                 <a  href="{{reporte.data.link}}" target="_blank"><div class="mb-20">

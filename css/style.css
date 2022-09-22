@@ -19473,3 +19473,49 @@ label.checkbox {
   color: white!important;
 }
 
+.redes a{
+  color: #fff;
+  padding: 0 5px;
+}
+
+.redes a:hover{
+  color: #ffc107;
+}
+
+.transition1{
+  transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+  .th1-responsive{
+    font-size: 30px!important;
+  }
+
+  #timer div {
+    margin: 0 20px 60px 20px;
+  }
+
+  #timer div h1{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  #timer div h4{
+    font-size: 15px;
+  }
+
+  .p-0-responsive{
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+
+}
+
+@media (max-width: 988px) {
+
+  .redes{
+    display: none!important;
+  }
+}
