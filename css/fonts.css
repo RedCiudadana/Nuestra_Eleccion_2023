@@ -41,6 +41,18 @@
 	src: url("/elementos/ELEMENTOS/FONT/Metropolis-SemiBold.otf");
 }
 
+@font-face {
+	font-family: "Arvo-Bold";
+  
+	src: url("/elementos/ELEMENTOS/FONT/Arvo-Bold.ttf");
+  }
+  
+  @font-face {
+	font-family: "Arvo-Regular";
+  
+	src: url("/elementos/ELEMENTOS/FONT/Arvo-Regular.ttf");
+  }
+
 body,
 small,
 .sub-menu-container .menu-item > .menu-link,
@@ -71,7 +83,7 @@ label,
 .widget-filter-links li a,
 .nav-tree li a,
 .wedding-head,
-.font-primary { font-family: 'Metropolis-Bold', sans-serif !important; }
+.font-primary { font-family: 'Arvo-Bold', sans-serif !important; }
 
 
 .entry-link span,

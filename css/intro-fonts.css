@@ -4,7 +4,17 @@
 	Replace your Fonts as necessary
 -----------------------------------------------------------------*/
 
-
+@font-face {
+	font-family: "Arvo-Bold";
+  
+	src: url("/elementos/ELEMENTOS/FONT/Arvo-Bold.ttf");
+  }
+  
+  @font-face {
+	font-family: "Arvo-Regular";
+  
+	src: url("/elementos/ELEMENTOS/FONT/Arvo-Regular.ttf");
+  }
 
 body,
 small,
@@ -34,7 +44,7 @@ label,
 .widget-filter-links li a,
 .nav-tree li a,
 .wedding-head,
-.font-primary { font-family: 'Poppins', sans-serif !important; }
+.font-primary { font-family: 'Arvo-Bold', sans-serif !important; }
 
 
 .entry-link span,
@@ -48,4 +58,4 @@ label,
 .before-heading,
 .wedding-head .first-name span,
 .wedding-head .last-name span,
-.font-secondary { font-family: 'PT Serif', serif !important; }
+.font-secondary { font-family: 'Arvo-Bold', serif !important; }
