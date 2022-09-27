@@ -136,6 +136,18 @@
   src: url("/elementos/ELEMENTOS/FONT/Arvo-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Nunito-Bold";
+
+  src: url("/elementos/ELEMENTOS/FONT/NUNITO/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nunito-Regular";
+
+  src: url("/elementos/ELEMENTOS/FONT/NUNITO/Nunito-Regular.ttf");
+}
+
 
 
 /* ----------------------------------------------------------------
@@ -228,7 +240,7 @@ li {
 body {
   line-height: 1.5;
   color: #46495F;
-  font-family: "Metropolis-Regular", sans-serif !important;
+  font-family: "Nunito-Regular", sans-serif !important;
 }
 
 a {
@@ -4593,7 +4605,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   font-size: 0.8125rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Metropolis-Regular", sans-serif;
+  font-family: "Nunito-Regular", sans-serif;
 }
 
 .menu-link span {
