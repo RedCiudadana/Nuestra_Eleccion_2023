@@ -43,8 +43,8 @@ permalink: "empadronamiento/index.html"
                                     <div class="flourish-embed" data-src="visualisation/11256483"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
                                 </div>
                             </div>
-                            {% for item in collections.dashboard_empadronamiento%}                            
-                                {{item.data.enlace_grafica | safe}}
+                            {% for item in collections.dashboard_empadronamiento | limit(1)%}                            
+                                {{item.data.imagen_grafica | safe}}
                             {% endfor %}
 
                             <!--ANUNCIO-->
