@@ -10130,7 +10130,7 @@ td.actions {
 
 /* 07. btn */
 .btn {
-  color: #fff;
+  color: #fff!important;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
