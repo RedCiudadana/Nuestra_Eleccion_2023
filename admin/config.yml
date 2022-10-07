@@ -260,6 +260,7 @@ collections:
       - {
           name: "imagen_grafica",
           label: "Imagen de la Gráfica",
+          widget: "image",
           required: false,
         }
   - name: "reporte_empadronamiento" # Used in routes, e.g., /admin/collections/podcast
