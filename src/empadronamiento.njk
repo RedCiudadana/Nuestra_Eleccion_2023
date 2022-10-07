@@ -44,7 +44,7 @@ permalink: "empadronamiento/index.html"
                                 </div>
                             </div>
                             {% for item in collections.dashboard_empadronamiento | limit(1)%}                            
-                                {{item.data.imagen_grafica | safe}}
+                                <img src"{{item.data.imagen_grafica}}">
                             {% endfor %}
 
                             <!--ANUNCIO-->
