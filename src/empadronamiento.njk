@@ -74,7 +74,7 @@ permalink: "empadronamiento/index.html"
                             <div id="reportes_full" style="display:none">
                             {% for reporte in collections.reportes_empadronamiento | reverse%}
                                 <a  href="{{reporte.data.link}}" target="_blank"><div class="mb-20"> 
-                                    <img src="/elementos/EMPA_WEB-07.png">
+                                    <img src="{{reporte.data.image}}">
                                     <h1 style="font-family:Arvo-Regular, sans-serif!important;font-size:20px">{{reporte.data.title}}</h1>
                                     <p style="font-family:Arvo-Regular, sans-serif!important;font-size:15px;color:rgb(70,73,96)!important">{{reporte.data.description}}</p>
                                 </div></a>
