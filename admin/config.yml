@@ -252,7 +252,16 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Título" }
-      - { name: "enlace_grafica", label: "Enlace de la Gráfica" }
+      - {
+          name: "enlace_grafica",
+          label: "Enlace de la Gráfica",
+          required: false,
+        }
+      - {
+          name: "imagen_grafica",
+          label: "Imagen de la Gráfica",
+          required: false,
+        }
   - name: "reporte_empadronamiento" # Used in routes, e.g., /admin/collections/podcast
     label: "Reportes de Empadronamiento" # Used in the UI
     folder: "src/reportes_empadronamiento" # The path to the folder where the documents are stored
