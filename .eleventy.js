@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('elementos');
     eleventyConfig.addPassthroughCopy('images');
     eleventyConfig.addPassthroughCopy('admin');
+    eleventyConfig.addPassthroughCopy({ 'netlify': '/' });
 
     eleventyConfig.addNunjucksFilter("mdIt", function(content) {
         return md.render(content);
