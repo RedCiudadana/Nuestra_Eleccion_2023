@@ -240,7 +240,7 @@ li {
 body {
   line-height: 1.5;
   color: #46495F;
-  font-family: "Nunito-Regular", sans-serif !important;
+  font-family: "Arvo-Regular", sans-serif !important;
 }
 
 a {
@@ -363,7 +363,7 @@ form {
   margin-bottom: 30px;
 }
 
-small {
+small, span {
   font-family: "Arvo-Regular", sans-serif;
 }
 
@@ -15722,7 +15722,7 @@ h3.titular-title {
 .heading-block.text-center > span,
 .center .heading-block > span,
 .text-center .heading-block > span {
-  max-width: 700px;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -19309,7 +19309,9 @@ label.checkbox {
 }
 
 .texto-intro{
-  font-size: 20px;
+  font-size: 17px;
+  color: rgb(70, 73, 95) !important;
+  margin: 20px 7%!important;
 }
 
 .titulo-podcast{
@@ -19532,4 +19534,10 @@ label.checkbox {
   .redes{
     display: none!important;
   }
+}
+
+.center-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

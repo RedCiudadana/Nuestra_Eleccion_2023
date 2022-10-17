@@ -13,7 +13,7 @@ permalink: "index.html"
         <!-- Slider
 		============================================= -->
 		<section id="slider" class="slider-element bg-color">
-			<div class="container pt-50">
+			<div class="container">
 				<div class="row h-100">
 					<div class="col-lg-6 d-flex align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4">
 						<h2 class="display-4 text-white" style="font-weight: 800">  Laboratorio Electoral: Nuestra Elección</h2>
@@ -65,7 +65,7 @@ permalink: "index.html"
 									<img class="imageinicio m-auto" src="/elementos/elementos_lab/HOME/NE-25.png" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0 text-center">
-									<h3 class="lower-case">Fortalecimiento de capacidades</h3>
+									<h3 class="lower-case" style="line-height:1">Fortalecimiento de capacidades</h3>
 									<p class="texto-intro">Procesos de formación en acceso a la información pública, datos abiertos e innovación, y documentos explicativos sobre el funcionamiento del sistema electoral y de partidos políticos</p>
 								</div>
 							</div>
@@ -77,7 +77,7 @@ permalink: "index.html"
 									<img class="imageinicio m-auto" src="/elementos/elementos_lab/HOME/NE-26.png" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0 text-center">
-									<h3 class="lower-case">Investigación basada en datos</h3>
+									<h3 class="lower-case" style="line-height:1">Investigación basada en datos</h3>
 									<p class="texto-intro">Estamos comprometidos con la investigación y la práctica en la ciencia electoral a través de la recopilación y el análisis de datos de alta calidad.</p>
 								</div>
 							</div>
@@ -89,7 +89,7 @@ permalink: "index.html"
 									<img class="imageinicio m-auto" src="/elementos/elementos_lab/HOME/NE-27.png" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0 text-center">
-									<h3 class="lower-case">Propuestas Ciudadanas</h3>
+									<h3 class="lower-case center-flex" style="line-height:1;height:60px">Propuestas Ciudadanas</h3>
 									<p class="texto-intro"> Al basar nuestro trabajo en datos y el método científico, nuestras recomendaciones apuntan a mejorar la práctica democrática para todos.</p>
 								</div>
 							</div>
@@ -248,7 +248,7 @@ permalink: "index.html"
 								<div class="cuadro_blog ">
 									<a href="{{blog.url}}"><img src="{{ blog.data.image }}" alt="Evento" class="w-36"></a>
 									<div class="px-4 py-4 text-left">
-										<i class="fa-solid fa-calendar"></i><span class="text-sm">
+										<i class="fa-regular fa-calendar"></i><span class="text-sm">
 										{{blog.data.date | dateFormat('DD/MM/YYYY')}}
 										</span><br>
 										<br>
@@ -268,9 +268,9 @@ permalink: "index.html"
 								</div>
 							</div>
 							{% endfor %}
-						</div>
-						<div class="mb-6" style="display:flex; justify-content:flex-end">
-							<a href="/novedades/index.html">Más Contenido<i class="icon-arrow-right" style="margin-left:5px"></i></a>
+							<div style="display:flex; justify-content:flex-end;padding-right:35px">
+								<a href="/novedades/index.html">Más Contenido<i class="icon-arrow-right" style="margin-left:5px"></i></a>
+							</div>
 						</div>
 
 						

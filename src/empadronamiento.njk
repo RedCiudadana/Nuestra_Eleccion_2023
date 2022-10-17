@@ -65,8 +65,8 @@ permalink: "empadronamiento/index.html"
                             <div id="reportes_parcial" style="display:block">
                             {% for reporte in collections.reportes_empadronamiento | reverse | limit(3)%}
                                 <a target="_blank" href="{{reporte.data.link}}" target="_blank"><div class="mb-20">
-                                    <img src="{{reporte.data.image}}">
-                                    <h1 style="font-family:Arvo-Regular, sans-serif!important;font-size:20px">{{reporte.data.title}}</h1>
+                                    <img class="w-100" src="{{reporte.data.image}}">
+                                    <h1 style="font-family:Arvo-Bold, sans-serif!important;font-size:20px">{{reporte.data.title}}</h1>
                                     <p style="font-family:Arvo-Regular, sans-serif!important;font-size:15px;color:rgb(70,73,96)!important">{{reporte.data.description}}</p>
                                 </div></a>
                             {% endfor %}
@@ -75,8 +75,8 @@ permalink: "empadronamiento/index.html"
                             <div id="reportes_full" style="display:none">
                             {% for reporte in collections.reportes_empadronamiento | reverse%}
                                 <a target="_blank" href="{{reporte.data.link}}" target="_blank"><div class="mb-20"> 
-                                    <img src="{{reporte.data.image}}">
-                                    <h1 style="font-family:Arvo-Regular, sans-serif!important;font-size:20px">{{reporte.data.title}}</h1>
+                                    <img class="w-100" src="{{reporte.data.image}}">
+                                    <h1 style="font-family:Arvo-Bold, sans-serif!important;font-size:20px">{{reporte.data.title}}</h1>
                                     <p style="font-family:Arvo-Regular, sans-serif!important;font-size:15px;color:rgb(70,73,96)!important">{{reporte.data.description}}</p>
                                 </div></a>
                             {% endfor %}
@@ -85,7 +85,7 @@ permalink: "empadronamiento/index.html"
 
                             <a href="javascript:mostrar_reportes()" id="boton_reportes" class="btn">Ver más ▾</a>
 
-                            <img class="mb-40 mt-40" src="/elementos/BANNER LATERAL.gif">
+                            <img class="mb-40 mt-40 w-100" src="/elementos/BANNER LATERAL.gif">
 
                             <!--<br><br><br>
 
