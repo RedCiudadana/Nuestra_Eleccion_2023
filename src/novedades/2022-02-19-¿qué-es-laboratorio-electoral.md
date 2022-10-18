@@ -9,13 +9,14 @@ correo: info@redciudadana.org.gt
 date: 2022-10-16T14:19:38.099Z
 highlight: false
 ---
-“Nuestra Elección” es un proyecto elaborado por la Asociación Civil Red Ciudadana, con el cual se pretende contribuir al fortalecimiento y desarrollo del sistema electoral guatemalteco, mediante la implementación de tres ejes: el primero denominado fortalecimiento de capacidades; el segundo, implementación de herramientas digitales electorales; y el tercero, propuestas de política pública. Adicionalmente, cada eje está estructurado por un conjunto de componentes, consistentes em las actividades que prevé realizarse y con las cuales se contribuye a cumplir los objetivos del proyecto.
+<!--StartFragment-->
 
-\
-En cuanto a los ejes, el primero pretende fortalecer las capacidades técnicas de actores involucrados en el sistema electoral, lo anterior mediante procesos de formación en los cuales se abordará el acceso a la información pública, transparencia, datos abiertos e innovación. Además, se tiene previsto desarrollar  documentos explicativos sobre el funcionamiento del sistema electoral y de partidos políticos, así como un diagnóstico y retrospectiva de los problemas que actualmente enfrentan los sistemas referidos. 
+Nuestra Elección es un proyecto desarrollado por Red Ciudadana de Guatemala que busca cambiar la forma en que se viven las elecciones en Guatemala para que esta vez sean los ciudadanos y ciudadanas los que hagan sus propuestas a las candidaturas.
 
+![](/images/posts/06_nuestra-eleccion.png)
 
-Por otro lado, en el segundo eje se prevé el desarrolló de herramientas digitales innovadoras, con las cuales se recopilarán datos electorales, explicadores e información sobre partidos políticos y procesos electorales en Guatemala. En ese sentido, se implementaría un portal de Laboratorio Electoral, espacio para incorporar modelos de innovación y la concreción de soluciones para enfrentar los retos que enfrenta Guatemala en materia electoral. 
+Desde Nuestra Elección promovemos que las propuestas sean construidas colectivamente. Para eso, Fundación Ciudadanía Inteligente ha creado una Metodología de Encuentro para que la creación de nuestras propuestas sea un espacio de convivencia y diálogo entre personas, amigos, vecinos y comunidades. Juntas de vecinos, clubes deportivos, sindicatos, gremios, colectivos y organizaciones de todo tipo están invitados a hacer sus propuestas y a organizar encuentros para debatir en conjunto acerca del país que la ciudadanía sueña. (Acá puedes encontrar información de cómo hacer tu propio encuentro).
 
+Las elecciones son el momento en que se define el futuro de nuestro país y es fundamental que toda la ciudadanía tenga un voz y opinión en este proceso. El voto no es la única forma de participar, desde Nuestra Elección puedes ir más allá creando tu propuesta, compartirla con tus amistades y apoyar las que más te gusten para que juntos hagamos sentir, más fuerte que nunca, la voz de la ciudadanía en estas elecciones que son nuestras. **¡porque es #NuestraElección!**
 
-Por último, el tercer eje se enfoca en promocionar propuestas de políticas públicas que permitan mejorar la calidad de democracia e incorporar modelos de innovación en la gestión pública electoral. Es pues que en este eje, se activarían las mesas de diálogo de propuestas de política pública entre sociedad civil y los candidatos o partidos políticos.
+<!--EndFragment-->
