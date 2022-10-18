@@ -1,6 +1,6 @@
 ---
-title: Nuestra Elección
+title: Nuestra Elección - ➡️ Ahora trabajemos en conjunto para lograrlo 🖐🏼
 description: Nuestra Elección - ➡️ Ahora trabajemos en conjunto para lograrlo 🖐🏼
-link: https://youtu.be/Kefn1s7kdA0
+link: https://www.youtube.com/embed/Kefn1s7kdA0
 date: 2022-10-18T22:18:31.926Z
 ---
