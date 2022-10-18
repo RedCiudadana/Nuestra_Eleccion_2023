@@ -1,10 +1,12 @@
 ---
 title: "¿Qué es Laboratorio Electoral: Nuestra Elección?"
 image: https://cranky-visvesvaraya-d3c687.netlify.app/images/posts/lab-electoral-09.png
-description: El lab es un espacio de datos
+description: “Nuestra Elección” es un proyecto elaborado por la Asociación Civil
+  Red Ciudadana, con el cual se pretende contribuir al fortalecimiento y
+  desarrollo del sistema electoral guatemalteco,
 autor: Red Ciudadana
 correo: info@redciudadana.org.gt
-date: 2022-02-19T14:19:38.099Z
+date: 2022-10-16T14:19:38.099Z
 highlight: false
 ---
 “Nuestra Elección” es un proyecto elaborado por la Asociación Civil Red Ciudadana, con el cual se pretende contribuir al fortalecimiento y desarrollo del sistema electoral guatemalteco, mediante la implementación de tres ejes: el primero denominado fortalecimiento de capacidades; el segundo, implementación de herramientas digitales electorales; y el tercero, propuestas de política pública. Adicionalmente, cada eje está estructurado por un conjunto de componentes, consistentes em las actividades que prevé realizarse y con las cuales se contribuye a cumplir los objetivos del proyecto.
