@@ -19542,3 +19542,11 @@ label.checkbox {
   justify-content: center;
   align-items: center;
 }
+
+.timer_animated{
+  transition: 0.5s;
+}
+
+.timer_animated:hover{
+  transform: scale(1.1);
+}
