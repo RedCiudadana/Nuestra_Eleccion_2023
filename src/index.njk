@@ -103,7 +103,7 @@ permalink: "index.html"
 
 				<div class="section py-6 my-6" style="background-color: #46495F">
 					{% if collections.podcastsHighlighted %}
-					{% for podcast in collections.podcastsHighlighted | limit(1)%}
+					{% for podcast in collections.podcastsHighlighted | reverse | limit(1)%}
 					<div class="container">
 						<div class="row align-items-center col-mb-50">
 					
