@@ -226,8 +226,22 @@ permalink: "index.html"
 				</div>
 			</div-->
 
-		<!-- Blogs y Podcasts
-		============================================= -->
+			<!-- TikToks
+			============================================= -->
+			
+			<div class="container my-4">
+				<div class="row mb-5">
+					<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Tik Toks</h2>
+					{% for tiktok in collections.tiktoksHighlighted | limit(3)%}
+					<div class="col-lg-4 col-sm-12 col-md-6 p-0">
+						{{tiktok.data.enlace | safe}}
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+
+			<!-- Novedades
+			============================================= -->
 				
 			
 			<div class="container my-4">

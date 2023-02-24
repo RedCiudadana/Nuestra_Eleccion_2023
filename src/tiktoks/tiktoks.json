@@ -1,0 +1,4 @@
+{
+    "tags": "tiktoks",
+    "permalink": "tiktoks/{{ page.fileSlug }}/index.html"
+}

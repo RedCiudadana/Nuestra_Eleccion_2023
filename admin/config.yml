@@ -282,5 +282,22 @@ collections:
           default: false,
           hint: "Display podcast in home's highlights",
         }
+  - name: "tiktoks"
+    label: "Tik Toks"
+    folder: "src/tiktoks"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { name: "title", label: "Título del TikTok" }
+      - { name: "enlace", label: "Enlace del Embed", widget: "string" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Anuncio Activo",
+        }
 
 show_preview_links: true

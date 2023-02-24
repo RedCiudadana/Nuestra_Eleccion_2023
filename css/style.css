@@ -14373,7 +14373,7 @@ body:not(.device-touch) .rounded-skill {
 
 /* ----------------------------------------------------------------
 	Quotes & Blockquotes
------------------------------------------------------------------*/
+
 
 blockquote {
   padding: 10px 20px;
@@ -14381,6 +14381,7 @@ blockquote {
   font-size: 1.125rem;
   border-left: 5px solid #eee;
 }
+-----------------------------------------------------------------*/
 
 .blockquote-reverse {
   padding-right: 15px;
