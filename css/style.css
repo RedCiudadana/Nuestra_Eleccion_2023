@@ -19551,3 +19551,11 @@ label.checkbox {
 .timer_animated:hover{
   transform: scale(1.1);
 }
+
+.bg-white-rounded{
+  padding: 10px 20px;
+  background-color: #FFF;
+  border-radius: 60px;
+  margin: 20px 0;
+  color: #46495F!important;
+}
