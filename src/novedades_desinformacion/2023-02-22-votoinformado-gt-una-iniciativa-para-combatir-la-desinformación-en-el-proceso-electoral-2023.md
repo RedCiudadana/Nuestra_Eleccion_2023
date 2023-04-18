@@ -1,7 +1,7 @@
 ---
 title: VotoInformado.gt una iniciativa para combatir la desinformación en el
   proceso electoral 2023
-image: /images/posts/eip_web-37.png
+image: /images/posts/web_voto-informado-05.png
 description: Guatemala ha enfrentado una serie de problemas en los últimos años
   relacionados con la desinformación y la manipulación de la opinión pública
   durante los procesos electorales.
