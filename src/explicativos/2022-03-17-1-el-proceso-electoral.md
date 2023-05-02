@@ -55,11 +55,16 @@ seccionA2: >-
 
   <!--EndFragment-->
 iseccionA2: /images/posts/lab-electoral-05.png
-seccionB1: "![](https://soy.usac.edu.gt/wp-content/uploads/2019/03/IMG_0078.jpg)"
-seccionB2: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
+seccionB1: <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/DUIu357kfzQ" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen></iframe>
+seccionB2: <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/wVFGPtOjRBU" title="YouTube video player"
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+  encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen></iframe>
 tseccionA3: Momentos claves para la participación ciudadana
 seccionA3: >-
   <!--StartFragment-->
@@ -100,8 +105,11 @@ seccionA4: >-
 
   <!--EndFragment-->
 iseccionA4: /images/posts/lab-electoral-01.png
-seccionB3: <embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
-  type="text/html" height="780px" width="780px" >
+seccionB3: <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/ZOuhm5A82Hg" title="YouTube video player"
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+  encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen></iframe>
 seccionB4: >-
   <!--StartFragment-->
 
