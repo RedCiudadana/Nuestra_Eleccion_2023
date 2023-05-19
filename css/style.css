@@ -19225,7 +19225,7 @@ label.checkbox {
 .audio-visuales > p {
   margin: auto;
   height: auto;
-  width: 100%;
+  width: 80%;
   padding: 5%;
 }
 
@@ -19260,8 +19260,8 @@ label.checkbox {
 }
 
 .audio-visuales {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 50%;
 }
 
 .link_explicativo {
