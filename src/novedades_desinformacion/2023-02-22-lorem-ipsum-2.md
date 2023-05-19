@@ -1,6 +1,6 @@
 ---
 title: Habilidades y aptitudes para combatir la desinformación
-image: /images/posts/eip_web-37.png
+image: /images/posts/habilidades-y-aptitudes.png
 description: Combatir la desinformación es un desafío para todos nosotros, y
   para hacerlo, es necesario desarrollar habilidades y aptitudes específicas.
 autor: Red Ciudadana
