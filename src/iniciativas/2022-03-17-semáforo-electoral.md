@@ -1,6 +1,7 @@
 ---
 title: Semáforo Electoral
 image: /images/posts/lab-electoral-09.png
+link: https://www.youtube.com/embed/ZfPCUriMSus
 description: Semáforo Electoral es un proyecto
 autor: Julio Herrera
 correo: jherrera@redciudadana.org.gt
