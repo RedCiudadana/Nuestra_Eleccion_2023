@@ -1,6 +1,7 @@
 ---
 title: Mochila Electoral
 image: /images/posts/lab-electoral-09.png
+link: https://www.youtube.com/embed/ZfPCUriMSus
 description: Descripción de CandiDatos
 autor: Julio Herrera
 correo: jherrera@redciudadana.org.gt
