@@ -1,7 +1,7 @@
 ---
 pagination:
   data: collections.videos
-  size: 5
+  size: 3
   alias: list
   reverse: true
 permalink: "videos/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
@@ -35,39 +35,46 @@ permalink: "videos/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageNu
                         </div>
 
                         <div class="row d-flex justify-content-center">
-                            <div class="col-lg-8">
-                                {% if list%}
-                                {% for item in list%}
-                                <a href="{{item.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
-                                <iframe width="200" height="auto"  src="{{item.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:auto"></iframe>
-                                <div class="pl-8 my-auto" style="text-align:left">
-                                    <h5 class="font-bold text-lg">
-                                    {{item.data.title }}
-                                    </h5>
-                                    <span class="text-sm">
-                                    {{item.data.date | dateFormat('DD/MM/YYYY')}}
-                                    </span><br>
-                                    <span class="text-sm">
-                                    {{item.data.description}}
-                                    </span>
-                                </div>
-                                </a>
-                                {% endfor %}
-                                {% endif %}
+                        
+                            {% if list%}
+                            {% for item in list%}
 
-                                <div class="d-flex justify-content-center">
-                                    {% if pagination.href.previous %}
-                                    <div class="mx-4">
-                                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Iniciativas más recientes</a>{% else %}←  Nuevos blog{% endif %}
+                            <div class="col-md-4 col-lg-4 col-sm-12  my-4">
+                                <div class="cuadro_blog h-100">
+                                    <iframe width="100%" height="100px"  src="{{item.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="px-4 py-4 text-left">
+                                        <i class="fa-solid fa-calendar"></i><span class="text-sm">
+                                        {{item.data.date | dateFormat('DD/MM/YYYY')}}
+                                        </span><br>
+                                        <br>
+                                        <h5 class="font-bold text-lg">
+                                        {{item.data.title }}
+                                        </h5>
+                                        
+                                        <span class="text-sm">
+                                        {{item.data.description}}
+                                        </span>
+                                        
                                     </div>
-                                    {% endif %}
-                                    {% if pagination.href.next %}
-                                    <div class="mx-4">
-                                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Iniciativas anteriores →</a>{% else %}Blog anteriores →{% endif %}
-                                    </div>
-                                    {% endif %}
+
                                 </div>
                             </div>
+                            {% endfor %}
+                            {% endif %}
+
+                            <div class="d-flex justify-content-center my-4">
+                                {% if pagination.href.previous %}
+                                <div class="mx-4">
+                                    {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Videos más recientes</a>{% else %}←  Nuevos Videos{% endif %}
+                                </div>
+                                {% endif %}
+                                {% if pagination.href.next %}
+                                <div class="mx-4">
+                                    {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Videos anteriores →</a>{% else %}Videos anteriores →{% endif %}
+                                </div>
+                                {% endif %}
+                            </div>
+
                         </div>
 
                     </div>

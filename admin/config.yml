@@ -156,6 +156,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Title" }
       - { label: "Image", name: "image", widget: "image" }
+      - { name: "link", label: "Enlace de video" }
       - { name: "description", label: "Description" }
       - { name: "autor", label: "Autor" }
       - { name: "correo", label: "Correo" }
