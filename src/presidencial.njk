@@ -1,0 +1,75 @@
+---
+pagination:
+  data: presidencial
+  size: 12
+  alias: list
+permalink: "presidencial/page-{{ pagination.pageNumber }}/index.html"
+---
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>Candidatos Presidenciales</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block content %}
+	<!-- Slider -->
+	<section id="slider" class="slider-element bg-color" style="background-image:url('/elementos/SLIDER/WEB_CANDIDATOS_2023-28.png');background-size:cover">
+		<div class="container">
+			<div class="row h-100 justify-content-center">
+			
+				<div class="col-lg-8 d-flex align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4 text-center justify-content-center">
+					<img style="width:180px; height:160px; margin:auto" src="/elementos/ICONOS/WEB_CANDIDATOS_2023-20.png">
+					<h1 class=" text-white" style="font-weight: 800">Candidaturas Presidenciales</h1>
+					<div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<div class="section m-0 pb-0" style="background-color:#f0f2fd">
+		<div class="container">
+
+		    <div class="row " >
+			{% for candidatura in list%}
+			<div class="col-lg-3 my-4 px-3">
+			    <div class="cuadro_candidatura h-100 ">
+				<div class="div_imagen">
+				    {% if candidatura.fotoUrl %}
+				    <img src="{{candidatura.fotoUrl}}">
+				    {%  else %}
+				    <img src="{{candidatura.fotoUrlPartido}}">
+				    {% endif %} 
+				    <h1>{{candidatura.nombre}}</h1>
+				</div>
+				<div class="texto">
+				    <a href="/presidencial/{{candidatura.nombre | slug}}/index.html" class="btn">Más Información</a>
+				</div>
+			    </div>
+			</div>
+			{% endfor %}
+		    </div>
+
+		<div class="row justify-content-center">
+			<div class="pagination my-4">
+				<ul>
+					<li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><</a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.previous }}"><</a>{% endif %}</li>
+
+					
+					{%- for pageEntry in pagination.pages %}
+
+					<li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+					{%- endfor %}
+					
+					
+					<li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">></a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.next }}">></a>{% endif %}</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+{% endblock %}

@@ -19814,3 +19814,108 @@ label.checkbox {
   position: absolute;
   border-radius:8px;
 }
+
+.dropdown-item{
+  display: flex;
+  padding: 5px;
+}
+
+.dropdown-item:hover{
+  color: #fff!important;
+}
+
+.link-dropdown{
+  color: #fff!important;
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 14px;
+  
+}
+
+.link-dropdown:hover{
+  color: #fff!important;
+}
+
+.center-elements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuadro_candidatura{
+	background-color: #fff;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cuadro_candidatura .div_imagen{
+	width: 100%;
+	text-align: center;
+}
+
+.cuadro_candidatura .imagen{
+	height: 200px;
+	width: 100%;
+	background-color: #888;
+}
+
+.cuadro_candidatura .texto{
+	text-align: center;
+	padding: 10px;
+}
+
+.cuadro_candidatura .div_imagen h1{
+	margin-top: 20px;
+	font-size: 20px!important;
+	font-weight: 600;
+	color: #777!important;
+}
+
+.pagination{
+  display: block;
+}
+
+.pagination ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.pagination li.current a {
+  background-color: #E86762;
+  color: #fff;
+}
+
+.pagination li a:hover {
+  background-color: #E86762;
+  color: #fff!important;
+}
+
+[aria-current] {
+  background-color: #E86762!important;
+  color: #fff!important;
+}
+
+.distritos > div > ul{
+  list-style: disc;
+  margin-left: 20px;
+}
