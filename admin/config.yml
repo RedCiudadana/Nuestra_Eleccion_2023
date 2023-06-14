@@ -300,14 +300,14 @@ collections:
           default: false,
           hint: "Anuncio Activo",
         }
-  - name: "novedades_desinformacion" # Used in routes, e.g., /admin/collections/blog
-    label: "Novedades Desinformación" # Used in the UI
-    folder: "src/novedades_desinformacion" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  - name: "novedades_desinformacion"
+    label: "Novedades Desinformación"
+    folder: "src/novedades_desinformacion"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
-      preview: false # Disable the editor preview and use instead 'preview links'
-    fields: # The fields for each document, usually in front matter
+      preview: false
+    fields:
       - { name: "title", label: "Title" }
       - { label: "Image", name: "image", widget: "image" }
       - { name: "description", label: "Description" }
