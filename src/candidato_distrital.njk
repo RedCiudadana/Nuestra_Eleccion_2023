@@ -1,18 +1,18 @@
 ---
 pagination:
-  data: presidencial
+  data: distrital
   size: 1
-  alias: presidencial
+  alias: distrital
   addAllPagesToCollections: true
-permalink: "presidencial/{{presidencial.nombre | slug}}/index.html"
+permalink: "distrital/{{distrital.id}}/{{distrital.nombre | slug}}/index.html"
 tags:
-  - presidencial
+  - distrital
 ---
 
 {% extends "src/base.njk" %}
 
 {% block head %}
-<title>{{presidencial.nombre}} | Candidatos 2023</title>
+<title>{{distrital.nombre}} | Candidatos 2023</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 {% endblock %}
 
@@ -23,35 +23,36 @@ tags:
 
             <div class="row my-4 m-o-responsive" style="background-color:#fff">
                 <div class="col-lg-12 d-flex breadcumb" style="padding:20px">
-                    <a href="/index.html">Inicio</a> &nbsp/&nbsp <a href="/presidencial/0/index.html">Presidencial</a> &nbsp/&nbsp <a href="#" style="pointer-events:none">{{presidencial.nombre}}</a> 
+                    <a href="/index.html">Inicio</a> &nbsp/&nbsp <a href="/distrital/0/index.html">Distrital</a> &nbsp/&nbsp <a href="#" style="pointer-events:none">{{distrital.nombre}}</a> 
                 </div>
             </div>
 
             <div class="row my-4 m-o-responsive" style="background-color:#fff">
                 <div class="col-lg-3 d-flex my-4">
-                    <img src="{{presidencial.fotoUrl}}">
+                    <img src="{{distrital.fotoUrl}}">
                 </div>
                 <div class="col-lg-6 my-4">
-                    <h3>{{presidencial.nombre}}</h3>
-                    <h5>Tip de Elección: {{presidencial.tipoeleccion}}</h5>
-                    <h5>Partido Político: {{presidencial.partidopostulante}}</h5>
-                    <h5>Dupla Presidencial: {{presidencial.dupla}}</h5>
-                    <h5>Estado: {{presidencial.estado}}</h5>
+                    <h3>{{distrital.nombre}}</h3>
+                    <h5>Tip de Elección: {{distrital.tipoeleccion}}</h5>
+                    <h5>Partido Político: {{distrital.partidopostulante}}</h5>
+                    <h5>Estado: {{distrital.estado}}</h5>
+                    <h5>Distrito: {{distrital.distrito}}</h5>
+                    <h5>Casilla: {{distrital.casilla}}</h5>
                 </div>
                 <div class="col-lg-3 my-4 center-elements">
-                    <a href="https://partidos-publicos.netlify.app/partidospublicos/{{presidencial.partidopostulante}}/"><img src="{{presidencial.fotoUrlPartido}}"></a>
+                    <a href="https://partidos-publicos.netlify.app/partidospublicos/{{distrital.partidopostulante}}/"><img src="{{distrital.fotoUrlPartido}}"></a>
                     <div class"d-flex" style"margin-tp:10px!important">
-                        {% if presidencial.fb %}
-                        <a href="{{presidencial.fb}}" target="_blank" style="font-size:30px!important"><i class="fa-brands fa-square-facebook"></i></a>
+                        {% if distrital.fb %}
+                        <a href="{{distrital.fb}}" target="_blank" style="font-size:30px!important"><i class="fa-brands fa-square-facebook"></i></a>
                         {% endif %}
-                        {% if presidencial.tw %}
-                        <a href="{{presidencial.tw}}" target="_blank" style="font-size:30px!important"><i class="fa-brands fa-square-twitter"></i></a>
+                        {% if distrital.tw %}
+                        <a href="{{distrital.tw}}" target="_blank" style="font-size:30px!important"><i class="fa-brands fa-square-twitter"></i></a>
                         {% endif %}
                     </div>
                 </div>
             </div>
 
-            {% if presidencial.experiencia_academica %}
+            {% if distrital.experiencia_academica %}
 
             <div class="row my-4 m-o-responsive" style="background-color:#fff">
                 <div class="col-lg-12" style="background-color: #E86762">
@@ -59,13 +60,13 @@ tags:
                 </div>
 
                 <div class="col-lg-12" style="background-color: #fff">
-                    <p class="mb-0 py-4">{{presidencial.experiencia_academica}}</p>
+                    <p class="mb-0 py-4">{{distrital.experiencia_academica}}</p>
                 </div>
             </div>
 
             {% endif %}
 
-            {% if presidencial.historial_politico %}
+            {% if distrital.historial_politico %}
 
             <div class="row my-4 m-o-responsive" style="background-color:#fff">
                 <div class="col-lg-12" style="background-color: #E86762">
@@ -73,24 +74,24 @@ tags:
                 </div>
 
                 <div class="col-lg-12" style="background-color: #fff">
-                    <p class="mb-0 py-4">{{presidencial.historial_politico}}</p>
+                    <p class="mb-0 py-4">{{distrital.historial_politico}}</p>
                 </div>
             </div>
 
             {% endif %}
 
-            {% if presidencial.planes_gobierno %}
+            {% if distrital.planes_gobierno %}
 
             <div class="row my-4 m-o-responsive" style="background-color:#fff">
                 <div class="col-lg-12 d-flex justify-content-between" style="background-color: #E86762">
                     <h4 class="mb-0 py-4 text-white">Planes de Gobierno</h4>
-                    <a href="{{presidencial.planes_gobierno}}" class="btn" style="align-self:center">Descarga Aquí</a>
+                    <a href="{{distrital.planes_gobierno}}" class="btn" style="align-self:center">Descarga Aquí</a>
                 </div>
             </div>
 
             {% endif %}
 
-            {% if presidencial.fuentes_info %}
+            {% if distrital.fuentes_info %}
 
             <div class="row my-4 m-o-responsive" style="background-color:#fff">
                 <div class="col-lg-12" style="background-color: #E86762">
@@ -98,7 +99,7 @@ tags:
                 </div>
 
                 <div class="col-lg-12" style="background-color: #fff">
-                    <p class="mb-0 py-4">{{presidencial.fuentes_info}}</p>
+                    <p class="mb-0 py-4">{{distrital.fuentes_info}}</p>
                 </div>
             </div>
 
