@@ -3,7 +3,7 @@ pagination:
   data: distrital
   size: 80
   alias: list
-permalink: "distrital/{{ pagination.pageNumber }}/index.html"
+permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 ---
 
 {% extends "src/base.njk" %}

@@ -3,7 +3,7 @@ pagination:
   data: parlacen
   size: 24
   alias: list
-permalink: "parlacen/{{ pagination.pageNumber }}/index.html"
+permalink: "parlacen/{{ pagination.pageNumber + 1}}/index.html"
 ---
 
 {% extends "src/base.njk" %}
@@ -23,6 +23,11 @@ permalink: "parlacen/{{ pagination.pageNumber }}/index.html"
 					<img style="width:180px; height:160px; margin:auto" src="/elementos/ICONOS/WEB_CANDIDATOS_2023-20.png">
 					<h1 class=" text-white" style="font-weight: 800">Candidaturas Parlacenales</h1>
 					<div>
+						<select id="filterSelect" onchange="handleFilterChange()">
+							<option value="all">All</option>
+							<option value="VALOR">VALOR</option>
+							<option value="VALOR - UNIONISTA">VALOR - UNIONISTA</option>
+						</select>
 					</div>
 				</div>
 
@@ -34,22 +39,26 @@ permalink: "parlacen/{{ pagination.pageNumber }}/index.html"
 		<div class="container">
 
 		    <div class="row " >
+			{% set selectedCategory = "VALOR" %}
 			{% for candidatura in list%}
-			<div class="col-lg-3 my-4 px-3">
-			    <div class="cuadro_candidatura h-100 ">
-				<div class="div_imagen">
-				    {% if candidatura.fotoUrl %}
-				    <img src="{{candidatura.fotoUrl}}">
-				    {%  else %}
-				    <img src="{{candidatura.fotoUrlPartido}}">
-				    {% endif %} 
-				    <h1>{{candidatura.nombre}}</h1>
+				
+				{% if candidatura.partidopostulante === selectedCategory or selectedCategory === 'all' %}
+				<div class="col-lg-3 my-4 px-3">
+					<div class="cuadro_candidatura h-100 ">
+					<div class="div_imagen">
+						{% if candidatura.fotoUrl %}
+						<img src="{{candidatura.fotoUrl}}">
+						{%  else %}
+						<img src="{{candidatura.fotoUrlPartido}}">
+						{% endif %} 
+						<h1>{{candidatura.nombre}}</h1>
+					</div>
+					<div class="texto">
+						<a href="/parlacen/{{candidatura.id}}/{{candidatura.nombre | slug}}/index.html" class="btn">Más Información</a>
+					</div>
+					</div>
 				</div>
-				<div class="texto">
-				    <a href="/parlacen/{{candidatura.id}}/{{candidatura.nombre | slug}}/index.html" class="btn">Más Información</a>
-				</div>
-			    </div>
-			</div>
+			{% endif %}
 			{% endfor %}
 		    </div>
 
@@ -71,5 +80,28 @@ permalink: "parlacen/{{ pagination.pageNumber }}/index.html"
 		</div>
 
 	</div>
+
+{% endblock %}
+
+{% block body_javascripts%}
+
+	<script>
+	function handleFilterChange() {
+		const select = document.getElementById("filterSelect");
+		const selectedCategory = select.value;
+
+		// Refresh the page to apply the filtering
+		window.location.href = `?partidopostulante=${selectedCategory}`;
+	}
+
+	// Preserve the selected value on page reload
+	window.onload = function () {
+		const urlParams = new URLSearchParams(window.location.search);
+		const selectedCategory = urlParams.get('partidopostulante');
+
+		const select = document.getElementById("filterSelect");
+		select.value = selectedCategory || 'all';
+	};
+	</script>
 
 {% endblock %}
