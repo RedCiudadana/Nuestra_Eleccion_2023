@@ -24,7 +24,7 @@ permalink: "parlacen/{{ pagination.pageNumber + 1}}/index.html"
 					<h1 class=" text-white" style="font-weight: 800">Candidaturas Parlacenales</h1>
 					<div>
 						<select id="filterSelect" class="filtro" onchange="handleFilterChange()">
-							<option value="TODOS">TODOS</option>
+							<option value="all">Todos los Partidos</option>
 							<option value="AZUL">AZUL</option>
 							<option value="BIEN">BIEN</option>
 							<option value="CAMBIO">CAMBIO</option>
@@ -115,7 +115,7 @@ permalink: "parlacen/{{ pagination.pageNumber + 1}}/index.html"
       var candidate = candidates[i];
       var partidoPostulante = candidate.getAttribute("data-partido-postulante");
 
-      if (selectedValue === "TODOS" || partidoPostulante === selectedValue) {
+      if (selectedValue === "all" || partidoPostulante === selectedValue) {
         candidate.style.display = "block"; // Muestra el candidato
       } else {
         candidate.style.display = "none"; // Oculta el candidato

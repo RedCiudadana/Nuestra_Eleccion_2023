@@ -1,7 +1,7 @@
 ---
 pagination:
   data: distrital
-  size: 80
+  size: 3000
   alias: list
 permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 ---
@@ -23,6 +23,33 @@ permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 					<img style="width:180px; height:160px; margin:auto" src="/elementos/ICONOS/WEB_CANDIDATOS_2023-20.png">
 					<h1 class=" text-white" style="font-weight: 800">Candidaturas Distritales</h1>
 					<div>
+						<select id="filterSelect" class="filtro" onchange="handleFilterChange()">
+							<option value="all">Todos los Partidos</option>
+							<option value="AZUL">AZUL</option>
+							<option value="BIEN">BIEN</option>
+							<option value="CAMBIO">CAMBIO</option>
+							<option value="CREO">CREO</option>
+							<option value="ELEFANTE">ELEFANTE</option>
+							<option value="FCN">FCN</option>
+							<option value="HUMANISTA">HUMANISTA</option>
+							<option value="MI FAMILIA">MI FAMILIA</option>
+							<option value="NOSOTROS">NOSOTROS</option>
+							<option value="PAN">PAN</option>
+							<option value="PODEMOS">PODEMOS</option>
+							<option value="POPULAR">POPULAR</option>
+							<option value="PROSPERIDAD CIUDADANA">PROSPERIDAD CIUDADANA</option>
+							<option value="REPUBLICANO">REPUBLICANO</option>
+							<option value="SEMILLA">SEMILLA</option>
+							<option value="TODOS">TODOS</option>
+							<option value="UNE">UNE</option>
+							<option value="UNION REPUBLICANA">UNION REPUBLICANA</option>
+							<option value="Urng-Maiz Winaq">Urng-Maiz Winaq</option>
+							<option value="VALOR - UNIONISTA">VALOR - UNIONISTA</option>
+							<option value="VAMOS">VAMOS</option>
+							<option value="VICTORIA">VICTORIA</option>
+							<option value="VIVA">VIVA</option>
+							<option value="VOS">VOS</option>
+						</select>
 					</div>
 				</div>
 
@@ -35,7 +62,7 @@ permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 
 		    <div class="row " >
 			{% for candidatura in list%}
-			<div class="col-lg-3 my-4 px-3">
+			<div class="col-lg-3 my-4 px-3 cuadros_candidatos" data-partido-postulante="{{ candidatura.partidopostulante }}">
 			    <div class="cuadro_candidatura h-100 ">
 				<div class="div_imagen">
 				    {% if candidatura.fotoUrl %}
@@ -53,7 +80,7 @@ permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 			{% endfor %}
 		    </div>
 
-		<div class="row justify-content-center">
+		<!--div class="row justify-content-center">
 			<div class="pagination my-4">
 				<ul>
 					<li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><</a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.previous }}"><</a>{% endif %}</li>
@@ -68,8 +95,33 @@ permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 					<li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">></a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.next }}">></a>{% endif %}</li>
 				</ul>
 			</div>
-		</div>
+		</div-->
 
 	</div>
+
+{% endblock %}
+
+{% block body_javascripts%}
+
+<script>
+  function handleFilterChange() {
+    var select = document.getElementById("filterSelect");
+    var selectedValue = select.value;
+    var candidates = document.getElementsByClassName("cuadros_candidatos");
+
+    // Recorre todos los candidatos y muestra u oculta según el valor seleccionado
+    for (var i = 0; i < candidates.length; i++) {
+      var candidate = candidates[i];
+      var partidoPostulante = candidate.getAttribute("data-partido-postulante");
+
+      if (selectedValue === "all" || partidoPostulante === selectedValue) {
+        candidate.style.display = "block"; // Muestra el candidato
+      } else {
+        candidate.style.display = "none"; // Oculta el candidato
+      }
+    }
+  }
+</script>
+
 
 {% endblock %}
