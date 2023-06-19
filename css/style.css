@@ -19919,3 +19919,18 @@ label.checkbox {
   list-style: disc;
   margin-left: 20px;
 }
+
+.filtro{
+  padding: 10px;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.filtro option{
+  padding: 10px;
+  margin: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
