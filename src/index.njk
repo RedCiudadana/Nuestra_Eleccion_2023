@@ -92,6 +92,39 @@ permalink: "index.html"
 					</div>
 				</div>
 
+				<!--div class="section py-4 my-2" style="background-color: #fff">
+					<div class="container">
+						<div class="row">
+							<select id="filterSelect" class="filtro" onchange="handleFilterChange()">
+								<option value="all" hidden>Elije un Distrito</option>
+								<option value="Distrito Central">Distrito Central</option>
+								<option value="Guatemala">Guatemala</option>
+								<option value="Alta Verapaz">Alta Verapaz</option>
+								<option value="Baja Verapaz">Baja Verapaz</option>
+								<option value="Chimaltenango">Chimaltenango</option>
+								<option value="Chiquimula">Chiquimula</option>
+								<option value="El Progreso">El Progreso</option>
+								<option value="Escuintla">Escuintla</option>
+								<option value="Huehuetenango">Huehuetenango</option>
+								<option value="Izabal">Izabal</option>
+								<option value="Jalapa">Jalapa</option>
+								<option value="Jutiapa">Jutiapa</option>
+								<option value="Petén">Petén</option>
+								<option value="Quetzaltenango">Quetzaltenango</option>
+								<option value="Quiché">Quiché</option>
+								<option value="Retalhuleu">Retalhuleu</option>
+								<option value="Sacatepéquez">Sacatepéquez</option>
+								<option value="San Marcos">San Marcos</option>
+								<option value="Santa Rosa">Santa Rosa</option>
+								<option value="Sololá">Sololá</option>
+								<option value="Suchitepéquez">Suchitepéquez</option>
+								<option value="Totonicapán">Totonicapán</option>
+								<option value="Zacapa">Zacapa</option>
+							</select>
+						</div>
+					</div>
+				</div-->
+
 				<div class="section py-4 my-2" style="background-color: #fff">
 					<div class="container">
 						<div class="row">
@@ -295,5 +328,21 @@ permalink: "index.html"
 {% endblock %}
 
 {% block body_javascripts %}
+
+	<script>
+		function handleFilterChange() {
+			// Obtener el elemento select
+			var selectElement = document.getElementById("filterSelect");
+
+			// Obtener el valor seleccionado
+			var selectedValue = selectElement.value;
+
+			// Guardar el valor en el localStorage
+			localStorage.setItem("distrito_seleccionado", selectedValue);
+
+			// Redirigir a la página de resultados
+			window.location.href = "/distrital_resultados/index.html";
+		}
+	</script>
 	
 {% endblock %}

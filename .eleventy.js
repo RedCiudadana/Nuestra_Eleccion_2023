@@ -67,4 +67,7 @@ module.exports = function (eleventyConfig) {
         });
     });
 
+    eleventyConfig.addCollection("distrital", function (collectionApi) {
+        return collectionApi.getFilteredByTag('distrital');
+    });
 }

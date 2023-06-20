@@ -1,0 +1,198 @@
+---
+permalink: "distrital_resultados/index.html"
+---
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>Candidatos Distritales</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block content %}
+	<!-- Slider -->
+	<section id="slider" class="slider-element bg-color" style="background-image:url('/elementos/SLIDER/WEB_CANDIDATOS_2023-28.png');background-size:cover">
+		<div class="container">
+			<div class="row h-100 justify-content-center">
+			
+				<div class="col-lg-8 d-flex align-self-center flex-column pt-5 pb-0 py-lg-6 mb-0 my-lg-4 text-center justify-content-center">
+					<img style="width:140px; height:auto; margin:auto" src="/elementos/ICONOS/DISTRITO.png">
+					<h1 class="mt-4 text-white" style="font-weight: 800;font-size:25px">Candidaturas Distritales {{distrito_seleccionado}}</h1>
+					<div>
+						<select id="filterSelect" class="filtro" onchange="handleFilterChange()">
+							<option value="all" id="distrito_actual" hidden>Elije un Distrito</option>
+							<option value="Distrito Central">Distrito Central</option>
+							<option value="Guatemala">Guatemala</option>
+							<option value="Alta Verapaz">Alta Verapaz</option>
+							<option value="Baja Verapaz">Baja Verapaz</option>
+							<option value="Chimaltenango">Chimaltenango</option>
+							<option value="Chiquimula">Chiquimula</option>
+							<option value="El Progreso">El Progreso</option>
+							<option value="Escuintla">Escuintla</option>
+							<option value="Huehuetenango">Huehuetenango</option>
+							<option value="Izabal">Izabal</option>
+							<option value="Jalapa">Jalapa</option>
+							<option value="Jutiapa">Jutiapa</option>
+							<option value="Petén">Petén</option>
+							<option value="Quetzaltenango">Quetzaltenango</option>
+							<option value="Quiché">Quiché</option>
+							<option value="Retalhuleu">Retalhuleu</option>
+							<option value="Sacatepéquez">Sacatepéquez</option>
+							<option value="San Marcos">San Marcos</option>
+							<option value="Santa Rosa">Santa Rosa</option>
+							<option value="Sololá">Sololá</option>
+							<option value="Suchitepéquez">Suchitepéquez</option>
+							<option value="Totonicapán">Totonicapán</option>
+							<option value="Zacapa">Zacapa</option>
+						</select>
+
+						<select id="filterSelect2" class="filtro" onchange="handleFilterChange2()">
+							<option value="all">Todos los Partidos</option>
+							<option value="AZUL">AZUL</option>
+							<option value="BIEN">BIEN</option>
+							<option value="CAMBIO">CAMBIO</option>
+							<option value="CREO">CREO</option>
+							<option value="ELEFANTE">ELEFANTE</option>
+							<option value="FCN">FCN</option>
+							<option value="HUMANISTA">HUMANISTA</option>
+							<option value="MI FAMILIA">MI FAMILIA</option>
+							<option value="NOSOTROS">NOSOTROS</option>
+							<option value="PAN">PAN</option>
+							<option value="PODEMOS">PODEMOS</option>
+							<option value="POPULAR">POPULAR</option>
+							<option value="PROSPERIDAD CIUDADANA">PROSPERIDAD CIUDADANA</option>
+							<option value="REPUBLICANO">REPUBLICANO</option>
+							<option value="SEMILLA">SEMILLA</option>
+							<option value="TODOS">TODOS</option>
+							<option value="UNE">UNE</option>
+							<option value="UNION REPUBLICANA">UNION REPUBLICANA</option>
+							<option value="Urng-Maiz Winaq">Urng-Maiz Winaq</option>
+							<option value="VALOR - UNIONISTA">VALOR - UNIONISTA</option>
+							<option value="VAMOS">VAMOS</option>
+							<option value="VICTORIA">VICTORIA</option>
+							<option value="VIVA">VIVA</option>
+							<option value="VOS">VOS</option>
+						</select>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<div class="section m-0 pb-0" style="background-color:#f0f2fd">
+		<div class="container">
+
+		    <div class="row " >
+			{% for candidatura in collections.distrital%}
+
+			<div class="col-lg-3 my-4 px-3 cuadros_candidatos" data-distrito="{{ candidatura.data.distrital.distrito }}" data-partido-postulante="{{ candidatura.data.distrital.partidopostulante }}">
+			    <div class="cuadro_candidatura h-100 ">
+				<div class="div_imagen">
+				    {% if candidatura.data.distrital.fotoUrl %}
+				    <img src="{{candidatura.data.distrital.fotoUrl}}">
+				    {%  else %}
+				    <img src="{{candidatura.data.distrital.fotoUrlPartido}}">
+				    {% endif %} 
+				    <h1>{{candidatura.data.distrital.nombre}}</h1>
+					<p style="font-weight:600">{{candidatura.data.distrital.partidopostulante}}</p>
+				</div>
+				<div class="texto">
+				    <a href="/distrital/{{candidatura.data.distrital.id}}/{{candidatura.data.distrital.nombre | slug}}/index.html" class="btn">Más Información</a>
+				</div>
+			    </div>
+			</div>
+
+			{% endfor %}
+		    </div>
+
+		<!--div class="row justify-content-center">
+			<div class="pagination my-4">
+				<ul>
+					<li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><</a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.previous }}"><</a>{% endif %}</li>
+
+					
+					{%- for pageEntry in pagination.pages %}
+
+					<li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+					{%- endfor %}
+					
+					
+					<li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">></a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.next }}">></a>{% endif %}</li>
+				</ul>
+			</div>
+		</div-->
+
+	</div>
+
+{% endblock %}
+
+{% block body_javascripts%}
+
+<script>
+
+	var select = document.getElementById("filterSelect");
+	var distrito_actual = document.getElementById("distrito_actual");
+	var candidates = document.getElementsByClassName("cuadros_candidatos");
+
+	// Obtener el valor guardado en el localStorage
+	var selectedOption = localStorage.getItem("distrito_seleccionado");
+	distrito_actual.innerHTML = selectedOption;
+
+	// Recorre todos los candidatos y muestra u oculta según el valor seleccionado
+	for (var i = 0; i < candidates.length; i++) {
+		var candidate = candidates[i];
+		var distritodata = candidate.getAttribute("data-distrito");
+
+		if (selectedOption === "all" || distritodata === selectedOption) {
+			candidate.style.display = "block"; // Muestra el candidato
+		} else {
+			candidate.style.display = "none"; // Oculta el candidato
+		}
+	}
+
+</script>
+
+<script>
+	function handleFilterChange() {
+		// Obtener el elemento select
+		var selectElement = document.getElementById("filterSelect");
+
+		// Obtener el valor seleccionado
+		var selectedValue = selectElement.value;
+
+		// Guardar el valor en el localStorage
+		localStorage.setItem("distrito_seleccionado", selectedValue);
+
+		// Redirigir a la página de resultados
+		window.location.href = "/distrital_resultados/index.html";
+	}
+</script>
+
+<script>
+  function handleFilterChange2() {
+    var select = document.getElementById("filterSelect2");
+    var selectedValue = select.value;
+    var candidates = document.getElementsByClassName("cuadros_candidatos");
+
+	// Obtener el valor guardado en el localStorage
+	var selectedOption = localStorage.getItem("distrito_seleccionado");
+
+    // Recorre todos los candidatos y muestra u oculta según el valor seleccionado
+    for (var i = 0; i < candidates.length; i++) {
+      var candidate = candidates[i];
+      var partidoPostulante = candidate.getAttribute("data-partido-postulante");
+	  var distritodata = candidate.getAttribute("data-distrito");
+
+	  if (distritodata === selectedOption) {
+		if (selectedValue === "all" || partidoPostulante === selectedValue) {
+			candidate.style.display = "block"; // Muestra el candidato
+		} else {
+			candidate.style.display = "none"; // Oculta el candidato
+		}
+	  }
+    }
+  }
+</script>
+
+{% endblock %}
