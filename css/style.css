@@ -19934,3 +19934,9 @@ label.checkbox {
   font-size: 13px;
   font-weight: 600;
 }
+
+.point-none{
+  pointer-events: none;
+  font-weight: 400;
+  line-height: 15px;
+}
