@@ -11,7 +11,7 @@ permalink: "distrital_resultados/index.html"
 
 {% block content %}
 	<!-- Slider -->
-	<section id="slider" class="slider-element bg-color" style="background-image:url('/elementos/SLIDER/WEB_CANDIDATOS_2023-28.png');background-size:cover">
+	<section id="slider" class="slider-element bg-color" style="background-size:cover">
 		<div class="container">
 			<div class="row h-100 justify-content-center">
 			
@@ -20,7 +20,8 @@ permalink: "distrital_resultados/index.html"
 					<h1 class="mt-4 text-white" style="font-weight: 800;font-size:25px">Candidaturas Distritales {{distrito_seleccionado}}</h1>
 					<div>
 						<select id="filterSelect" class="filtro" onchange="handleFilterChange()">
-							<option value="all" id="distrito_actual" hidden>Elije un Distrito</option>
+							<option value="-" id="distrito_actual" hidden>Elige un distrito</option>
+							<option value="all">Todos los Distritos</option>
 							<option value="Distrito Central">Distrito Central</option>
 							<option value="Guatemala">Guatemala</option>
 							<option value="Alta Verapaz">Alta Verapaz</option>
@@ -130,44 +131,47 @@ permalink: "distrital_resultados/index.html"
 {% block body_javascripts%}
 
 <script>
+  var select = document.getElementById("filterSelect");
+  var distrito_actual = document.getElementById("distrito_actual");
+  var candidates = document.getElementsByClassName("cuadros_candidatos");
 
-	var select = document.getElementById("filterSelect");
-	var distrito_actual = document.getElementById("distrito_actual");
-	var candidates = document.getElementsByClassName("cuadros_candidatos");
+  // Obtener el valor del parámetro de consulta 'distrito' de la URL
+  var urlParams = new URLSearchParams(window.location.search);
+  var selectedOption = urlParams.get('distrito');
 
-	// Obtener el valor guardado en el localStorage
-	var selectedOption = localStorage.getItem("distrito_seleccionado");
-	distrito_actual.innerHTML = selectedOption;
+  // Asignar el valor seleccionado a la etiqueta HTML
+  distrito_actual.innerHTML = selectedOption || "Todos los Distritos";
 
-	// Recorre todos los candidatos y muestra u oculta según el valor seleccionado
-	for (var i = 0; i < candidates.length; i++) {
-		var candidate = candidates[i];
-		var distritodata = candidate.getAttribute("data-distrito");
+  // Recorrer todos los candidatos y mostrar u ocultar según el valor seleccionado
+  for (var i = 0; i < candidates.length; i++) {
+    var candidate = candidates[i];
+    var distritodata = candidate.getAttribute("data-distrito");
 
-		if (selectedOption === "all" || distritodata === selectedOption) {
-			candidate.style.display = "block"; // Muestra el candidato
-		} else {
-			candidate.style.display = "none"; // Oculta el candidato
-		}
-	}
-
+    if (!selectedOption || selectedOption === "all" || distritodata === selectedOption) {
+      candidate.style.display = "block"; // Mostrar el candidato
+    } else {
+      candidate.style.display = "none"; // Ocultar el candidato
+    }
+  }
 </script>
 
 <script>
-	function handleFilterChange() {
-		// Obtener el elemento select
-		var selectElement = document.getElementById("filterSelect");
+  function handleFilterChange() {
+    // Obtener el elemento select
+    var selectElement = document.getElementById("filterSelect");
 
-		// Obtener el valor seleccionado
-		var selectedValue = selectElement.value;
+    // Obtener el valor seleccionado
+    var selectedValue = selectElement.value;
 
-		// Guardar el valor en el localStorage
-		localStorage.setItem("distrito_seleccionado", selectedValue);
-
-		// Redirigir a la página de resultados
-		window.location.href = "/distrital_resultados/index.html";
-	}
+    // Redirigir a la página de resultados con el parámetro de consulta 'distrito'
+    if (selectedValue === "all") {
+      window.location.href = "/distrital_resultados/index.html";
+    } else {
+      window.location.href = "/distrital_resultados/index.html?distrito=" + encodeURIComponent(selectedValue);
+    }
+  }
 </script>
+
 
 <script>
   function handleFilterChange2() {
