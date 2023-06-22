@@ -1,0 +1,93 @@
+---
+permalink: "resultados/index.html"
+---
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>Nuestra Elección | Resultados</title>
+{% endblock %}
+
+{% block content %}
+
+        <!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+
+                <!-- event-area-start -->
+                <div class="event-area pt-60 pb-130">
+                    <div class="container">
+
+                        <div class="container clearfix">
+                            <div class="heading-block center">
+
+                                <img style="margin:2% auto;padding:2% 45%"  src="/elementos/NUESTRA ELECCION-08.png" alt="Canvas Logo">
+
+                                <h2>Resultados</h2>
+                                <!--span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span-->
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="row">
+
+                                {% if list%}
+                                {% for item in list%}
+                                <div class="col-md-4 col-lg-4 col-sm-12  my-4">
+                                    <div class="cuadro_blog h-100">
+                                        <iframe width="100%" height="100px"  src="{{item.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <div class="px-4 py-4 text-left">
+                                            <i class="fa-solid fa-calendar"></i><span class="text-sm">
+                                            {{item.data.date | dateFormat('DD/MM/YYYY')}}
+                                            </span><br>
+                                            <br>
+                                            <h5 class="font-bold text-lg">
+                                            {{item.data.title }}
+                                            </h5>
+                                            
+                                            <span class="text-sm">
+                                            {{item.data.description}}
+                                            </span>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                {% endif %}
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    {% if pagination.href.previous %}
+                                    <div class="mx-4">
+                                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Iniciativas más recientes</a>{% else %}←  Nuevos blog{% endif %}
+                                    </div>
+                                    {% endif %}
+                                    {% if pagination.href.next %}
+                                    <div class="mx-4">
+                                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Iniciativas anteriores →</a>{% else %}Blog anteriores →{% endif %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        
+
+                    </div>
+                </div>
+
+
+
+                </div>
+            </div>
+            <!-- event-area-end -->
+
+			</div>
+		</section><!-- #content end -->
+
+{% endblock %}
