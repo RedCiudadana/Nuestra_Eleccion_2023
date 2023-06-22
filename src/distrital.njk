@@ -35,6 +35,7 @@ permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 							<option value="MI FAMILIA">MI FAMILIA</option>
 							<option value="NOSOTROS">NOSOTROS</option>
 							<option value="PAN">PAN</option>
+							<option value="PIN">PIN</option>
 							<option value="PODEMOS">PODEMOS</option>
 							<option value="POPULAR">POPULAR</option>
 							<option value="PROSPERIDAD CIUDADANA">PROSPERIDAD CIUDADANA</option>
@@ -49,6 +50,7 @@ permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 							<option value="VICTORIA">VICTORIA</option>
 							<option value="VIVA">VIVA</option>
 							<option value="VOS">VOS</option>
+							<option value="WINAQ">WINAQ</option>
 						</select>
 					</div>
 				</div>
@@ -71,6 +73,7 @@ permalink: "distrital/{{ pagination.pageNumber + 1}}/index.html"
 				    <img src="{{candidatura.fotoUrlPartido}}">
 				    {% endif %} 
 				    <h1>{{candidatura.nombre}}</h1>
+					<p style="font-weight:600">{{candidatura.distrito}}</p>
 				</div>
 				<div class="texto">
 				    <a href="/distrital/{{candidatura.id}}/{{candidatura.nombre | slug}}/index.html" class="btn point-none">{{candidatura.casilla}}</a>
