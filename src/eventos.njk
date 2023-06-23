@@ -1,7 +1,7 @@
 ---
 pagination:
   data: collections.eventos
-  size: 5
+  size: 3
   alias: list
   reverse: true
 permalink: "eventos/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
@@ -58,12 +58,12 @@ permalink: "eventos/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageN
                                 <div class="d-flex justify-content-center">
                                     {% if pagination.href.previous %}
                                     <div class="mx-4">
-                                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Iniciativas más recientes</a>{% else %}←  Nuevos blog{% endif %}
+                                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Eventos más recientes</a>{% else %}←  Nuevos Eventos{% endif %}
                                     </div>
                                     {% endif %}
                                     {% if pagination.href.next %}
                                     <div class="mx-4">
-                                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Iniciativas anteriores →</a>{% else %}Blog anteriores →{% endif %}
+                                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Eventos anteriores →</a>{% else %}Eventos anteriores →{% endif %}
                                     </div>
                                     {% endif %}
                                 </div>
