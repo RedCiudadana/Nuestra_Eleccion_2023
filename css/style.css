@@ -19940,3 +19940,7 @@ label.checkbox {
   font-weight: 400;
   line-height: 15px;
 }
+
+.content_blog img{
+  margin:auto
+}
