@@ -11,6 +11,8 @@ highlight: false
 ---
 En la encrucijada de la democracia, donde se entrecruzan la participación ciudadana y la responsabilidad cívica, nacen los foros de candidatos, que no son más que espacios de intercambio, debate y reflexión. En el corazón de Guatemala, en la ciudad de Cobán, Alta Verapaz, se celebró recientemente un evento de este tipo que, más que un simple encuentro, se convirtió en una verdadera fiesta de la democracia.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pLzVX8dobQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 **Un foro, varios objetivos**
 El foro de candidatos a alcalde de Cobán, organizado por la Red Ciudadana, tuvo varios objetivos. Primero, brindar a los ciudadanos la oportunidad de conocer a los aspirantes al cargo de alcalde, sus propuestas, y su visión para la ciudad. Segundo, facilitar un espacio donde los candidatos pudieran escuchar las inquietudes, necesidades y expectativas de los habitantes de Cobán. Finalmente, fomentar el diálogo y el respeto mutuo, pilares fundamentales de cualquier sociedad democrática.
 
