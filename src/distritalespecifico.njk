@@ -189,7 +189,7 @@ permalink: "distrital_resultados/index.html"
       var partidoPostulante = candidate.getAttribute("data-partido-postulante");
 	  var distritodata = candidate.getAttribute("data-distrito");
 
-	  if (distritodata === selectedOption) {
+	  if (!selectedOption || distritodata === selectedOption) {
 		if (selectedValue === "all" || partidoPostulante === selectedValue) {
 			candidate.style.display = "block"; // Muestra el candidato
 		} else {
