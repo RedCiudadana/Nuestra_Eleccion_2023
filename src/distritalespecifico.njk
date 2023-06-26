@@ -179,8 +179,9 @@ permalink: "distrital_resultados/index.html"
     var selectedValue = select.value;
     var candidates = document.getElementsByClassName("cuadros_candidatos");
 
-	// Obtener el valor guardado en el localStorage
-	var selectedOption = localStorage.getItem("distrito_seleccionado");
+	// Obtener el valor del parámetro de consulta 'distrito' de la URL
+	var urlParams = new URLSearchParams(window.location.search);
+	var selectedOption = urlParams.get('distrito');
 
     // Recorre todos los candidatos y muestra u oculta según el valor seleccionado
     for (var i = 0; i < candidates.length; i++) {
