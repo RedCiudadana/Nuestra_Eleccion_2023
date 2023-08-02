@@ -17,7 +17,7 @@ permalink: "index.html"
 		</div>
 
 		<!-- Slider -->
-		<section id="slider" class="slider-element bg-color" style="background-image:url('/elementos/slider2v.png');background-size: cover; background-repeat: no-repeat; background-position: center center; height: 100vh;">
+		<a href="/index.html"><section id="slider" class="slider-element bg-color" style="background-image:url('/elementos/slider2v.png');background-size: cover; background-repeat: no-repeat; background-position: center center; height: 100vh;">
 			<div class="container">
 				<div class="row h-100 justify-content-center">
 				
@@ -26,7 +26,7 @@ permalink: "index.html"
 
 				</div>
 			</div>
-		</section>
+		</section></a>
 
 		<!-- Content
 		============================================= -->
@@ -202,7 +202,8 @@ permalink: "index.html"
 
 									<div class="entry col-sm-6 col-xl-6">
 										<div class="grid-inner">
-											<a href="https://open.spotify.com/episode/07jgf9edynFB5HFDBT4unV" target="_blank"><img style="width:300px;margin:auto" src="/elementos/PODCAST.png"></a>
+											<!--a href="https://open.spotify.com/episode/07jgf9edynFB5HFDBT4unV" target="_blank"><img style="width:300px;margin:auto" src="/elementos/PODCAST.png"></a-->
+											<iframe id="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/T1B66HlFX-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 										</div>
 									</div>
 
@@ -353,5 +354,16 @@ permalink: "index.html"
 			window.location.href = "/distrital_resultados/index.html";
 		}
 	</script>
+
+	<script>
+        // Function to automatically play the video when the iframe is loaded
+        function playVideoOnLoad() {
+            var videoIframe = document.getElementById('videoIframe');
+            videoIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
+
+        // Attach the playVideoOnLoad function to the iframe's onload event
+        window.onload = playVideoOnLoad;
+    </script>
 	
 {% endblock %}
