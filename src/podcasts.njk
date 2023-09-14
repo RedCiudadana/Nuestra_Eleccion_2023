@@ -40,7 +40,7 @@ permalink: "podcasts/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.page
                                 {% for item in list%}
                                 <a href="{{item.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
                                 <iframe width="200" height="auto"  src="{{item.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:auto"></iframe>
-                                <div class="pl-8 my-auto" style="text-align:left">
+                                <div class="pl-8" style="text-align:left">
                                     <h5 class="font-bold text-lg">
                                     {{item.data.title }}
                                     </h5>
