@@ -58,12 +58,12 @@ permalink: "podcasts/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.page
                                 <div class="d-flex justify-content-center">
                                     {% if pagination.href.previous %}
                                     <div class="mx-4">
-                                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Iniciativas más recientes</a>{% else %}←  Nuevos blog{% endif %}
+                                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Podcasts más recientes</a>{% else %}←  Nuevos Podcasts{% endif %}
                                     </div>
                                     {% endif %}
                                     {% if pagination.href.next %}
                                     <div class="mx-4">
-                                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Iniciativas anteriores →</a>{% else %}Blog anteriores →{% endif %}
+                                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Podcasts anteriores →</a>{% else %}Podcasts anteriores →{% endif %}
                                     </div>
                                     {% endif %}
                                 </div>
