@@ -7,6 +7,6 @@ description: ¿Cómo es el proceso electoral? ¿Qué papel tenemos como ciudadan
   nos afectan los procesos públicos.En esta segunda temporada vamos a explorar
   el proceso electoral 2023
 link: https://open.spotify.com/episode/3JfGb44y8Iz7MuU7Lp9Rta?si=cbce1da50f2c4ddd
-date: 2023-09-19T11:55:33.271Z
+date: 2023-06-05T11:55:33.271Z
 highlight: false
 ---
