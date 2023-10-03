@@ -4,7 +4,7 @@ icono_explicativo: /images/posts/nuestra-eleccion-14.png
 date: 2022-03-17T17:03:42.523Z
 slider: /images/posts/04.png
 tslider: "El proceso electoral "
-txtslider: "democracia, convocatoria a elecciones, postulación de candidatos,
+txtslider: "Democracia, convocatoria a elecciones, postulación de candidatos,
   elecciones generales, conteo y oficialización de resultados "
 tseccionA1: Contenido
 seccionA1: >-
@@ -18,7 +18,7 @@ seccionA1: >-
 
 
   <!--EndFragment-->
-iseccionA1: /images/posts/lab-electoral-02.png
+iseccionA1: /images/posts/ne-16.png
 tseccionA2: Las fases del proceso electoral
 seccionA2: >-
   <!--StartFragment-->
@@ -54,7 +54,7 @@ seccionA2: >-
 
 
   <!--EndFragment-->
-iseccionA2: /images/posts/lab-electoral-05.png
+iseccionA2: /images/posts/ne-12.png
 seccionB1: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/DUIu357kfzQ" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -80,7 +80,7 @@ seccionA3: >-
 
 
   <!--EndFragment-->
-iseccionA3: /images/posts/lab-electoral-03.png
+iseccionA3: /images/posts/ne-11.png
 tseccionA4: Glosario de términos
 seccionA4: >-
   <!--StartFragment-->
@@ -104,29 +104,13 @@ seccionA4: >-
 
 
   <!--EndFragment-->
-iseccionA4: /images/posts/lab-electoral-01.png
+iseccionA4: /images/posts/ne-17.png
 seccionB3: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/ZOuhm5A82Hg" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write;
   encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen></iframe>
-seccionB4: >-
-  <!--StartFragment-->
-
-
-  # Bibliografía
-
-
-  González Arana, A. (2021). El ABC Electoral para ciudadanos. Guatemala : Departamento de Investigaciones Sociopolíticas.
-
-
-  IIDH. (2017). Diccionario Electoral. Costa Rica: Instituto Interamericano de Derechos Humanos.
-
-
-  TSE. (2016). Ley Electoral y de Partidos Políticos. Decreto Número 1-85 Asamblea Nacional Constituyente . Guatemala: Tribunal Supremo Electoral.
-
-
-  <!--EndFragment-->
+seccionB4: ""
 sliderconclusion: /images/posts/04.png
 txtslider2: El proceso electoral implica un espacio amplio para integrar al
   ciudadano como el actor principal del mismo.
@@ -135,5 +119,10 @@ tconclusion: Conclusión
 tslider2: Momentos claves para la participación ciudadana
 conclusion: "El proceso electoral es el conjunto de etapas o fases sucesivas y
   ordenadas, dirigidas por un órgano electoral fundamentadas por un cuerpo
-  legal, teniendo como fin realizar unas "
+  legal, teniendo como fin realizar unas. # Bibliografía  González Arana, A.
+  (2021). El ABC Electoral para ciudadanos. Guatemala : Departamento de
+  Investigaciones Sociopolíticas.  IIDH. (2017). Diccionario Electoral. Costa
+  Rica: Instituto Interamericano de Derechos Humanos.  TSE. (2016). Ley
+  Electoral y de Partidos Políticos. Decreto Número 1-85 Asamblea Nacional
+  Constituyente . Guatemala: Tribunal Supremo Electoral. "
 ---
