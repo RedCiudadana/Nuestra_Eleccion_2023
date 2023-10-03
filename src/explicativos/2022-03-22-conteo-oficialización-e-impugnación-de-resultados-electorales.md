@@ -4,7 +4,7 @@ icono_explicativo: /images/posts/nuestra-eleccion-16.png
 date: 2022-03-22T04:03:54.316Z
 slider: /images/posts/04.png
 tslider: Conteo, oficialización e impugnación de resultados electorales
-txtslider: democracia, elecciones generales, conteo de resultados, resultados
+txtslider: Democracia, elecciones generales, conteo de resultados, resultados
   oficiales, impugnación de resultados electorales, resultados preliminares
 tseccionA1: "Conteo de votos:"
 seccionA1: >-
@@ -21,6 +21,7 @@ seccionA1: >-
 
 
   Contados los votos, el presidente de la JRV constará en un acta los votos válidos emitidos y hará entrega de los mismos a los delegados de la Junta Electoral Municipal -JEM-. Esta deberá recopilar todas las actas y resultados de las JRV dentro de su jursidicción y establecer el resultado oficial dentro de su municipio (TSE, 2016). Inmediatamente, el representante de la JEM deberá trasladar los resultados de su jurisdicción a la Junta Electoral Departamental -JED- para que dicho órgano electoral pueda totalizar los resultados preliminares del proceso electoral en su departamento. Estos resultados se enviarán al Tribunal Supremo Electoral -TSE- para que se haga el anuncio oficial del proceso electoral en disputa.
+iseccionA1: /images/posts/ne-16.png
 tseccionA2: Resultados preliminares
 seccionA2: Desde el momento en el que el presidente de cada Junta Receptora de
   Votos haya entregado los resultados de su centro de votación a la Junta
@@ -33,14 +34,9 @@ seccionA2: Desde el momento en el que el presidente de cada Junta Receptora de
   constantemente. No obstante, estos resultados no pueden ser tomados como
   oficiales hasta el momento en el que se hayan resuelto todas las posibles
   disputas electorales en los distintos ámbitos; en caso existan.
-seccionB1: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-seccionB2: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+iseccionA2: /images/posts/ne-12.png
+seccionB1: ""
+seccionB2: ""
 tseccionA3: "Proceso de impugnación de resultados: "
 seccionA3: >-
   Sin embargo, como medio de garantizar que el proceso electoral se desarrolle
@@ -58,6 +54,7 @@ seccionA3: >-
 
 
   La Ley Electoral y de Partidos Políticos de Guatemala establece distintos mecanismos para la aclaración y/o repetición del conteo de votos o, en casos más extremos, del proceso total de la elección. Sin embargo, para los fines ilustrativos del presente, únicamente se han seleccionado los tres mecanismos más frecuentados para la resolución de las cuestionantes sobre los comicios electorales.
+iseccionA3: /images/posts/ne-11.png
 tseccionA4: "Oficialización de los resultados: "
 seccionA4: >-
   En primera instancia, el Tribunal Supremo Electoral deberá oficializar los
@@ -72,14 +69,9 @@ seccionA4: >-
 
 
   El Tribunal Supremo Electoral está obligado a divulgar por todos los medios de comunicación, los resultados electorales, parciales y definitivos, dentro del plazo de ocho días siguientes a la terminación del proceso electoral.
-seccionB3: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-seccionB4: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+iseccionA4: /images/posts/ne-17.png
+seccionB3: ""
+seccionB4: ""
 sliderconclusion: /images/posts/04.png
 tconclusion: Conclusión
 conclusion: "Para que una elección y sus resultados gocen de la necesaria
