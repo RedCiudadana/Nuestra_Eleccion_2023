@@ -139,18 +139,16 @@ seccionA4: >-
   <!--StartFragment-->
 
 
-  Escaño: asiento que ocupa un funcionario público en el Congreso o Parlamento.  
+  **Escaño:** asiento que ocupa un funcionario público en el Congreso o Parlamento.  
 
 
-  Subrepresentación: fenómeno que hace referencia a cuando a un distrito electoral se le asignan menos escaños de lo que proporcionalmente le corresponden (según la cantidad de habitantes en territorio que abarca dicha circunscripción). 
+  **Subrepresentación:** fenómeno que hace referencia a cuando a un distrito electoral se le asignan menos escaños de lo que proporcionalmente le corresponden (según la cantidad de habitantes en territorio que abarca dicha circunscripción). 
 
 
-  Sobrerrepresentación: fenómeno que hace referencia a cuando a un distrito electoral se le asignan más escaños de lo que proporcionalmente le corresponden (según la cantidad de habitantes en territorio que abarca dicha circunscripción). 
+  **Sobrerrepresentación:** fenómeno que hace referencia a cuando a un distrito electoral se le asignan más escaños de lo que proporcionalmente le corresponden (según la cantidad de habitantes en territorio que abarca dicha circunscripción). 
 
 
-  Redistribución de distritos: se refiere al proceso de trazado de las fronteras de los distritos electorales, según los criterios de equidad poblacional, geografía, cercanía cultural o representación de minorías.
-
-
+  **Redistribución de distritos:** se refiere al proceso de trazado de las fronteras de los distritos electorales, según los criterios de equidad poblacional, geografía, cercanía cultural o representación de minorías.
 
 
   <!--EndFragment-->
