@@ -66,20 +66,31 @@ seccionB2: <iframe width="560" height="315"
   encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen></iframe>
 tseccionA3: Momentos claves para la participación ciudadana
-seccionA3: >-
-  <!--StartFragment-->
+seccionA3: "<!--StartFragment-->
 
 
-  El proceso electoral implica un espacio amplio para integrar al ciudadano como el actor principal del mismo. Desde la convocatoria a elecciones, cualquier ciudadano (mayor de 18 años) inscrito en el Registro de Ciudadanos del Tribunal Supremo Electoral puede participar a través de una organización política en el proceso electoral. 
+  \r
+
+  En el proceso electoral en Guatemala, los ciudadanos son los actores
+  principales. Puedes participar de dos formas: unirte a una organización
+  política si lo deseas o simplemente votar el día de las elecciones si no
+  quieres involucrarte activamente. Todos los ciudadanos registrados pueden
+  votar por los candidatos presidenciales, municipales, diputados y
+  parlamentarios.
 
 
-  De no querer participar activamente en una organización política, los ciudadanos pueden (y deben) participar en el proceso electoral de otra manera; ejerciendo su sufragio el día de las elecciones. Todos los ciudadanos empadronados pueden acercarse a las urnas el día de las elecciones y ejercer su voto para el binomio presidencial, la corporación municipal, los diputados de su distrito, los diputados del listado nacional y los diputados por el Parlamento Centroamericano. 
+  \r
+
+  Además, tienes opciones para participar de manera diferente, como supervisar
+  el financiamiento de las organizaciones políticas o exigir transparencia a
+  través de la Ley de Acceso a la Información Pública. También puedes
+  involucrarte en los espacios que el Tribunal Supremo Electoral ofrece en las
+  Juntas Electorales y las Juntas Receptoras de Votos. Esto es fundamental para
+  garantizar la legitimidad del proceso electoral, ya que los ciudadanos vigilan
+  desde adentro sin sesgos partidarios.
 
 
-  Asimismo, existen formas de participación ciudadana alternativas al ejercicio electoral y la participación política. A través de la Ley de Acceso a la Información Pública, los ciudadanos pueden fiscalizar el financiamiento o exigir la rendición de cuentas de las distintas organizaciones políticas. Además, los ciudadanos pueden participar en los espacios que el Tribunal Supremo Electoral proporciona en las Juntas Electorales, así como en las Juntas Receptoras de Votos. La participación ciudadana en estos espacios es uno de los pilares de la legitimidad del proceso electoral guatemalteco, puesto que los ciudadanos fiscalizan el proceso desde adentro y sin fines partidarios. 
-
-
-  <!--EndFragment-->
+  <!--EndFragment-->"
 iseccionA3: /images/posts/ne-11.png
 tseccionA4: Glosario de términos
 seccionA4: >-
