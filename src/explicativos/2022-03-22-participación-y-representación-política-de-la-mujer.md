@@ -3,29 +3,30 @@ title: "Participación y representación política de la mujer "
 icono_explicativo: /images/posts/nuestra-eleccion-13.png
 date: 2022-03-22T03:44:23.153Z
 slider: /images/posts/04.png
-tslider: democracia, representación política, participación política,
+tslider: "Participación y representación política de la mujer "
+txtslider: Democracia, representación política, participación política,
   subrepresentación femenina, cuotas de género, paridad
-txtslider: "Participación y representación política de la mujer "
 tseccionA1: Participación historica
 seccionA1: >-
-  Históricamente, la noción de la  participación política ha sido reducida a
-  únicamente una de sus formas más habituales; el sufragio. Sin embargo, este
-  tipo de participación encuentra, más allá de la participación puramente
-  electoral, una variedad de actividades individuales y colectivas que los
-  ciudadanos pueden ejercer dentro de un contexto democrático. Por lo tanto, la
-  participación política se define como un conjunto de actividades,
-  comportamientos y acciones que de manera individual o colectiva suceden dentro
-  de una sociedad a través de individuos, colectivos y partidos con el fin de
-  demandar, influir o formar parte del proceso de toma de decisión política. Es
-  decir, la participación política es un conjunto de acciones que pueden
-  realizar los ciudadanos para influir en la toma de decisiones.
+  <!--StartFragment-->
 
 
-  Por lo tanto, la participación política de todos los ciudadanos de un Estado es un derecho fundamental en cualquier contexto democrático. Sin embargo, a pesar de que es una obligación del Estado el asegurar dicha participación, históricamente, esta no ha sido ejercida plenamente por distintos sectores de la población; lo que representa un problema sustancial de la calidad de la democracia. La participación política no puede desvincularse del derecho a la representación política, entendido como “el resultado del proceso mediante el cual una comunidad ha seleccionado y ha elegido a alguno o algunos de sus miembros para que se hagan cargo, defienden, argumentan, los temas y los intereses que son comunes”. Esta relación entre representantes y representados es constitutiva de la democracia como régimen de gobierno y, por tanto, de su legitimidad y eficacia.
+  \
+
+  La participación política va más allá del simple acto de votar en las elecciones. Incluye una amplia gama de actividades que los ciudadanos pueden llevar a cabo de manera individual o colectiva para influir en las decisiones políticas de su sociedad. Es un derecho fundamental en cualquier democracia y es esencial para garantizar la calidad de la misma. La participación política no se limita al sufragio, sino que abarca diversas acciones que pueden realizar los ciudadanos para ser parte activa en la toma de decisiones. Esto es esencial para que el sistema político sea legítimo y eficaz. Además, la representación política, donde se eligen representantes para abogar por los intereses comunes, es un componente crucial de la democracia. 
 
 
-  Garantizar la participación política en igualdad de todos los grupos sociales, especialmente de las mujeres, es fundamental para la legitimidad del sistema político y el desarrollo de cualquier sociedad. A nivel internacional, esto se ha reflejado en la aprobación de tratados de derechos humanos e igualdad de condiciones, así como en la adopción de acuerdos políticos que incorporan compromisos relacionados con esta materia. Un ejemplo regional de lo anterior es la Carta Democrática Interamericana, misma que señala que “los Estados promoverán la plena e igualitaria participación de la mujer en las estructuras políticas de sus respectivos países como elemento fundamental para la promoción y ejercicio de la cultura democrática”. De igual manera, en el ámbito nacional, las constituciones políticas recientes incluyen disposiciones sobre la garantía de estos derechos. Toda constitución política contempla tres grupos de normas importantes con relación a la participación política de las mujeres. El primer grupo incluye el derecho de todas las personas a participar en la política y el poder hacerlo en igualdad entre hombres y mujeres. Ese segundo conjunto es el que establece las normas y reglas del juego sobre el régimen electoral y el sistema de partidos políticos. Por último, se desarrolla ese conglomerado que abarca algunas normas contenidas en tratados internacionales de derechos humanos, extrapolados para los contextos nacionales.
-iseccionA1: ""
+  En particular, es fundamental garantizar que todos los grupos sociales, incluyendo a las mujeres, tengan igualdad de oportunidades para participar en la política. Esto se refleja en tratados de derechos humanos y acuerdos políticos a nivel internacional. Por ejemplo, la Carta Democrática Interamericana enfatiza la importancia de la plena y equitativa participación de las mujeres en la política.
+
+
+  Las constituciones políticas también juegan un papel importante al establecer normas sobre la igualdad de género en la participación política. Esto abarca desde el derecho de todas las personas a participar en igualdad de condiciones hasta las reglas electorales y los compromisos internacionales en materia de derechos humanos.
+
+
+  En resumen, la participación política es un derecho fundamental en cualquier democracia y no se limita al voto. Es esencial para garantizar la legitimidad y eficacia del sistema político, y se deben tomar medidas para asegurar la igualdad de oportunidades para todos los grupos sociales, incluyendo a las mujeres.
+
+
+  <!--EndFragment-->
+iseccionA1: /images/posts/ne-16.png
 tseccionA2: ¿Cómo es la participación política de las mujeres en Guatemala?
 seccionA2: >-
   Guatemala presenta uno de los índices más bajos de participación y
@@ -40,32 +41,31 @@ seccionA2: >-
 
 
   Asimismo, esta limitada participación de las mujeres en el ámbito político está relacionada con una serie de barreras y techos estructurales de ámbito cultural, socioeconómico y político.
-iseccionA2: ""
-seccionB1: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-seccionB2: <embed src="https://sistemaranking.redciudadana.org/mapas/m1c"
-  type="text/html" height="780px" width="780px" >
+iseccionA2: /images/posts/ne-12.png
+seccionB1: ""
+seccionB2: ""
 tseccionA3: ¿Qué alternativas existen para fortalecer la participación política
   de las mujeres?
 seccionA3: >-
-  Como en cualquier contexto democrático, en Guatemala existe la latente
-  necesidad de impulsar una mayor incorporación de las mujeres a la arena
-  política.  El sustento de buscar esa incorporación radica en el concepto de la
-  representación misma, tanto en su conformación “descriptiva”, entendida que
-  los distintos grupos sociales se vean representados en los órganos de toma de
-  decisión, así como en su conformación “sustantiva”, asegurando la
-  representación de los intereses de estos grupos a través de los actores que
-  ejercen dicha representación (Freidenberg, 2017). 
+  <!--StartFragment-->
 
 
+  \
 
-  Por lo tanto, a nivel internacional han surgido una serie de propuestas de políticas alternativas que pretenden brindar estos espacios de representación a las mujeres. Dentro del variado conjunto de políticas que se han implementado para ampliar la representación, tanto en su conformación descriptiva como sustantiva, destacan la adopción de una serie de acciones afirmativas. Una acción afirmativa se refiere a una herramienta temporal implementada por el Estado para corregir la baja representación de algún grupo social en los ámbitos de toma de decisión; también conocidas como medidas de discriminación positiva. Entre este tipo de medidas destacan acciones como las cuotas de género o la aprobación de la paridad de género en todo tipo de competencia electoral.
+  En Guatemala, al igual que en cualquier democracia, es importante promover la participación activa de las mujeres en la política. Esto se basa en la idea de representación, que implica que los diversos grupos sociales estén presentes en los órganos de toma de decisiones y que sus intereses sean considerados por quienes los representan.
 
 
+  A nivel internacional, se han propuesto políticas alternativas para garantizar la representación de las mujeres en la política. Estas políticas buscan tanto la representación "descriptiva", es decir, que las mujeres estén presentes en los cargos de toma de decisiones, como la representación "sustantiva", que implica que sus intereses sean defendidos por quienes las representan.
 
-  Las cuotas de género se presentan como una medida alternativa para enfrentar la baja presencia de las mujeres en la vida política.. Esta medida afirmativa obliga a las organizaciones partidistas a incluir en sus listas de elección un número o porcentaje fijo de curules o candidaturas destinado exclusivamente para las mujeres. Esta modalidad busca garantizar la participación de las mujeres en igualdad de condiciones con los hombres a través del aumento de su presencia en cargos de representación política y en puestos de toma de decisiones. Actualmente, más de 120 países a nivel mundial cuentan con alguna cuota de género. En algunos casos se define una cuota única para las mujeres, mientras que en otros se han establecido porcentajes que oscilan entre el 20% y el 40% y que pueden ir aumentando progresivamente según la legislación.
+
+  Una de estas políticas alternativas son las cuotas de género, también conocidas como medidas de discriminación positiva. Estas cuotas obligan a los partidos políticos a reservar un número o porcentaje específico de candidaturas o escaños para las mujeres. Su objetivo es garantizar que las mujeres tengan igualdad de oportunidades en la política y aumentar su presencia en los cargos de representación y toma de decisiones. Más de 120 países en todo el mundo han implementado cuotas de género, algunas establecen un número fijo de candidaturas para mujeres, mientras que otras utilizan porcentajes que varían entre el 20% y el 40%. Estas medidas pueden aumentar gradualmente según la legislación vigente.
+
+
+  En resumen, es esencial promover la participación política de las mujeres en Guatemala y en todo el mundo, y las cuotas de género son una de las herramientas utilizadas para lograrlo. Estas políticas buscan garantizar la igualdad de oportunidades y la representación de las mujeres en la toma de decisiones políticas.
+
+
+  <!--EndFragment-->
+iseccionA3: /images/posts/ne-11.png
 tseccionA4: Glosario de términos
 seccionA4: >-
   **Representación política:** acto mediante el cual un representante
@@ -77,14 +77,9 @@ seccionA4: >-
   **Cuotas de género:** son medidas temporales orientadas a incrementar el número de candidaturas de mujeres en las instituciones de representación. 
 
   **Paridad:** principio que se utiliza para garantizar la igualdad (distribución 50/50 en las listas) entre hombres y mujeres en el acceso a puestos de representación política.
-seccionB3: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-seccionB4: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lo8aytCP224" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+iseccionA4: /images/posts/ne-17.png
+seccionB3: ""
+seccionB4: ""
 sliderconclusion: /images/posts/04.png
 tconclusion: Conclusiones
 conclusion: "En términos generales, la implementación de las cuotas y la paridad
