@@ -19944,3 +19944,7 @@ label.checkbox {
 .content_blog img{
   margin:auto
 }
+
+.dropdown-item:hover img{
+  filter: brightness(0) invert(1);
+}

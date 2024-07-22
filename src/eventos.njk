@@ -29,7 +29,7 @@ permalink: "eventos/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageN
 
                                 <img style="margin:2% auto"  src="/elementos/ELEMENTOS/ICONOS/01.png" alt="Canvas Logo">
 
-                                <h2>Eventos</h2>
+                                <!-- <h2>Eventos</h2> -->
                                 
                             </div>
                         </div>
@@ -39,7 +39,7 @@ permalink: "eventos/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageN
                                 {% if list%}
                                 {% for item in list%}
                                 <a href="{{item.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
-                                <img src="{{ item.data.image }}" alt="Evento" class="w-36">
+                                <img src="{{ item.data.image }}" alt="Evento" style="width: 250px; height: 170px;">
                                 <div class="pl-8 my-auto" style="text-align:left">
                                     <h5 class="font-bold text-lg">
                                     {{item.data.title }}
